@@ -255,6 +255,7 @@ def behavior(c,m,name,index):
     side=Render(m,w,h//2,ground);small=Render(m,w//2,h//2,ground);out=Movie(ROOT/'videos'/f'{index:02d}_{name if name not in ("forward","backward") else name+"_swim"}.mp4',c)
     preview=[];nframes=round(c['simulation']['duration_s']*fps);rootid=mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_BODY,'body_00_head')
     title=name.replace('_',' ').title();title+=' command' if name=='hover' else ''
+    if params['profile']=='carangiform':title+=' | Carangiform-style body wave'
     tailid=mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_BODY,'fin_caudal_0')
     tailqa=m.jnt_qposadr[mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_JOINT,'j_fin_caudal_0')]
     pecqa=m.jnt_qposadr[mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_JOINT,'j_fin_pecL_0_abduct')]
@@ -310,7 +311,7 @@ def run(c,only=None):
             rows.append(f'| {name} | {peak:.4f} | {displacement[0]:+.2f} | {displacement[1]:+.2f} | {displacement[2]:+.2f} |')
         report('swimming_ground.md',f'''# Stationary chin and ground reference: videos 03–06
 
-All three chin position targets are held at zero for forward, backward, hover and turning. Tiny passive actuator compliance is measured below; there is no commanded scan. The separate chin demonstration retains its three active DOFs. Both tail and pectoral actuation remain active; trajectories use the current per-gait configuration. See `forward_improvement.md` for the earlier speed improvement and `larger_tail.md` for the current wider-stroke tradeoff.
+All three chin position targets are held at zero for forward, backward, hover and turning. Tiny passive actuator compliance is measured below; there is no commanded scan. The separate chin demonstration retains its three active DOFs. Both tail and pectoral actuation remain active; trajectories use the current per-gait configuration. See `carangiform.md` for the current posterior-body wave and its measured benefit. `forward_improvement.md` and `larger_tail.md` preserve the earlier controller comparisons.
 
 The ground grid is fixed in world coordinates at z = {ground['z_m']*1000:g} mm, with {ground['spacing_m']*1000:g} mm spacing and a heavier line every {ground['major_every']} cells. Gold lines mark x = 0 and y = 0. It is decorative render geometry and adds no contact, fluid force or mass. Its lines are never translated or rotated with the camera or fish.
 

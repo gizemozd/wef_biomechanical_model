@@ -18,6 +18,19 @@ class Controller:
         self.names=[j['name'] for j in self.spec]
         body_s=self.s[self.kind=='body']
         self.body_span=(body_s.min(),np.ptp(body_s))
+        u=np.clip((self.s-self.body_span[0])/self.body_span[1],0,1)
+        floor=self.p.get('body_amplitude_floor',0.2)
+        self.body_envelope=floor+(1-floor)*u*u
+        if self.p['profile']=='carangiform':
+            # Fractions of the existing seam-safe ROM, from first to last body
+            # hinge. Bend the posterior trunk and keep the peduncle relatively stiff.
+            envelope=np.asarray(self.p['carangiform_envelope'],dtype=float)
+            if (envelope.ndim!=2 or envelope.shape[1]!=2 or len(envelope)<2
+                or not np.isfinite(envelope).all() or np.any(np.diff(envelope[:,0])<=0)
+                or envelope[0,0]!=0 or envelope[-1,0]!=1
+                or np.any((envelope[:,1]<0)|(envelope[:,1]>1))):
+                raise ValueError('carangiform_envelope must span 0..1 with increasing positions and amplitudes in 0..1')
+            self.body_envelope=np.interp(u,envelope[:,0],envelope[:,1])
     def __call__(self,t):
         p=self.p;f=p['frequency_hz'];wave=p['wavelength_bl'];amp=np.deg2rad(p['amplitude_deg'])
         ramp=min(1,t/max(p['ramp_s'],1e-6));ramp=.5-.5*np.cos(np.pi*ramp)
@@ -34,9 +47,7 @@ class Controller:
                 result[k]=lim*p['chin_amplitude_fraction']*np.sin(2*np.pi*p['chin_frequency_hz']*t+offset)
             elif kind=='body':
                 if j['name'].endswith('yaw'):
-                    u=np.clip((s-self.body_span[0])/self.body_span[1],0,1)
-                    floor=p.get('body_amplitude_floor',0.2)
-                    fraction=p['body_amplitude_fraction']*(floor+(1-floor)*u*u)
+                    fraction=p['body_amplitude_fraction']*self.body_envelope[k]
                     if p['profile']=='knifefish_rigid_trunk' and s<.8:fraction*=.05
                     result[k]=lim*fraction*np.sin(2*np.pi*(f*t-direction*s/wave))
                     # Compensate body/fin tracking lag when a faster gait is used.

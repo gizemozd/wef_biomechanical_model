@@ -100,12 +100,16 @@ controller:
   # Each behavior keeps caudal and paired pectoral strokes active.
   gaits:
     forward:
+      profile: carangiform
+      # [position from first to last body hinge, fraction of available yaw ROM].
+      # Quiet anterior targets, stronger posterior trunk, relatively stiff peduncle.
+      carangiform_envelope: [[0.0, 0.03], [0.3, 0.03], [0.55, 1.0], [0.82, 1.0], [1.0, 0.3]]
       chin_amplitude_fraction: 0.0
       frequency_hz: 6.0
       body_amplitude_fraction: 0.95
       pec_amplitude_deg: 14.0
       pec_pitch_fraction: 0.3
-      # Larger visible tail sweep; about 5% less travel than gain 2.2 / -60 deg.
+      # Coordinate the rigid caudal fin with the stronger posterior body wave.
       caudal_counterbend_gain: 3.0
       caudal_amplitude_deg: 11.0
       caudal_phase_deg: -45.0

@@ -175,3 +175,20 @@ def test_both_fin_groups_active_in_four_behaviors(model,cfg):
         if name!='turning':
             left=ctl.names.index('j_fin_pecL_0_rotate');right=ctl.names.index('j_fin_pecR_0_rotate')
             np.testing.assert_allclose(controls[:,left],controls[:,right])
+
+def test_carangiform_posterior_body_motion(model,cfg):
+    if cfg['controller'].get('gaits',{}).get('forward',{}).get('profile')!='carangiform':
+        pytest.skip('Forward gait is not configured as carangiform')
+    # Check achieved motion, including passive compliance, rather than just the
+    # requested envelope: posterior bending must dominate and taper at the peduncle.
+    trace=simulate(model,cfg,'forward',duration=5,record_fps=100)
+    ids=[model.joint(f'j_body_{i:02d}_yaw').id for i in range(1,cfg['segmentation']['N_body'])]
+    angles=trace['qpos'][trace['time']>=2.5][:,model.jnt_qposadr[ids]]
+    sweep=np.ptp(angles,axis=0)
+    u=np.linspace(0,1,len(ids))
+    posterior=sweep[(u>=.5)&(u<=.85)].mean()
+    assert posterior>3*sweep[u<=.2].mean()
+    assert sweep[u>.85].mean()<.75*posterior
+    assert np.all(angles>=model.jnt_range[ids,0]-1e-4)
+    assert np.all(angles<=model.jnt_range[ids,1]+1e-4)
+    assert np.isfinite(trace['qpos']).all()
