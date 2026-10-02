@@ -74,6 +74,72 @@ def signed_metrics(a,b,pa,pb,pivot,axis,angle,rotation=None):
     d=np.concatenate(ds)
     return float(max(0,-d.min())),float(max(0,d.max()))
 
+def measure_body_rom(c,bodies,geometry,outer_masks):
+    """Validate regional ranges on unchanged cut surfaces, including yaw/pitch corners."""
+    sg=c['segmentation'];jc=c['joints'];effective=[];seams=[];compound=[]
+    for geo in geometry:
+        i=geo['body_index']-1;p=np.asarray(geo['pivot']);r=geo['radius'];h=geo['height_m']
+        a,b=bodies[i:i+2];points=[]
+        for mesh,outer,target in [(a,outer_masks[i],r),(b,outer_masks[i+1],r-geo['overlap_m'])]:
+            adj=mesh.face_adjacency;mix=outer[adj[:,0]]!=outer[adj[:,1]]
+            adj=adj[mix];edges=mesh.face_adjacency_edges[mix]
+            cap=np.where(outer[adj[:,0]],adj[:,1],adj[:,0]);v=mesh.triangles[cap]-p
+            rr=np.linalg.norm(v if sg['cut_type']=='sphere' else v[:,:,:2],axis=2)
+            pts=sample_edges(mesh,edges[np.max(np.abs(rr-target),axis=1)<r*.002+2e-7],sg['seam_samples_per_edge'])
+            v=pts-p;rr=np.linalg.norm(v if sg['cut_type']=='sphere' else v[:,:2],axis=1)
+            points.append(pts[(np.abs(rr-target)<r*.002+2e-7)&(pts[:,0]<p[0])])
+        pa,pb=points
+        if min(len(pa),len(pb))<4:raise ValueError(f'Insufficient body seam samples at joint {i+1}')
+        requested=jc[geo['region']+'_yaw_deg'];pitch=0 if sg['cut_type']=='cylinder' else jc['pitch_deg']
+        budget=jc.get('seam_displacement_fraction_by_region',{}).get(geo['region'],.010)
+        if not np.isfinite(budget) or budget<=0:raise ValueError('Seam displacement fraction must be positive')
+        yaw=min(requested,np.rad2deg(budget*h/r)) if jc['auto_reduce_for_seams'] else requested
+        pitch=min(pitch,np.rad2deg(.010*h/r)) if jc['auto_reduce_for_seams'] else pitch
+        common={'body_index':i+1,'height_m':h,'sample_count':len(pa)+len(pb)}
+        for attempt in range(10):
+            tests=[];corners=[]
+            for label,axis,limit in [('yaw',[0,0,1],yaw),('pitch',[0,1,0],pitch)]:
+                for fraction in [0,-.5,.5,-1,1]:
+                    angle=fraction*limit;gap,penetration=signed_metrics(a,b,pa,pb,p,axis,angle)
+                    threshold=sg['seam_rest_fraction'] if fraction==0 else sg['seam_bent_fraction']
+                    tests.append({**common,'joint':f'j_body_{i+1:02d}_{label}','axis':label,'angle_deg':angle,'gap_m':gap,'penetration_m':penetration,'gap_fraction':gap/h,'threshold':threshold})
+            for y in [-yaw,yaw]:
+                for z in [-pitch,pitch]:
+                    rot=Rotation.from_euler('z',y,degrees=True).as_matrix()@Rotation.from_euler('y',z,degrees=True).as_matrix()
+                    gap,penetration=signed_metrics(a,b,pa,pb,p,[0,0,1],y,rotation=rot)
+                    corners.append({**common,'yaw_deg':y,'pitch_deg':z,'gap_m':gap,'penetration_m':penetration,'gap_fraction':gap/h,'threshold':sg['seam_bent_fraction']})
+            if all(row['gap_fraction']<=row['threshold'] for row in tests+corners):break
+            if not jc['auto_reduce_for_seams']:raise ValueError(f'Seam threshold exceeded at body joint {i+1}')
+            yaw*=.65;pitch*=.65
+        else:raise ValueError(f'Cannot meet seam threshold at body joint {i+1}')
+        effective.append({**geo,'requested_yaw_deg':requested,'yaw_deg':float(yaw),'pitch_deg':float(pitch)})
+        seams.extend(tests);compound.extend(corners)
+        print(f'Joint {i+1}: yaw {yaw:.3f}, pitch {pitch:.3f}, compound gap {max(x["gap_fraction"] for x in corners):.2%}',flush=True)
+    dump(ROOT/'reports/body_compound_metrics.json',compound)
+    return effective,seams
+
+def update_body_rom(c):
+    """Refresh ranges on existing meshes; do not alter the rigid exterior or chin."""
+    path=ROOT/'assets/segments.json';meta=json.loads(path.read_text())
+    records=[s for s in meta['segments'] if s['region']=='body'];bodies=[];outer=[]
+    if len(records)!=c['segmentation']['N_body']:raise ValueError('Body count changed; run full segmentation')
+    for s in records:
+        mesh=trimesh.load(ROOT/'assets/meshes'/s['mesh'].replace('.obj','.ply'),process=False)
+        mesh.vertices+=s['origin'];bodies.append(mesh)
+        outer.append(np.load(ROOT/'assets/meshes'/s['outer_mask_file']))
+    meta['joints'],seams=measure_body_rom(c,bodies,meta['joints'],outer)
+    dump(path,meta);dump(ROOT/'reports/seam_metrics.json',seams)
+    phase=ROOT/'reports/phase1.md'
+    if phase.exists():
+        import re
+        compound=json.loads((ROOT/'reports/body_compound_metrics.json').read_text())
+        value=max(row['gap_fraction'] for row in seams+compound)
+        text=re.sub(r'Maximum sampled seam gap / local body height: \*\*.*?\*\*',f'Maximum sampled seam gap / local body height: **{value:.4%}**',phase.read_text())
+        text=text.replace('Tests cover rest, ±half and ±full yaw/pitch separately.', 'Tests cover rest, ±half and ±full yaw/pitch separately. Four combined yaw/pitch corners per joint are also checked in `body_compound_metrics.json`.') if 'Four combined yaw/pitch' not in text else text
+        text=text.replace('all points, compound poses, or fin membranes','all points, arbitrary compound poses, or fin membranes')
+        phase.write_text(text)
+    return meta['joints']
+
 def measure_chin_rom(c,head,chin,src,chin_p,chin_r,chin_overlap):
     """Measure the rigid attachment; only reduce active ROM when explicitly configured."""
     sg=c['segmentation']
@@ -267,49 +333,12 @@ def run(c):
         records.append({'name':name,'parent':parent,'origin':p,'region':region})
         meshes[name]=m
     # Measure seam-boundary displacement against neighboring triangle surfaces.
-    seam=[];edge_cache={}
-    for i,m in enumerate(bodies):
-        edge_cache[i]=seam_edges(m,src)
+    geometry=[]
     for i,p in enumerate(pivots):
-        a,b=bodies[i:i+2];r=radii[i];h=float(np.interp(p[0],xs,dims[:,1]))
-        def interface_points(mesh, outer, target):
-            adj=mesh.face_adjacency
-            mix=outer[adj[:,0]]!=outer[adj[:,1]]
-            adj=adj[mix];edges=mesh.face_adjacency_edges[mix]
-            cap=np.where(outer[adj[:,0]],adj[:,1],adj[:,0])
-            vectors=mesh.triangles[cap]-p
-            rr=np.linalg.norm(vectors,axis=2) if sg['cut_type']=='sphere' else np.linalg.norm(vectors[:,:,:2],axis=2)
-            iscap=np.max(np.abs(rr-target),axis=1)<r*.002+2e-7
-            return sample_edges(mesh,edges[iscap],sg['seam_samples_per_edge'])
-        aa=interface_points(a,edge_cache[i][1],r)
-        bb=interface_points(b,edge_cache[i+1][1],r-overlaps[i])
-        def select(points, target_radius):
-            rr=np.linalg.norm(points-p,axis=1) if sg['cut_type']=='sphere' else np.linalg.norm((points-p)[:,:2],axis=1)
-            return points[(np.abs(rr-target_radius)<r*.002+2e-7)&(points[:,0]<p[0])]
-        pa,pb=select(aa,r),select(bb,r-overlaps[i])
-        if min(len(pa),len(pb))<4:raise ValueError(f'Insufficient outer seam samples at joint {i+1}')
         source_x=p[0]/scale+center[0]
         region='trunk' if source_x>0 else ('posterior' if source_x>-6.5 else 'peduncle')
-        req=c['joints'][region+'_yaw_deg']; reqpitch=0 if sg['cut_type']=='cylinder' else c['joints']['pitch_deg']
-        values={}
-        for label,axis,limit in [('yaw',[0,0,1],req),('pitch',[0,1,0],reqpitch)]:
-            # Conservative displacement bound leaves headroom for combined yaw/pitch.
-            actual=min(limit,np.rad2deg(.010*h/r)) if c['joints']['auto_reduce_for_seams'] else limit
-            for attempt in range(10):
-                tests=[]
-                for fraction in [0,-.5,.5,-1,1]:
-                    angle=fraction*actual;gap,penetration=signed_metrics(a,b,pa,pb,p,axis,angle)
-                    threshold=sg['seam_rest_fraction'] if fraction==0 else sg['seam_bent_fraction']
-                    tests.append({'axis':label,'angle_deg':angle,'gap_m':gap,'penetration_m':penetration,'gap_fraction':gap/h,'threshold':threshold})
-                if all(t['gap_fraction']<=t['threshold'] for t in tests):break
-                if not c['joints']['auto_reduce_for_seams']:raise ValueError('Seam threshold exceeded')
-                actual*=.65
-            else:
-                a.export(ROOT/'reports/debug_a.ply');b.export(ROOT/'reports/debug_b.ply');np.savez(ROOT/'reports/debug_seam.npz',pa=pa,pb=pb,p=p)
-                raise ValueError(f'Cannot meet seam threshold at joint {i+1}: {tests}')
-            values[label+'_deg']=float(actual);seam.extend([{'joint':f'j_body_{i+1:02d}_{label}','height_m':h,'sample_count':len(pa)+len(pb),**t} for t in tests])
-        effective.append({'body_index':i+1,'pivot':p,'radius':r,'overlap_m':overlaps[i],'height_m':h,'region':region,'requested_yaw_deg':req,**values})
-        print(f'Joint {i+1}: yaw {values["yaw_deg"]:.3f} pitch {values["pitch_deg"]:.3f}, seam samples {len(pa)+len(pb)}',flush=True)
+        geometry.append({'body_index':i+1,'pivot':p,'radius':radii[i],'overlap_m':overlaps[i],'height_m':float(np.interp(p[0],xs,dims[:,1])),'region':region})
+    effective,seam=measure_body_rom(c,bodies,geometry,[seam_edges(m,src)[1] for m in bodies])
     chin_joint=measure_chin_rom(c,bodies[0],chin,src if modeled_reference is None else modeled_reference,chin_p,chin_r,chin_overlap)
     # Transfer each face from its source triangle; disjoint UV islands cannot bleed across seams.
     atlas=Image.open(ROOT/'assets/textures/Elephant_Nose_Fish_Diffuse.png').convert('RGB')
@@ -392,7 +421,8 @@ def run(c):
     for p,r in zip(pivots,radii):ax.add_patch(Circle((p[0],p[2]),r,fill=False,lw=.5,color='#b57918'))
     ax.autoscale();ax.set_aspect('equal');ax.set_xlabel('x (m)');ax.set_ylabel('z (m)');ax.set_title('Final exact-boolean segmentation and body-only cut spheres')
     fig.savefig(ROOT/'reports/segmentation.png',dpi=160);plt.close(fig)
-    maxgap=max(t['gap_fraction'] for t in seam)
+    compound=json.loads((ROOT/'reports/body_compound_metrics.json').read_text())
+    maxgap=max(t['gap_fraction'] for t in seam+compound)
     total=sum(s['mass_kg'] for s in records)
     report('phase1.md',f'''# Phase 1 — segmentation and seams
 
@@ -400,7 +430,7 @@ def run(c):
 
 Original textured exterior triangles are retained where the anatomy is unchanged. Ball/socket mode models the chin root with a rounded ball. When configured, a smooth rigid waist is trimmed around the marked joint position, reducing the ball's visible prominence; `chin_root_contour.json` records the local change. UVs on this new exterior are projected radially outward to the source, and shared reference normals keep the root shading consistent. No visual skin is used. Fin bases use configurable, manually inferred external landmarks; these are not recovered bones. Upper (dorsal) and lower (anal) fins are each one complete rigid mesh, neutral by default. The chin is an independent head-attached body with three actuated rotations.
 
-Maximum sampled seam gap / local body height: **{maxgap:.4%}**. Tests cover rest, ±half and ±full yaw/pitch separately. Reported penetration includes intentional overlap. Samples run along outer/cap boundary edges; this is a finite numerical test, not a proof for all points, compound poses, or fin membranes. Ranges were reduced to preserve body seams; see `assets/segments.json` and `seam_metrics.json`.
+Maximum sampled seam gap / local body height: **{maxgap:.4%}**. Tests cover rest, ±half and ±full yaw/pitch separately. Four combined yaw/pitch corners per joint are also checked in `body_compound_metrics.json`. Reported penetration includes intentional overlap. Samples run along outer/cap boundary edges; this is a finite numerical test, not a proof for all points, arbitrary compound poses, or fin membranes. Ranges were reduced to preserve body seams; see `assets/segments.json` and `seam_metrics.json`.
 
 Chin limits (seam policy: {chin_joint["seam_policy"]}): yaw ±{chin_joint['yaw_deg']:.3f}°, pitch ±{chin_joint['pitch_deg']:.3f}°, roll ±{chin_joint['roll_deg']:.3f}°. These engineering limits are not measured anatomical ROM. Ball/socket mode enforces coverage of the head socket rim across all sampled rotations. Legacy report-only mode permits bent gaps. See `chin_seam_metrics.json` and `chin_compound_metrics.json`. All three rotational DOFs have independent actuators and sensors.
 
@@ -416,5 +446,7 @@ OBJ and MTL assets are self-contained under `assets/`. MuJoCo uses one diffuse m
 ''')
     print(f'Segmentation complete: {len(records)} solids, mass {total:.6f} kg, max gap {maxgap:.4%}')
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--config');ap.add_argument('--chin-rom-only',action='store_true',help='Update chin ranges and seam diagnostics from existing meshes only');a=ap.parse_args()
-    (update_chin_rom if a.chin_rom_only else run)(config(a.config))
+    ap=argparse.ArgumentParser();ap.add_argument('--config');mode=ap.add_mutually_exclusive_group()
+    mode.add_argument('--chin-rom-only',action='store_true',help='Update chin ranges and seam diagnostics from existing meshes only')
+    mode.add_argument('--body-rom-only',action='store_true',help='Update body ranges and compound seam checks without recutting meshes')
+    a=ap.parse_args();(update_chin_rom if a.chin_rom_only else update_body_rom if a.body_rom_only else run)(config(a.config))

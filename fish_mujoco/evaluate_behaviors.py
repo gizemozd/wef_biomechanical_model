@@ -105,6 +105,9 @@ def run(c,names=None,ablations=True):
         dump(ROOT/'reports/propulsion_audit.json',{'signature':signature(c),'behaviors':audit,'method':'Same-state native MuJoCo ellipsoid force subtraction plus independent free-root simulations with selected position targets held neutral. Passive forces and every mesh remain present. Mean statistics use the final half of each run.'})
         plot(c,audit)
         write_report(c,audit)
+        if 'forward' in audit and c['controller'].get('gaits',{}).get('forward',{}).get('motion_label')=='Reference-inspired swimming':
+            from reference_swim import run as reference_report
+            reference_report(c)
     return audit
 
 def plot(c,audit):
@@ -138,7 +141,7 @@ In videos 03–06 the chin's three position targets now stay at zero; active sen
 
 Pectoral rotation about the span (global local-body y axis) now uses the same sign on left and right, as required by sagittal reflection of an axial vector. Its sign reverses for backward strokes. Previously that component was mirrored incorrectly; it did not reliably reverse pectoral thrust. Backward uses an independent lateral tail stroke together with reverse-feathered pectorals. Hover keeps both groups active with approximately opposing mean forces; it is open-loop and drifts. Turning retains coordinated tail strokes plus body/tail bias and unequal pectoral amplitudes.
 
-No joint range, mesh, actuator gain, inertia, fluid proxy or fluid coefficient was changed for these controller revisions. Native MuJoCo ellipsoid forces drive a free root; no trajectory prescription or added thrust is used. The base gaits use 3 Hz and 1.2 BL wavelength. The forward gait uses its own frequency, amplitude and caudal phase overrides from config.yaml. `carangiform.md` describes its current posterior-body envelope and improved propulsion. `forward_improvement.md` and `larger_tail.md` preserve the earlier speed and tail-amplitude comparisons. Historical `tuning.json`/`tuning.png` are retained and are no longer implicit overrides of config.yaml.
+The reference-video revision expands the five posterior body yaw limits from ±0.716° to ±1.432° after individual and compound seam checks. Meshes, actuator gains, inertia, fluid proxies and fluid coefficients remain unchanged. Native MuJoCo ellipsoid forces drive a free root; no trajectory prescription or added thrust is used. The base gaits use 3 Hz and 1.2 BL wavelength. The forward gait uses its own frequency, amplitude and caudal phase overrides from config.yaml. `reference_swim.md` describes the current slower body/tail cadence, independently cycling pectorals and stronger posterior bending. `carangiform.md` and `tail_increment.md` document the earlier gaits. `forward_improvement.md` and `larger_tail.md` preserve the earlier speed and tail-amplitude comparisons. Historical `tuning.json`/`tuning.png` are retained and are no longer implicit overrides of config.yaml.
 
 ## Measured contributions
 

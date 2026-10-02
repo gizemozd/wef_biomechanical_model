@@ -49,6 +49,12 @@ def test_seam_measurements(cfg):
         assert np.isfinite([r['gap_m'],r['penetration_m']]).all()
         threshold=cfg['segmentation']['seam_rest_fraction'] if r['angle_deg']==0 else cfg['segmentation']['seam_bent_fraction']
         assert r['gap_fraction']<=threshold,r
+    compound=json.loads((ROOT/'reports/body_compound_metrics.json').read_text())
+    assert len(compound)==(cfg['segmentation']['N_body']-1)*4
+    for r in compound:
+        assert r['sample_count']>=8
+        assert np.isfinite([r['gap_m'],r['penetration_m']]).all()
+        assert r['gap_fraction']<=cfg['segmentation']['seam_bent_fraction'],r
 
 def test_chin_three_dofs_and_whole_median_fins(model,meta,cfg):
     chin=mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_BODY,'chin_0')
@@ -192,3 +198,17 @@ def test_carangiform_posterior_body_motion(model,cfg):
     assert np.all(angles>=model.jnt_range[ids,0]-1e-4)
     assert np.all(angles<=model.jnt_range[ids,1]+1e-4)
     assert np.isfinite(trace['qpos']).all()
+
+def test_forward_achieved_tail_and_pectoral_cadence(model,cfg):
+    # Measure independent physical joint motion after startup, including fluid load.
+    from scipy.signal import find_peaks
+    trace=simulate(model,cfg,'forward',duration=5,record_fps=100)
+    steady=trace['time']>=1
+    ctl=Controller(model,cfg,'forward')
+    for joint,hz in [('j_fin_caudal_0',ctl.p['frequency_hz']),
+                     ('j_fin_pecL_0_abduct',ctl.p.get('pec_frequency_hz',ctl.p['frequency_hz']))]:
+        q=trace['qpos'][steady,model.jnt_qposadr[model.joint(joint).id]]
+        peaks,_=find_peaks(q,prominence=.25*np.ptp(q),distance=round(70/hz))
+        assert len(peaks)>=3,joint
+        measured=1/np.median(np.diff(trace['time'][steady][peaks]))
+        assert abs(measured/hz-1)<.1,(joint,measured,hz)

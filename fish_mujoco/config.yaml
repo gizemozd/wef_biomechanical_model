@@ -43,6 +43,8 @@ joints:
   peduncle_yaw_deg: 1.0
   pitch_deg: 0.5
   auto_reduce_for_seams: true
+  # Larger posterior yaw is accepted only after individual and compound seam checks.
+  seam_displacement_fraction_by_region: {trunk: 0.010, posterior: 0.020, peduncle: 0.010}
   stiffness: 0.003
   damping: 0.00015
   armature: 0.00000001
@@ -105,14 +107,19 @@ controller:
       # Quiet anterior targets, stronger posterior trunk, relatively stiff peduncle.
       carangiform_envelope: [[0.0, 0.03], [0.3, 0.03], [0.55, 1.0], [0.82, 1.0], [1.0, 0.3]]
       chin_amplitude_fraction: 0.0
-      frequency_hz: 6.0
+      # Visual approximation of the linked reference, not fitted 3D kinematics.
+      motion_label: Reference-inspired swimming
+      frequency_hz: 2.5
+      pec_frequency_hz: 3.5
+      body_wave_modulation_depth: 0.25
+      body_wave_modulation_hz: 0.5
       body_amplitude_fraction: 0.95
-      pec_amplitude_deg: 14.0
+      pec_amplitude_deg: 16.0
       pec_pitch_fraction: 0.3
       # Coordinate the rigid caudal fin with the stronger posterior body wave.
-      caudal_counterbend_gain: 3.6
+      caudal_counterbend_gain: 1.6
       caudal_amplitude_deg: 12.0
-      caudal_phase_deg: -45.0
+      caudal_phase_deg: -10.0
     backward:
       chin_amplitude_fraction: 0.0
       body_amplitude_fraction: 0.15

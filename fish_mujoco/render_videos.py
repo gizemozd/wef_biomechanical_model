@@ -255,7 +255,9 @@ def behavior(c,m,name,index):
     side=Render(m,w,h//2,ground);small=Render(m,w//2,h//2,ground);out=Movie(ROOT/'videos'/f'{index:02d}_{name if name not in ("forward","backward") else name+"_swim"}.mp4',c)
     preview=[];nframes=round(c['simulation']['duration_s']*fps);rootid=mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_BODY,'body_00_head')
     title=name.replace('_',' ').title();title+=' command' if name=='hover' else ''
-    if params['profile']=='carangiform':title+=' | Carangiform-style body wave'
+    if params.get('motion_label'):title+=' | '+params['motion_label']
+    elif params['profile']=='carangiform':title+=' | Carangiform-style body wave'
+    cadence=f'body/tail {params["frequency_hz"]:g} Hz | pectorals {params.get("pec_frequency_hz",params["frequency_hz"]):g} Hz'
     tailid=mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_BODY,'fin_caudal_0')
     tailqa=m.jnt_qposadr[mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_JOINT,'j_fin_caudal_0')]
     pecqa=m.jnt_qposadr[mujoco.mj_name2id(m,mujoco.mjtObj.mjOBJ_JOINT,'j_fin_pecL_0_abduct')]
@@ -283,7 +285,7 @@ def behavior(c,m,name,index):
                            (f'Displacement: x {delta[0]:+.1f} mm | y {delta[1]:+.1f} mm | z {delta[2]:+.1f} mm',28,h//2+46,(215,230,230))])
         # Perspective scale at look-at depth in the top panel, 45-degree vertical FOV.
         scale_px=int(.02*(h/2)/(2*.30*np.tan(np.deg2rad(45/2))))
-        frame=annotate(frame,title,f'Tail + paired pectoral propulsion | f = {params["frequency_hz"]:.1f} Hz | wavelength = {params["wavelength_bl"]:.2f} BL | axial speed = {speed:+.4f} BL/s | t = {t:.2f} s',labels)
+        frame=annotate(frame,title,f'Tail + paired pectoral propulsion | {cadence} | axial speed = {speed:+.4f} BL/s | t = {t:.2f} s',labels)
         draw=Image.fromarray(frame);dd=ImageDraw.Draw(draw);sx,sy=40,h-35;dd.line((sx,sy,sx+scale_px,sy),fill='white',width=3);dd.text((sx,sy-24),'20 mm at center depth',font=font(15),fill='white');frame=np.array(draw)
         out.add(frame)
         if name=='forward' and i%max(1,fps//12)==0 and i<fps*3:
@@ -291,6 +293,25 @@ def behavior(c,m,name,index):
         if i==nframes//2:Image.fromarray(frame).save(ROOT/'reports'/f'behavior_{name}.png')
     out.close();side.close();small.close()
     if preview:preview[0].save(ROOT/'videos/preview.gif',save_all=True,append_images=preview[1:],duration=83,loop=0)
+
+def verify_ground(c,m):
+    """Confirm decorative ground coordinates remain fixed as the fish and camera move."""
+    g=c['render']['swimming_ground'];d=mujoco.MjData(m);r=Render(m,320,240,g)
+    original=m.geom_pos.copy();count=m.ngeom
+    def coordinates():
+        return np.array([np.r_[geom.pos,geom.mat.ravel(),geom.size]
+                         for geom in r.r.scene.geoms[:r.r.scene.ngeom]
+                         if geom.category==mujoco.mjtCatBit.mjCAT_DECOR])
+    try:
+        mujoco.mj_forward(m,d);r.frame(d);before=coordinates()
+        d.qpos[:3]=[.02,.015,.01];mujoco.mj_forward(m,d)
+        r.frame(d,look=d.qpos[:3],azimuth=115,elevation=-65)
+        np.testing.assert_array_equal(before,coordinates())
+        np.testing.assert_array_equal(original,m.geom_pos);assert count==m.ngeom
+        dump(ROOT/'reports/ground_world_reference.json',{'decorative_geoms':len(before),
+            'grid_lines':max(0,len(before)-1),'unchanged_across_root_and_camera_changes':True,
+            'world_z_m':g['z_m'],'spacing_m':g['spacing_m'],'model_geoms_unchanged':True})
+    finally:r.close()
 
 def run(c,only=None):
     m=mujoco.MjModel.from_xml_path(str(ROOT/'fish.xml'))
@@ -302,6 +323,7 @@ def run(c,only=None):
     for index,name in enumerate(['forward','backward','hover','turning','body_undulation'],start=3):
         if only in (None,name) or (only=='swimming' and index<=6):behavior(c,m,name,index);print('Rendered',name,flush=True)
     if only in (None,'swimming'):
+        verify_ground(c,m)
         ground=c['render']['swimming_ground'];rows=[]
         for name in ['forward','backward','hover','turning']:
             tr=np.load(ROOT/'reports'/f'trajectory_{name}.npz')
@@ -311,7 +333,7 @@ def run(c,only=None):
             rows.append(f'| {name} | {peak:.4f} | {displacement[0]:+.2f} | {displacement[1]:+.2f} | {displacement[2]:+.2f} |')
         report('swimming_ground.md',f'''# Stationary chin and ground reference: videos 03–06
 
-All three chin position targets are held at zero for forward, backward, hover and turning. Tiny passive actuator compliance is measured below; there is no commanded scan. The separate chin demonstration retains its three active DOFs. Both tail and pectoral actuation remain active; trajectories use the current per-gait configuration. See `carangiform.md` for the current posterior-body wave and its measured benefit. `forward_improvement.md` and `larger_tail.md` preserve the earlier controller comparisons.
+All three chin position targets are held at zero for forward, backward, hover and turning. Tiny passive actuator compliance is measured below; there is no commanded scan. The separate chin demonstration retains its three active DOFs. Both tail and pectoral actuation remain active; trajectories use the current per-gait configuration. See `reference_swim.md` for the current reference-inspired posterior-body wave and measured contributions. `forward_improvement.md` and `larger_tail.md` preserve the earlier controller comparisons.
 
 The ground grid is fixed in world coordinates at z = {ground['z_m']*1000:g} mm, with {ground['spacing_m']*1000:g} mm spacing and a heavier line every {ground['major_every']} cells. Gold lines mark x = 0 and y = 0. It is decorative render geometry and adds no contact, fluid force or mass. Its lines are never translated or rotated with the camera or fish.
 

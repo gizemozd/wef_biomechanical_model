@@ -8,6 +8,11 @@ class Controller:
     def __init__(self,model,c,behavior='forward',overrides=None):
         self.m=model;self.c=c;self.behavior=behavior
         self.p={**c['controller'],**c['controller'].get('gaits',{}).get(behavior,{}),**(overrides or {})}
+        if not 0<=self.p.get('body_wave_modulation_depth',0)<=1:
+            raise ValueError('body_wave_modulation_depth must be between 0 and 1')
+        for key in ['frequency_hz','pec_frequency_hz','body_wave_modulation_hz']:
+            if key in self.p and (not np.isfinite(self.p[key]) or self.p[key]<=0):
+                raise ValueError(f'{key} must be finite and positive')
         self.spec=json.loads((ROOT/'assets/joints.json').read_text())
         meta=json.loads((ROOT/'assets/segments.json').read_text());self.segs={s['name']:s for s in meta['segments']}
         self.L=c['source']['length_m']
@@ -34,6 +39,10 @@ class Controller:
     def __call__(self,t):
         p=self.p;f=p['frequency_hz'];wave=p['wavelength_bl'];amp=np.deg2rad(p['amplitude_deg'])
         ramp=min(1,t/max(p['ramp_s'],1e-6));ramp=.5-.5*np.cos(np.pi*ramp)
+        # A slow, smooth envelope varies stroke strength without changing the
+        # traveling-wave phase or prescribing the fish's root trajectory.
+        depth=p.get('body_wave_modulation_depth',0.0)
+        modulation=1-.5*depth*(1-np.cos(2*np.pi*p.get('body_wave_modulation_hz',.5)*t))
         result=np.zeros(len(self.spec));direction=-1 if self.behavior=='backward' else 1
         dynamic_yaw=0.0
         phase=2*np.pi*(f*t-direction*self.s/wave)
@@ -47,7 +56,7 @@ class Controller:
                 result[k]=lim*p['chin_amplitude_fraction']*np.sin(2*np.pi*p['chin_frequency_hz']*t+offset)
             elif kind=='body':
                 if j['name'].endswith('yaw'):
-                    fraction=p['body_amplitude_fraction']*self.body_envelope[k]
+                    fraction=p['body_amplitude_fraction']*self.body_envelope[k]*modulation
                     if p['profile']=='knifefish_rigid_trunk' and s<.8:fraction*=.05
                     result[k]=lim*fraction*np.sin(2*np.pi*(f*t-direction*s/wave))
                     # Compensate body/fin tracking lag when a faster gait is used.
@@ -63,7 +72,7 @@ class Controller:
                 a=np.deg2rad(p['pec_amplitude_deg'])*p['amplitude_deg']/22
                 if self.behavior=='braking':a*=2
                 if self.behavior=='turning' and sign<0:a*=p.get('turn_pectoral_inner_fraction',.6)
-                phase_pec=2*np.pi*f*t
+                phase_pec=2*np.pi*p.get('pec_frequency_hz',f)*t
                 if 'abduct' in j['name']:result[k]=sign*a*np.sin(phase_pec)
                 elif 'protract' in j['name']:result[k]=sign*.5*a*np.cos(phase_pec)*p.get('pectoral_phase_sign',1)*(-1 if self.behavior=='backward' else 1)
                 # Under left/right reflection an axial y rotation keeps its sign.

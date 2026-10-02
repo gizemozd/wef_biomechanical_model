@@ -88,31 +88,31 @@
                   <geom name="fluid_body_06" type="ellipsoid" size="0.01898605671 0.007554138311 0.007483711194" pos="-0.03507127701 -3.803389518e-14 -0.0007418514269" quat="-0.7029511089 6.967924916e-11 0.7112381729 7.711114057e-11" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
                   <body name="body_07" pos="-0.009465827681 0 -0.0003675776473" gravcomp="1" user="1.869382097e-06">
                     <inertial pos="-0.03519539653 -2.293844458e-14 -0.0009293040176" mass="0.001869382097" diaginertia="2.621353741e-08 1.143079802e-07 1.154043148e-07" quat="-0.5016990444 0.5016990448 0.4982951619 0.4982951624" />
-                    <joint name="j_body_07_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                    <joint name="j_body_07_yaw" type="hinge" axis="0 0 1" range="-1.432394488 1.432394488" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                     <joint name="j_body_07_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                     <geom name="visual_body_07" type="mesh" mesh="body_07" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
                     <geom name="fluid_body_07" type="ellipsoid" size="0.01649688116 0.006043392445 0.00579570939" pos="-0.03519539653 -2.293844458e-14 -0.0009293040176" quat="-0.5016990444 0.5016990448 0.4982951619 0.4982951624" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
                     <body name="body_08" pos="-0.009465827681 0 -0.0003346977227" gravcomp="1" user="9.94307641e-07">
                       <inertial pos="-0.03426692894 -1.79904318e-09 -0.001426954164" mass="0.000994307641" diaginertia="1.037234256e-08 3.680162218e-08 4.071798345e-08" quat="-0.497875401 0.4978740671 0.5021167593 0.5021157819" />
-                      <joint name="j_body_08_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                      <joint name="j_body_08_yaw" type="hinge" axis="0 0 1" range="-1.432394488 1.432394488" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                       <joint name="j_body_08_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                       <geom name="visual_body_08" type="mesh" mesh="body_08" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
                       <geom name="fluid_body_08" type="ellipsoid" size="0.01299342888 0.005993852249 0.004028939515" pos="-0.03426692894 -1.79904318e-09 -0.001426954164" quat="-0.497875401 0.4978740671 0.5021167593 0.5021157819" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
                       <body name="body_09" pos="-0.009465827681 0 5.730831849e-05" gravcomp="1" user="3.82977846e-07">
                         <inertial pos="-0.03323258484 -1.438445679e-07 -0.002354940175" mass="0.000382977846" diaginertia="2.490067954e-09 5.690010661e-09 7.024609045e-09" quat="-0.480122045 0.4800423084 0.519150332 0.5191581039" />
-                        <joint name="j_body_09_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                        <joint name="j_body_09_yaw" type="hinge" axis="0 0 1" range="-1.432394488 1.432394488" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                         <joint name="j_body_09_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                         <geom name="visual_body_09" type="mesh" mesh="body_09" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
                         <geom name="fluid_body_09" type="ellipsoid" size="0.008169685099 0.004996661798 0.002746391425" pos="-0.03323258484 -1.438445679e-07 -0.002354940175" quat="-0.480122045 0.4800423084 0.519150332 0.5191581039" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
                         <body name="body_10" pos="-0.009465827681 0 -5.829593004e-05" gravcomp="1" user="1.790268535e-07">
                           <inertial pos="-0.0306867704 -1.667605304e-07 -0.00232905417" mass="0.0001790268535" diaginertia="6.622097277e-10 1.490119071e-09 1.834180271e-09" quat="0.532272921 0.5323594828 0.4654538597 -0.4654370237" />
-                          <joint name="j_body_10_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                          <joint name="j_body_10_yaw" type="hinge" axis="0 0 1" range="-1.432394488 1.432394488" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                           <joint name="j_body_10_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                           <geom name="visual_body_10" type="mesh" mesh="body_10" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
                           <geom name="fluid_body_10" type="ellipsoid" size="0.006097085014 0.00374859376 0.002107782885" pos="-0.0306867704 -1.667605304e-07 -0.00232905417" quat="0.532272921 0.5323594828 0.4654538597 -0.4654370237" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
                           <body name="body_11" pos="-0.009465827681 0 -0.0009090979917" gravcomp="1" user="4.695746255e-08">
                             <inertial pos="-0.0252896315 -6.599013903e-07 -0.001447020597" mass="4.695746255e-05" diaginertia="4.743624159e-11 2.615651723e-10 2.705280735e-10" quat="-0.0006662570038 0.686860154 0.0003640923782 0.7267892077" />
-                            <joint name="j_body_11_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                            <joint name="j_body_11_yaw" type="hinge" axis="0 0 1" range="-1.432394488 1.432394488" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                             <joint name="j_body_11_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
                             <geom name="visual_body_11" type="mesh" mesh="body_11" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
                             <geom name="fluid_body_11" type="ellipsoid" size="0.005079663466 0.001732821971 0.001431191147" pos="-0.0252896315 -6.599013903e-07 -0.001447020597" quat="-0.0006662570038 0.686860154 0.0003640923782 0.7267892077" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
@@ -210,15 +210,15 @@
     <position name="a_j_body_05_pitch" joint="j_body_05_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
     <position name="a_j_body_06_yaw" joint="j_body_06_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
     <position name="a_j_body_06_pitch" joint="j_body_06_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
-    <position name="a_j_body_07_yaw" joint="j_body_07_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_07_yaw" joint="j_body_07_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.025 0.025" forcerange="-0.02 0.02" />
     <position name="a_j_body_07_pitch" joint="j_body_07_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
-    <position name="a_j_body_08_yaw" joint="j_body_08_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_08_yaw" joint="j_body_08_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.025 0.025" forcerange="-0.02 0.02" />
     <position name="a_j_body_08_pitch" joint="j_body_08_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
-    <position name="a_j_body_09_yaw" joint="j_body_09_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_09_yaw" joint="j_body_09_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.025 0.025" forcerange="-0.02 0.02" />
     <position name="a_j_body_09_pitch" joint="j_body_09_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
-    <position name="a_j_body_10_yaw" joint="j_body_10_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_10_yaw" joint="j_body_10_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.025 0.025" forcerange="-0.02 0.02" />
     <position name="a_j_body_10_pitch" joint="j_body_10_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
-    <position name="a_j_body_11_yaw" joint="j_body_11_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_11_yaw" joint="j_body_11_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.025 0.025" forcerange="-0.02 0.02" />
     <position name="a_j_body_11_pitch" joint="j_body_11_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
     <position name="a_j_body_12_yaw" joint="j_body_12_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
     <position name="a_j_body_12_pitch" joint="j_body_12_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
