@@ -16,7 +16,7 @@ Independent ablations hold the selected group's position targets at neutral; the
 
 | Gait | Tail force (mN) | Pectoral force (mN) | Both active (BL/s) | Tail neutral (BL/s) | Pectorals neutral (BL/s) |
 |---|---:|---:|---:|---:|---:|
-| forward | +0.22159 | +0.31402 | +0.04573 | +0.02945 | +0.02719 |
+| forward | +0.18575 | +0.32598 | +0.04358 | +0.02945 | +0.02179 |
 | backward | -0.14400 | -0.16756 | -0.03432 | -0.02317 | -0.02807 |
 | hover | -0.09558 | +0.08859 | -0.00247 | +0.01277 | -0.01684 |
 | turning | +0.02347 | +0.02692 | +0.00617 | -0.01486 | -0.00100 |
