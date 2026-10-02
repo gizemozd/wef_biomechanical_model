@@ -1,0 +1,21 @@
+{
+  "duration_s": 6,
+  "frequency_hz": 1.0,
+  "amplitude_fraction": 0.85,
+  "measured_range_deg": {
+    "yaw": [
+      -38.194211481471115,
+      38.22038241683779
+    ],
+    "pitch": [
+      -38.19820169187804,
+      38.193496795343485
+    ],
+    "roll": [
+      -25.439187968729605,
+      25.454878707232623
+    ]
+  },
+  "root_displacement_m": 0.001999971061340052,
+  "note": "Free-root simulation; only chin targets oscillate. Other joint targets remain zero. Engineering motion, not calibrated biological kinematics."
+}

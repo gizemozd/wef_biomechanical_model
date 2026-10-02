@@ -1,0 +1,62 @@
+{
+  "format": "OBJ",
+  "units": "unspecified source units; calibrated to configured full extent",
+  "source_bounds": [
+    [
+      -4.635,
+      -11.233,
+      -0.001
+    ],
+    [
+      4.635,
+      13.241,
+      7.545
+    ]
+  ],
+  "source_vertices": 7621,
+  "source_triangles": 13948,
+  "body_triangles": 13268,
+  "body_components": 3,
+  "body_watertight_before": false,
+  "repair": [
+    {
+      "boundary_vertices": 14,
+      "center_m": [
+        0.06508948271635202,
+        0.0076372593656241616,
+        9.923067044912389e-06
+      ]
+    },
+    {
+      "boundary_vertices": 14,
+      "center_m": [
+        0.06508948271635202,
+        -0.0076372593656241616,
+        9.923067044912389e-06
+      ]
+    }
+  ],
+  "scale_m_per_source_unit": 0.008171937566396992,
+  "normalized_bounds": [
+    [
+      -0.09999999999999999,
+      -0.037876930620250056,
+      -0.03083272043801585
+    ],
+    [
+      0.09999999999999999,
+      0.037876930620250056,
+      0.030832720438015854
+    ]
+  ],
+  "texture_resolution": [
+    4096,
+    4096
+  ],
+  "materials": [
+    "elephant_nose_fish_mat_all",
+    "sclera"
+  ],
+  "normalized_volume_m3": 6.0129912943692235e-05,
+  "length_m": 0.2
+}

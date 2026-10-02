@@ -1,0 +1,38 @@
+{
+  "previous_radius_mm": 2.410721582087113,
+  "current_radius_mm": 2.165563455095203,
+  "radius_reduction_percent": 10.169491525423723,
+  "pivot_translation_mm": [
+    1.6343875132793921,
+    0.0,
+    -0.16343875132793922
+  ],
+  "tuning_unchanged": true,
+  "tuning_sha256": "74fcd13e707197a23d84979152eeba8f32c5023d1b8257e04490e5d8e7bad6ab",
+  "config_sections_preserved": [
+    "controller",
+    "joints",
+    "fluid",
+    "simulation",
+    "render"
+  ],
+  "pytest": "11 passed in 10.09s",
+  "poses_checked": 125,
+  "max_socket_rim_gap_m": 0.0,
+  "videos": {
+    "08_chin_3dof.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "9.000000"
+    },
+    "09_chin_scan.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000"
+    }
+  }
+}

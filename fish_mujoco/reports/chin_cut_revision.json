@@ -1,0 +1,27 @@
+{
+  "previous_landmarks": {
+    "chin_pivot_source": [
+      9.1,
+      0,
+      2.63
+    ],
+    "chin_radius_source": 0.45,
+    "chin_upper_limit_source": 2.88
+  },
+  "current_landmarks": {
+    "chin_pivot_source": [
+      8.6,
+      0,
+      2.7
+    ],
+    "chin_radius_source": 0.65,
+    "chin_upper_limit_source": 2.93
+  },
+  "pivot_posterior_shift_mm": 4.085968783198501,
+  "pivot_dorsal_shift_mm": 0.5720356296477925,
+  "proximal_cut_posterior_shift_mm": 2.4708136916160583,
+  "previous_chin_length_mm": 14.554150402545929,
+  "current_chin_length_mm": 17.024964094161987,
+  "current_chin_components": 1,
+  "tuning_sha256": "74fcd13e707197a23d84979152eeba8f32c5023d1b8257e04490e5d8e7bad6ab"
+}

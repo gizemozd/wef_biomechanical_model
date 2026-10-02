@@ -1,0 +1,142 @@
+{
+  "trials": [
+    {
+      "frequency_hz": 1.0,
+      "amplitude_deg": 12.0,
+      "wavelength_bl": 0.6,
+      "speed_bl_s": 3.8000034635145374e-05,
+      "final_position_m": [
+        0.01733593314315318,
+        0.00022191707042068786,
+        0.0006248367194126105
+      ]
+    },
+    {
+      "frequency_hz": 1.0,
+      "amplitude_deg": 12.0,
+      "wavelength_bl": 1.2,
+      "speed_bl_s": -0.00011141457418715706,
+      "final_position_m": [
+        0.017254196757906577,
+        0.0002465276013931382,
+        0.0006345814045263089
+      ]
+    },
+    {
+      "frequency_hz": 1.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 0.6,
+      "speed_bl_s": 0.0003084857114942571,
+      "final_position_m": [
+        0.01752530048586029,
+        0.000409755876235782,
+        0.0035048013190671695
+      ]
+    },
+    {
+      "frequency_hz": 1.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 1.2,
+      "speed_bl_s": 0.00025309817515010665,
+      "final_position_m": [
+        0.01748889935918231,
+        0.00047823167161656935,
+        0.003533196373056253
+      ]
+    },
+    {
+      "frequency_hz": 2.0,
+      "amplitude_deg": 12.0,
+      "wavelength_bl": 0.6,
+      "speed_bl_s": 0.0001577153749747855,
+      "final_position_m": [
+        0.017444959106981527,
+        0.0008644897753234387,
+        0.0012201588531663716
+      ]
+    },
+    {
+      "frequency_hz": 2.0,
+      "amplitude_deg": 12.0,
+      "wavelength_bl": 1.2,
+      "speed_bl_s": -0.000591430735790409,
+      "final_position_m": [
+        0.017039797345288803,
+        0.0009741532461875787,
+        0.0012465808138609816
+      ]
+    },
+    {
+      "frequency_hz": 2.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 0.6,
+      "speed_bl_s": 0.0016621308305746364,
+      "final_position_m": [
+        0.018594345012452263,
+        0.001337783181177265,
+        0.007038110991792608
+      ]
+    },
+    {
+      "frequency_hz": 2.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 1.2,
+      "speed_bl_s": 0.0014399735265455062,
+      "final_position_m": [
+        0.018455257008806587,
+        0.0015915934740127952,
+        0.0070962209515441745
+      ]
+    },
+    {
+      "frequency_hz": 3.0,
+      "amplitude_deg": 12.0,
+      "wavelength_bl": 0.6,
+      "speed_bl_s": 0.0009425553722236227,
+      "final_position_m": [
+        0.017849404655119756,
+        0.0018706397334849435,
+        0.0029801278233814177
+      ]
+    },
+    {
+      "frequency_hz": 3.0,
+      "amplitude_deg": 12.0,
+      "wavelength_bl": 1.2,
+      "speed_bl_s": -0.000942135451582628,
+      "final_position_m": [
+        0.01683001292320305,
+        0.0021477170485692935,
+        0.003023032614110325
+      ]
+    },
+    {
+      "frequency_hz": 3.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 0.6,
+      "speed_bl_s": 0.007058987970401487,
+      "final_position_m": [
+        0.022022635816739522,
+        0.002731225185003377,
+        0.012537697312208523
+      ]
+    },
+    {
+      "frequency_hz": 3.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 1.2,
+      "speed_bl_s": 0.006550616006271171,
+      "final_position_m": [
+        0.021709544374920033,
+        0.0031690386889910876,
+        0.012549664392798901
+      ]
+    }
+  ],
+  "best": {
+    "frequency_hz": 3.0,
+    "amplitude_deg": 24.0,
+    "wavelength_bl": 0.6
+  },
+  "wall_seconds": 21.236784458043985
+}

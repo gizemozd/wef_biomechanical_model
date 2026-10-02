@@ -1,0 +1,1260 @@
+{
+  "poses_checked": 125,
+  "rim_samples": 1835,
+  "nskin": 0,
+  "max_socket_rim_gap_m": 0.0,
+  "max_rigid_transform_error_m": 2.824008476212267e-17,
+  "note": "Checks coverage of the head socket rim by the rigid chin solid. Exposed ball contour and texture continuity are reviewed in renders; this is not a soft-tissue model.",
+  "poses": [
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911795390620776,
+      "rigid_transform_error_m": 1.672906736921608e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911795320781049,
+      "rigid_transform_error_m": 1.6930225707429498e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911797599172143,
+      "rigid_transform_error_m": 1.599923903925e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911795620977215,
+      "rigid_transform_error_m": 1.6296247535484087e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911795746347502,
+      "rigid_transform_error_m": 1.73905487716621e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000595769088093743,
+      "rigid_transform_error_m": 1.6365348541700844e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690628258939,
+      "rigid_transform_error_m": 1.6457031883953286e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000595769182080968,
+      "rigid_transform_error_m": 1.717288626685379e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691551773281,
+      "rigid_transform_error_m": 1.717288626685379e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690975935375,
+      "rigid_transform_error_m": 1.7040954328532715e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909888313183448,
+      "rigid_transform_error_m": 1.5222136723669557e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909888836713536,
+      "rigid_transform_error_m": 1.5612511283791264e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000490988774821236,
+      "rigid_transform_error_m": 1.6365348541700844e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909888591079726,
+      "rigid_transform_error_m": 1.5326799766041375e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909887414661395,
+      "rigid_transform_error_m": 1.5612511283791264e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691342668654,
+      "rigid_transform_error_m": 1.6996749443881478e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690323041946,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691902085519,
+      "rigid_transform_error_m": 1.777562605088864e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690271768423,
+      "rigid_transform_error_m": 1.672906736921608e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691024848725,
+      "rigid_transform_error_m": 1.5714574547875807e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912235430105434,
+      "rigid_transform_error_m": 1.6365348541700844e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912238331803485,
+      "rigid_transform_error_m": 1.6508380002127377e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912234881789213,
+      "rigid_transform_error_m": 1.6365348541700844e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912237233307081,
+      "rigid_transform_error_m": 1.6365348541700844e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912235814413102,
+      "rigid_transform_error_m": 1.6583686511701263e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005947996830533713,
+      "rigid_transform_error_m": 1.6644533895600582e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005947998062585409,
+      "rigid_transform_error_m": 1.6016862586769483e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005947996709309191,
+      "rigid_transform_error_m": 1.6508380002127377e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005947995987705432,
+      "rigid_transform_error_m": 1.6133860946657727e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000594799713290133,
+      "rigid_transform_error_m": 1.6209457032726225e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920546252684483,
+      "rigid_transform_error_m": 1.5222136723669557e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0002092052645105071,
+      "rigid_transform_error_m": 1.5129185701554326e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920547380288529,
+      "rigid_transform_error_m": 1.5540063044689707e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920536381154186,
+      "rigid_transform_error_m": 1.5540063044689707e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920535665338983,
+      "rigid_transform_error_m": 1.5442936699178228e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.369783102149518e-05,
+      "rigid_transform_error_m": 1.435902883673646e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.369781031993594e-05,
+      "rigid_transform_error_m": 1.4539632184201917e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.369786219095833e-05,
+      "rigid_transform_error_m": 1.4539632184201917e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.369775227903698e-05,
+      "rigid_transform_error_m": 1.4947841523253463e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.36977104255574e-05,
+      "rigid_transform_error_m": 1.4783763548176353e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920537485963038,
+      "rigid_transform_error_m": 1.5732516979464565e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920565171125404,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0002092053619290107,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000209205475584516,
+      "rigid_transform_error_m": 1.4949414235291404e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920544367165824,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948109284455474,
+      "rigid_transform_error_m": 1.5732516979464565e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948107813705904,
+      "rigid_transform_error_m": 1.581003221877967e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948105541155528,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948104110181996,
+      "rigid_transform_error_m": 1.581003221877967e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000594810831011168,
+      "rigid_transform_error_m": 1.6538259447394393e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004931225835795543,
+      "rigid_transform_error_m": 1.6378272523610234e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004931228175425779,
+      "rigid_transform_error_m": 1.6386215934551753e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004931226961550835,
+      "rigid_transform_error_m": 1.6366785043660312e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004931228225396023,
+      "rigid_transform_error_m": 1.684984126198544e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000493122582292661,
+      "rigid_transform_error_m": 1.5738493244439647e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.542009939627061e-05,
+      "rigid_transform_error_m": 1.5589907375479054e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.541993229177398e-05,
+      "rigid_transform_error_m": 1.4827827331669352e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.542003193577298e-05,
+      "rigid_transform_error_m": 1.4827827331669352e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.541992204227026e-05,
+      "rigid_transform_error_m": 2.824008476212267e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.542009666365815e-05,
+      "rigid_transform_error_m": 1.49226555887273e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 1.5934725450339873e-05,
+      "rigid_transform_error_m": 1.4046172853913364e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 1.5683548259587796e-05,
+      "rigid_transform_error_m": 1.402774943915277e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 1.4696863606797948e-05,
+      "rigid_transform_error_m": 0.0
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 1.5716507177472325e-05,
+      "rigid_transform_error_m": 3.511543213478341e-18
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 1.595034211931773e-05,
+      "rigid_transform_error_m": 1.402774943915277e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.542022510273972e-05,
+      "rigid_transform_error_m": 2.797822320424859e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.5420508924745e-05,
+      "rigid_transform_error_m": 1.5521898148890684e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.542043064405546e-05,
+      "rigid_transform_error_m": 1.5521898148890684e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.542050190184644e-05,
+      "rigid_transform_error_m": 1.5519247325175873e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.542022942329943e-05,
+      "rigid_transform_error_m": 1.553438879648335e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004931226743643652,
+      "rigid_transform_error_m": 2.797913897663062e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000493122873149709,
+      "rigid_transform_error_m": 1.5529469437643404e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004931226416304406,
+      "rigid_transform_error_m": 1.7352654923862144e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004931228686631008,
+      "rigid_transform_error_m": 1.6378272523610234e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000493122643452442,
+      "rigid_transform_error_m": 1.7351841213299774e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948107457540715,
+      "rigid_transform_error_m": 1.605534665436469e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948106087081557,
+      "rigid_transform_error_m": 1.657520058274271e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948106761518247,
+      "rigid_transform_error_m": 1.6041796136406148e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948108446294333,
+      "rigid_transform_error_m": 1.6457031883953286e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005948107566535044,
+      "rigid_transform_error_m": 1.5698109303555773e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920536299467754,
+      "rigid_transform_error_m": 1.5642599018934396e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0002092054196415785,
+      "rigid_transform_error_m": 1.5222136723669557e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920551902917051,
+      "rigid_transform_error_m": 1.5222136723669557e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920534262646107,
+      "rigid_transform_error_m": 1.51741831226287e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920548053980222,
+      "rigid_transform_error_m": 2.807309089796302e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.36977003237652e-05,
+      "rigid_transform_error_m": 1.4999653954254606e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.36977785980662e-05,
+      "rigid_transform_error_m": 1.4947841523253463e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.369786314256814e-05,
+      "rigid_transform_error_m": 1.4539632184201917e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.369781124733764e-05,
+      "rigid_transform_error_m": 1.4642751435095294e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 7.369786445594993e-05,
+      "rigid_transform_error_m": 2.797157557069881e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0002092054379048414,
+      "rigid_transform_error_m": 1.5612511283791264e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920547510825042,
+      "rigid_transform_error_m": 2.8185920280518337e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920531207389089,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.00020920557572884883,
+      "rigid_transform_error_m": 1.5732516979464565e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000209205233873576,
+      "rigid_transform_error_m": 1.5612511283791264e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005947997441537896,
+      "rigid_transform_error_m": 1.7368905267604862e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000594799355494486,
+      "rigid_transform_error_m": 1.581003221877967e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005947995787544889,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005947997113711632,
+      "rigid_transform_error_m": 1.7433755170605403e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.000594799867975148,
+      "rigid_transform_error_m": 1.7541305574877886e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912235778928798,
+      "rigid_transform_error_m": 1.717288626685379e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912235802747594,
+      "rigid_transform_error_m": 1.6296247535484087e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912238440417846,
+      "rigid_transform_error_m": 1.668544521577865e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912235491882972,
+      "rigid_transform_error_m": 1.78487348619467e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008912235578215211,
+      "rigid_transform_error_m": 1.6155067146423172e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691341825931,
+      "rigid_transform_error_m": 1.717288626685379e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691941436569,
+      "rigid_transform_error_m": 1.6110529248338214e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691967775936,
+      "rigid_transform_error_m": 1.717288626685379e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690641085791,
+      "rigid_transform_error_m": 1.5976078630065742e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690945927787,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909887249991136,
+      "rigid_transform_error_m": 1.6365348541700844e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909888480687074,
+      "rigid_transform_error_m": 1.5612511283791264e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909887755673251,
+      "rigid_transform_error_m": 1.5515838457795457e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909888730657521,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0004909888469175,
+      "rigid_transform_error_m": 1.5899003276961254e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690678178205,
+      "rigid_transform_error_m": 1.6016862586769483e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690282353575,
+      "rigid_transform_error_m": 1.777562605088864e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957691726318551,
+      "rigid_transform_error_m": 1.672906736921608e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690574127892,
+      "rigid_transform_error_m": 1.777562605088864e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0005957690632083596,
+      "rigid_transform_error_m": 1.672906736921608e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        -29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911795550029731,
+      "rigid_transform_error_m": 1.7433755170605403e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        -14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911796229968455,
+      "rigid_transform_error_m": 1.6508380002127377e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        0.0
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911794866692329,
+      "rigid_transform_error_m": 1.7046471879050793e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        14.999999999999998
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911796633390927,
+      "rigid_transform_error_m": 1.734486290536619e-17
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        29.999999999999996
+      ],
+      "socket_rim_gap_m": 0.0,
+      "max_penetration_m": 0.0008911793364539547,
+      "rigid_transform_error_m": 1.8111044797400594e-17
+    }
+  ]
+}

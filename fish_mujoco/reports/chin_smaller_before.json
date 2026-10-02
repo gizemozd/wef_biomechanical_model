@@ -1,0 +1,98 @@
+{
+  "segmentation": {
+    "N_body": 14,
+    "median_fins": "single_mesh",
+    "cut_type": "sphere",
+    "cut_radius_factor": 0.8,
+    "sphere_subdivisions": 4,
+    "overlap_m": 0.00035,
+    "pivot_anterior_source": 6.2,
+    "pivot_posterior_source": -7.7,
+    "dorsal_base": [
+      [
+        -8.6,
+        3.95
+      ],
+      [
+        -7,
+        4.65
+      ],
+      [
+        -5,
+        5.85
+      ],
+      [
+        -3,
+        6.2
+      ],
+      [
+        -2.6,
+        6.24
+      ]
+    ],
+    "anal_base": [
+      [
+        -8.6,
+        2.94
+      ],
+      [
+        -7,
+        2.48
+      ],
+      [
+        -5,
+        1.72
+      ],
+      [
+        -2.7,
+        1.5
+      ]
+    ],
+    "pec_base_y": 1.63,
+    "caudal_base_x": -9.1,
+    "chin_attachment": "ball_socket",
+    "chin_pivot_source": [
+      9.18,
+      0,
+      2.65
+    ],
+    "chin_radius_source": 0.335,
+    "chin_upper_limit_source": 2.99,
+    "chin_skin": false,
+    "chin_skin_blend_radii_m": [
+      0.0015,
+      0.0055
+    ],
+    "chin_skin_mouth_fade_source_z": [
+      2.85,
+      3.0
+    ],
+    "chin_skin_subdivisions": 1,
+    "seam_rest_fraction": 0.01,
+    "seam_bent_fraction": 0.03,
+    "seam_samples_per_edge": 5
+  },
+  "chin_joint": {
+    "attachment": "ball_socket",
+    "pivot": [
+      0.08322301217618697,
+      0.0,
+      -0.009168913949497424
+    ],
+    "radius": 0.0027375990847429924,
+    "overlap_m": 2.190079267794394e-05,
+    "height_m": 0.004659663422999999,
+    "seam_policy": "enforce_socket_coverage",
+    "socket_faces_verified_spherical": 1896,
+    "yaw_deg": 45.0,
+    "pitch_deg": 45.0,
+    "roll_deg": 30.0,
+    "requested_yaw_deg": 45.0,
+    "requested_pitch_deg": 45.0,
+    "requested_roll_deg": 30.0
+  },
+  "tuning_sha256": {
+    "reports/tuning.json": "74fcd13e707197a23d84979152eeba8f32c5023d1b8257e04490e5d8e7bad6ab",
+    "reports/tuning.png": "9ea5c66225f58c5b6f31c8837eabe5a012b926df69c78d6d9f2deeda32ebc75a"
+  }
+}

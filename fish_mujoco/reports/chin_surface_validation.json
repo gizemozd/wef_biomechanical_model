@@ -1,0 +1,1263 @@
+{
+  "poses_checked": 125,
+  "watertight_position_topology": true,
+  "max_rest_position_error_m": 1.1185567965232128e-08,
+  "max_root_transform_error_m": 1.3891268426313617e-08,
+  "max_visual_boundary_gap_m": 0.0,
+  "max_shaft_rigid_transform_error_m": 1.0044052707605227e-08,
+  "checked_rigid_shaft_length_m": 0.015024964094161986,
+  "checked_rigid_shaft_vertices": 2066,
+  "note": "Shared visible topology stays continuous. This does not assert volume-preserving tissue deformation or absence of every self-intersection.",
+  "poses": [
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 8.819922706051712e-09,
+      "volume_m3": 1.7862659343508593e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 8.9015211986679e-09,
+      "volume_m3": 1.7862815695593487e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.052970899751926e-09,
+      "volume_m3": 1.7862437560990143e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 8.962557097309842e-09,
+      "volume_m3": 1.786155070415835e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.098715692349098e-09,
+      "volume_m3": 1.786021556910714e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.232905764953847e-09,
+      "volume_m3": 1.7871856399398715e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.302775536117376e-09,
+      "volume_m3": 1.7871796498978063e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.2434100154709e-09,
+      "volume_m3": 1.7870871148690396e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.411841934517103e-09,
+      "volume_m3": 1.7869143447924896e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        -22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.348435660524584e-09,
+      "volume_m3": 1.7866731128185874e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.465483162551071e-09,
+      "volume_m3": 1.7881031351235068e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.430216146278113e-09,
+      "volume_m3": 1.7880584631763744e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.387388536595256e-09,
+      "volume_m3": 1.78789696560294e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.453536045328828e-09,
+      "volume_m3": 1.7876296554844368e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        0.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.426554657452618e-09,
+      "volume_m3": 1.7872747445112942e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.425274419381197e-09,
+      "volume_m3": 1.788878737172511e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.38008867891007e-09,
+      "volume_m3": 1.7887842153454946e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.31425065985436e-09,
+      "volume_m3": 1.7885500180151535e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.351803826434034e-09,
+      "volume_m3": 1.7881921008012267e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.277619910405208e-09,
+      "volume_m3": 1.7877348606233803e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.130840358185727e-09,
+      "volume_m3": 1.7893943692770618e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.174233933926879e-09,
+      "volume_m3": 1.7892464214404358e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.315663691231732e-09,
+      "volume_m3": 1.7889468483604647e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.233263755216818e-09,
+      "volume_m3": 1.7885160560269025e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -45.0,
+        45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.10443619195508e-09,
+      "volume_m3": 1.787983408844249e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.295675252548291e-09,
+      "volume_m3": 1.7863324172111424e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.226530962022859e-09,
+      "volume_m3": 1.7863839247941682e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.321085525202261e-09,
+      "volume_m3": 1.786379107384711e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.15094275632909e-09,
+      "volume_m3": 1.7863182956239793e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.371593381919285e-09,
+      "volume_m3": 1.786205632264776e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.76094389192005e-09,
+      "volume_m3": 1.787280907441355e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.733027301092054e-09,
+      "volume_m3": 1.7873482217561153e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.796416783933012e-09,
+      "volume_m3": 1.787322861507365e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.796869105826769e-09,
+      "volume_m3": 1.787206555849113e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        -22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.838969807106596e-09,
+      "volume_m3": 1.7870072337627624e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.853675845171416e-09,
+      "volume_m3": 1.7882170776373368e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.841110692158873e-09,
+      "volume_m3": 1.7882898653260597e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.878305018404839e-09,
+      "volume_m3": 1.788235858786613e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.89081772530808e-09,
+      "volume_m3": 1.7880587387716762e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        0.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.850503509607956e-09,
+      "volume_m3": 1.787770577122889e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.755708535549802e-09,
+      "volume_m3": 1.7889984045128343e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.815046860194036e-09,
+      "volume_m3": 1.7890654980626044e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.694289958873753e-09,
+      "volume_m3": 1.7889791017405197e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.864334059394884e-09,
+      "volume_m3": 1.788745106615076e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.823654692859143e-09,
+      "volume_m3": 1.788379452776308e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.604218867016755e-09,
+      "volume_m3": 1.7895059337084827e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.516112344740437e-09,
+      "volume_m3": 1.789557036584748e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.3548433628886e-09,
+      "volume_m3": 1.7894394419084295e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.684238510160795e-09,
+      "volume_m3": 1.789161163800271e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        -22.5,
+        45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.530402264545025e-09,
+      "volume_m3": 1.788741163870558e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.435947289927695e-09,
+      "volume_m3": 1.7863096812988485e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.51488360657642e-09,
+      "volume_m3": 1.786397116949624e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.435303988952868e-09,
+      "volume_m3": 1.7864286776500584e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.51488360657642e-09,
+      "volume_m3": 1.786402212676135e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.435947289927695e-09,
+      "volume_m3": 1.7863195254365016e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.886432869058357e-09,
+      "volume_m3": 1.7872169818012623e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.886706393623025e-09,
+      "volume_m3": 1.7873576696531586e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.94774910032383e-09,
+      "volume_m3": 1.787406800801734e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.886706393623025e-09,
+      "volume_m3": 1.7873610316286722e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        -22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.886432869058357e-09,
+      "volume_m3": 1.787223477045646e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 3.8799823892982805e-09,
+      "volume_m3": 1.7880995408669904e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 3.881574810104081e-09,
+      "volume_m3": 1.7882898729945796e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 3.758368091662402e-09,
+      "volume_m3": 1.7883553193047727e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 3.881574810104081e-09,
+      "volume_m3": 1.7882914197849508e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        0.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 3.8799823892982805e-09,
+      "volume_m3": 1.78810252909947e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.88697424351371e-09,
+      "volume_m3": 1.7888229813878674e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 1.0000868839841206e-08,
+      "volume_m3": 1.7890517936386535e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 1.0044052707605227e-08,
+      "volume_m3": 1.7891298122457255e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 1.0000868839841206e-08,
+      "volume_m3": 1.789051719704963e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.88697424351371e-09,
+      "volume_m3": 1.788822838789954e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.755718696973488e-09,
+      "volume_m3": 1.789277183583527e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.55673342596557e-09,
+      "volume_m3": 1.7895274505491465e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.234844242706104e-09,
+      "volume_m3": 1.7896123850012846e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.55673342596557e-09,
+      "volume_m3": 1.7895261973889387e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        0.0,
+        45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.755718696973488e-09,
+      "volume_m3": 1.789274762804365e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.371593381919285e-09,
+      "volume_m3": 1.786201193632233e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.15094275632909e-09,
+      "volume_m3": 1.78631913836211e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.321085525202261e-09,
+      "volume_m3": 1.7863849157241974e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.226530962022859e-09,
+      "volume_m3": 1.786394045640278e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.295675252548291e-09,
+      "volume_m3": 1.7863459026833137e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.838969807106596e-09,
+      "volume_m3": 1.7870035966914183e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.796869105826769e-09,
+      "volume_m3": 1.787206552290403e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.796416783933012e-09,
+      "volume_m3": 1.7873261548696966e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.733027301092054e-09,
+      "volume_m3": 1.7873542509885465e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        -22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.76094389192005e-09,
+      "volume_m3": 1.7872889242205483e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.850503509607956e-09,
+      "volume_m3": 1.787768402451516e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.89081772530808e-09,
+      "volume_m3": 1.788058468066297e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.878305018404839e-09,
+      "volume_m3": 1.788237146174907e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.841110692158873e-09,
+      "volume_m3": 1.7882922583494192e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        0.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.853675845171416e-09,
+      "volume_m3": 1.7882200486455785e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.823654692859143e-09,
+      "volume_m3": 1.788379179364771e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.864334059394884e-09,
+      "volume_m3": 1.7887451890965558e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.694289958873753e-09,
+      "volume_m3": 1.788979197752266e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.815046860194036e-09,
+      "volume_m3": 1.7890652643086245e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.755708535549802e-09,
+      "volume_m3": 1.7889975199338323e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.530402264545025e-09,
+      "volume_m3": 1.7887429401409256e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.684238510160795e-09,
+      "volume_m3": 1.7891621651284857e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.3548433628886e-09,
+      "volume_m3": 1.7894393423905818e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.516112344740437e-09,
+      "volume_m3": 1.7895555850999778e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        22.5,
+        45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.604218867016755e-09,
+      "volume_m3": 1.7895029713083682e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.098715692349098e-09,
+      "volume_m3": 1.7860234659441894e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 8.962557097309842e-09,
+      "volume_m3": 1.786161861032296e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.052970899751926e-09,
+      "volume_m3": 1.786254489016137e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 8.9015211986679e-09,
+      "volume_m3": 1.786295036727781e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 8.819922706051712e-09,
+      "volume_m3": 1.7862807421075877e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.348435660524584e-09,
+      "volume_m3": 1.7866732349456443e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.411841934517103e-09,
+      "volume_m3": 1.7869178800860285e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.2434100154709e-09,
+      "volume_m3": 1.7870932004424036e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.302775536117376e-09,
+      "volume_m3": 1.7871872479787712e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        -22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.232905764953847e-09,
+      "volume_m3": 1.787193610977899e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.426554657452618e-09,
+      "volume_m3": 1.7872740908425274e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.453536045328828e-09,
+      "volume_m3": 1.787630897193287e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.387388536595256e-09,
+      "volume_m3": 1.7878993446865764e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.430216146278113e-09,
+      "volume_m3": 1.7880611437423243e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        0.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.465483162551071e-09,
+      "volume_m3": 1.788105260071531e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.277619910405208e-09,
+      "volume_m3": 1.7877345598020262e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.351803826434034e-09,
+      "volume_m3": 1.7881923591224134e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.31425065985436e-09,
+      "volume_m3": 1.7885501952561478e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.38008867891007e-09,
+      "volume_m3": 1.7887836771953387e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        22.5,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.425274419381197e-09,
+      "volume_m3": 1.788876897769879e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        -29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.10443619195508e-09,
+      "volume_m3": 1.787984536092078e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        -14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.233263755216818e-09,
+      "volume_m3": 1.7885167909508887e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        0.0
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.315663691231732e-09,
+      "volume_m3": 1.7889466640923115e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        14.999999999999998
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.174233933926879e-09,
+      "volume_m3": 1.789244855016607e-05
+    },
+    {
+      "yaw_pitch_roll_deg": [
+        45.0,
+        45.0,
+        29.999999999999996
+      ],
+      "max_uv_boundary_gap_m": 0.0,
+      "max_shaft_rigid_transform_error_m": 9.130840358185727e-09,
+      "volume_m3": 1.7893910501911544e-05
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "mean_absolute_rgb_difference_255": 0.0019887820512820512,
+  "max_rgb_difference_255": 39.0,
+  "fraction_pixels_difference_over_15": 4.6474358974358976e-05,
+  "note": "Includes per-mesh normal changes and hidden caps. Same camera and material parameters; no image alignment."
+}

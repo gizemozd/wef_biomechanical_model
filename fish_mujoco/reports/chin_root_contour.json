@@ -1,0 +1,51 @@
+{
+  "pivot_source": [
+    9.05,
+    0.0,
+    2.65
+  ],
+  "profile_source": [
+    [
+      -0.65,
+      1.4
+    ],
+    [
+      -0.4,
+      0.72
+    ],
+    [
+      -0.25,
+      0.48
+    ],
+    [
+      -0.13,
+      0.32
+    ],
+    [
+      0.0,
+      0.218
+    ],
+    [
+      0.13,
+      0.23
+    ],
+    [
+      0.3,
+      0.28
+    ],
+    [
+      0.55,
+      0.45
+    ],
+    [
+      0.75,
+      1.0
+    ]
+  ],
+  "removed_volume_m3": 2.7690192535704042e-08,
+  "axial_interval_source": [
+    8.4,
+    9.8
+  ],
+  "note": "Permanent local rigid contour change below the mouth; no flexible cover."
+}

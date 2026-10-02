@@ -1,0 +1,9 @@
+# Phase 3 — generated MuJoCo model
+
+MuJoCo 3.14.0; compile and `mj_forward` successful. 22 bodies, 40 hinge joints, 40 position actuators, 86 named sensors. Free root; every fin attaches to its anatomical body segment. Body yaw/pitch ranges use measured seam-safe values from the segmentation manifest.
+
+Mass: 60.1025 g; rest COM: [0.017278734079087574, 3.017986141051474e-08, -0.00022169678930515977] m. Explicit principal inertia from closed mesh volume with uniform density and overlap correction. Tiny fin-tip principal inertias are floored at 1.0e-14 kg·m² for numerical conditioning; 0 modules adjusted (see inertia_adjustments.json). Fluid/collision proxies have zero additional mass; visuals have no collisions. Ellipsoids fit body principal inertia, fin extents fit thin ellipsoids. Group 1 = textured visuals; group 3 = proxies; group 4 = hidden rigid head/chin comparison meshes when the continuous chin skin is enabled (False). The skin is visual only and adds no mass, joints, contacts or fluid forces. All fish self-collision is disabled through masks, and adjacent exclusions are also explicit; external contact remains possible with compatible masks.
+
+Gravity: True; explicit neutral buoyancy: True. MJCF `gravcomp = rho_water/rho_fish` supplies the Archimedean force at each uniform-density segment COM, equivalent to rho_water × corrected displaced volume × g. Thus standalone `fish.xml` is passive-neutral without a Python force callback. This assumes full submersion and coincident buoyancy/mass centroids; native fluid density alone does not provide this force.
+
+Water density 1000.0 kg/m³ and dynamic viscosity 0.001 Pa·s; `implicitfast`, dt=0.001 s. The model has no CFD wake, circulation memory or fin-to-fin coupling. Reynolds number is reported from measured behavior speed after tuning.

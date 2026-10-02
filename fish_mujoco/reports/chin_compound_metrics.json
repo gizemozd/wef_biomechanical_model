@@ -1,0 +1,2002 @@
+[
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      -45,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000891179552879593,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      -45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911795277458257,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      -45,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911797283370107,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      -45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911795578104426,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      -45,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911795251787387,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      -22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690995481318,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      -22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690642232391,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      -22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000595769154474239,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      -22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957691923606723,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      -22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690949556589,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      0,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004909888142902544,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      0.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00049098886241079,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      0,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000490988753323132,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      0.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004909888294703168,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      0,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004909887578010292,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000595769102757208,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690085724592,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957691897523581,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690297663664,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690990234986,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      45,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912235180035637,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000891223820179045,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      45,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912234852278789,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45.0,
+      45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912237145302124,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -45,
+      45,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912235907441116,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -45.0,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947996714585155,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947997776723883,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -45.0,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947997121198103,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947995704476202,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -45.0,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947997539278886,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920545854890955,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0002092052819079518,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0002092054653962486,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920530914336004,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      -22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920530929101623,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      0.0,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.36978291693787e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      0.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369780893710203e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      0.0,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369785347681905e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      0.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369775923230598e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      0.0,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369774767159272e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920535402074532,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920565748881536,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0002092053645130937,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920546472921647,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0002092054410062482,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      45.0,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948109510383494,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948107910969635,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      45.0,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948105126618459,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948104253942015,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      -22.5,
+      45.0,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000594810812918762,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      -45,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931226421116079,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      -45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931228893016748,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      -45,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931226962540625,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      -45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931228901821308,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      -45,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000493122636796213,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      -22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.542007037441176e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      -22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.541998997332309e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      -22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.54200017009129e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      -22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.541999393849625e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      -22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.542007244839008e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      0,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 1.5934722262765675e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      0.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 1.5683553494062753e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      0,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 1.4696876457891265e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.01,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      0.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 1.5716493284068008e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      0,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 1.5950335388385384e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.542024006796531e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.542048411303431e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.542043499138291e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.542047893089107e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.542024542568014e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      45,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000493122621303265,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931228880602078,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      45,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931226196129714,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0.0,
+      45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931228887386578,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      0,
+      45,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004931225988226842,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -45.0,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948107863394823,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948106005203901,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -45.0,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948107192228369,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948108213428641,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -45.0,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005948107469180792,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920533143002482,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920539438528218,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920551101519033,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920536744853136,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      -22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0002092054738633887,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      0.0,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369772094043621e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      0.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369778544972525e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      0.0,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.36978540880405e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      0.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369781091909531e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      0.0,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 7.369782174913193e-05,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920542604696703,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920546699004168,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920531889409943,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920557224560256,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.00020920524201034415,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      45.0,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947997307458446,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947993782118939,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      45.0,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947995370600976,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947997295902862,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      22.5,
+      45.0,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005947998905749942,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      -45,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912235340909596,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      -45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912235656501953,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      -45,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912238010432446,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      -45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912235458223974,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      -45,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008912235633259612,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      -22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957691202645107,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      -22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957692291773583,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      -22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957691718586919,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      -22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690641569452,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      -22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957691071336541,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      0,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004909887401175627,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      0.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004909888166446497,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      0,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000490988757168093,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      0.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0004909888527952223,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      0,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000490988827718424,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      22.5,
+      -30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690730830011,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      22.5,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690298326599,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      22.5,
+      0.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957691723679949,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      22.5,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690373886832,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      22.5,
+      30.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0005957690339019516,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      45,
+      -30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911795570411499,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      45.0,
+      -15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.000891179614297159,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      45,
+      0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911794992160875,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45.0,
+      45.0,
+      15.0
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911796526989206,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  },
+  {
+    "yaw_pitch_roll_deg": [
+      45,
+      45,
+      30
+    ],
+    "gap_m": 0.0,
+    "penetration_m": 0.0008911793300461123,
+    "gap_fraction": 0.0,
+    "threshold": 0.03,
+    "height_m": 0.003629890736192465,
+    "sample_count": 1835,
+    "enforced": true,
+    "within_threshold": true,
+    "metric": "head socket rim covered by rigid chin ball"
+  }
+]

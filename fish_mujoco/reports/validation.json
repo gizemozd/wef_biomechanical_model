@@ -1,0 +1,116 @@
+{
+  "source_sha256": "af2867bb01610841bea88f0473e1165c8035b9f42066587b28e8066437851e1c",
+  "segments": 22,
+  "body_count": 14,
+  "mass_kg": 0.060129912945040005,
+  "max_sampled_gap_fraction": 0.009959971148563417,
+  "max_penetration_m": 0.00017503580436133793,
+  "passive": {
+    "sim_seconds": 5,
+    "wall_seconds": 1.6496481250505894,
+    "realtime_factor": 3.0309494031320563,
+    "root_displacement_m": 5.3126698046473946e-14,
+    "max_speed": 1.843240636175397e-13,
+    "warnings": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "videos": [
+    {
+      "file": "00_original_vs_segmented.mp4",
+      "bytes": 520339,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "4.000000",
+      "nb_frames": "240"
+    },
+    {
+      "file": "01_exploded_segments.mp4",
+      "bytes": 404329,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "5.000000",
+      "nb_frames": "300"
+    },
+    {
+      "file": "02_joint_rom.mp4",
+      "bytes": 1577715,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "12.000000",
+      "nb_frames": "720"
+    },
+    {
+      "file": "03_forward_swim.mp4",
+      "bytes": 541386,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000",
+      "nb_frames": "360"
+    },
+    {
+      "file": "04_backward_swim.mp4",
+      "bytes": 632068,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000",
+      "nb_frames": "360"
+    },
+    {
+      "file": "05_hover.mp4",
+      "bytes": 242351,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000",
+      "nb_frames": "360"
+    },
+    {
+      "file": "06_turning.mp4",
+      "bytes": 601358,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000",
+      "nb_frames": "360"
+    },
+    {
+      "file": "07_body_undulation.mp4",
+      "bytes": 541758,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000",
+      "nb_frames": "360"
+    },
+    {
+      "file": "08_chin_3dof.mp4",
+      "bytes": 246735,
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "9.000000",
+      "nb_frames": "540"
+    }
+  ]
+}

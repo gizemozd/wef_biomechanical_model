@@ -1,0 +1,73 @@
+{
+  "geometry_changed_segments": [
+    "body_00_head",
+    "chin_0"
+  ],
+  "preserved_config_sections": [
+    "joints",
+    "controller",
+    "fluid",
+    "simulation",
+    "render"
+  ],
+  "tuning_byte_identical": true,
+  "pytest": "10 passed in 6.90s",
+  "chin_rest_max_gap_mm": 2.86443662460505e-06,
+  "chin_combined_max_gap_mm": 5.299462769388612,
+  "chin_compound_threshold_met": false,
+  "compiled_chin_pivot_m": [
+    0.07848328839,
+    0.0,
+    -0.008760317071
+  ],
+  "mass_kg": 0.060129912949200004,
+  "texture_comparison": {
+    "mean_absolute_rgb_difference_255": 0.0006549145299145299,
+    "max_rgb_difference_255": 25.0,
+    "fraction_pixels_difference_over_15": 3.205128205128205e-06,
+    "note": "Includes per-mesh normal changes and hidden caps. Same camera and material parameters; no image alignment."
+  },
+  "max_bidirectional_vertex_distance_m": {
+    "body_00_head": 0.0024970706037379248,
+    "body_01": 4.548275714145272e-09,
+    "body_02": 6.6931105516927635e-09,
+    "body_03": 3.8769061915212064e-09,
+    "body_04": 1.0389388738025085e-08,
+    "body_05": 1.3975691819677465e-08,
+    "body_06": 4.0120500510225715e-09,
+    "body_07": 1.819935034730542e-08,
+    "body_08": 1.1970548211847253e-08,
+    "body_09": 2.931540861782971e-08,
+    "body_10": 6.031354018651292e-10,
+    "body_11": 3.727231264092293e-09,
+    "body_12": 7.453791397192188e-09,
+    "body_13": 7.450623302577543e-09,
+    "chin_0": 0.0027111422548683163,
+    "fin_pecL_0": 0.0,
+    "fin_pecR_0": 0.0,
+    "fin_pelL_0": 0.0,
+    "fin_pelR_0": 0.0,
+    "fin_dorsal_0": 0.0,
+    "fin_anal_0": 0.0,
+    "fin_caudal_0": 0.0
+  },
+  "geometry_comparison_tolerance_m": 1e-07,
+  "videos": {
+    "08_chin_3dof.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "9.000000",
+      "nb_frames": "540"
+    },
+    "09_chin_scan.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000",
+      "nb_frames": "360"
+    }
+  }
+}

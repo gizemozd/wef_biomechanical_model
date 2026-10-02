@@ -1,0 +1,16 @@
+[
+  {
+    "label": "initial_strong_caudal",
+    "overrides": {
+      "caudal_amplitude_deg": 8,
+      "body_amplitude_fraction": 0.7,
+      "pec_amplitude_deg": 10
+    },
+    "speed_bl_s": -0.027430003704984687
+  },
+  {
+    "label": "reduced_caudal_larger_pectoral",
+    "overrides": {},
+    "speed_bl_s": 0.0016692653585452517
+  }
+]

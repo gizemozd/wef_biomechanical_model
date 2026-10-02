@@ -1,0 +1,114 @@
+{
+  "previous_pivot_source": [
+    9.5,
+    0,
+    2.6
+  ],
+  "current_pivot_source": [
+    9.05,
+    0,
+    2.65
+  ],
+  "pivot_translation_mm": [
+    -3.677371904878643,
+    0.0,
+    0.40859687831984803
+  ],
+  "previous_radius_mm": 2.165563455095203,
+  "current_radius_mm": 1.8386859524393235,
+  "radius_reduction_percent": 15.094339622641506,
+  "all_exterior_rigid": true,
+  "preserved_config_sections": [
+    "joints",
+    "controller",
+    "fluid",
+    "simulation",
+    "render"
+  ],
+  "tuning_byte_identical": true,
+  "tuning_sha256": "74fcd13e707197a23d84979152eeba8f32c5023d1b8257e04490e5d8e7bad6ab",
+  "tests": "12 passed; UV and protected-geometry checks passed again after final UV/normal export changes",
+  "root_contour": {
+    "pivot_source": [
+      9.05,
+      0.0,
+      2.65
+    ],
+    "profile_source": [
+      [
+        -0.65,
+        1.4
+      ],
+      [
+        -0.4,
+        0.72
+      ],
+      [
+        -0.25,
+        0.48
+      ],
+      [
+        -0.13,
+        0.32
+      ],
+      [
+        0.0,
+        0.218
+      ],
+      [
+        0.13,
+        0.23
+      ],
+      [
+        0.3,
+        0.28
+      ],
+      [
+        0.55,
+        0.45
+      ],
+      [
+        0.75,
+        1.0
+      ]
+    ],
+    "removed_volume_m3": 2.7690192535704042e-08,
+    "axial_interval_source": [
+      8.4,
+      9.8
+    ],
+    "note": "Permanent local rigid contour change below the mouth; no flexible cover."
+  },
+  "validation": {
+    "poses_checked": 125,
+    "rim_samples": 1835,
+    "nskin": 0,
+    "max_socket_rim_gap_m": 0.0,
+    "max_rigid_transform_error_m": 2.824008476212267e-17,
+    "note": "Checks coverage of the head socket rim by the rigid chin solid. Exposed ball contour and texture continuity are reviewed in renders; this is not a soft-tissue model."
+  },
+  "videos": {
+    "01_exploded_segments.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "5.000000"
+    },
+    "08_chin_3dof.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "9.000000"
+    },
+    "09_chin_scan.mp4": {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "60/1",
+      "duration": "6.000000"
+    }
+  },
+  "model_sha256": "c3d6d916d14cb3e368561883262fc8620fe56ca24866f749256580e94cca3500"
+}

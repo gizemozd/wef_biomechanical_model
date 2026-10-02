@@ -1,0 +1,18 @@
+{
+  "file": "chin_surface.skn",
+  "vertices": 19049,
+  "triangles": 36072,
+  "watertight_at_rest": true,
+  "bones": [
+    "body_00_head",
+    "chin_0"
+  ],
+  "blend_radii_m": [
+    0.0015,
+    0.0055
+  ],
+  "partially_weighted_vertices": 3078,
+  "mechanical_cut": "existing concentric spherical cap/socket",
+  "physics_changed": false,
+  "note": "Visual linear-blend skin, not a soft-tissue mechanical simulation."
+}

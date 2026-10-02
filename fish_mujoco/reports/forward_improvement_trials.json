@@ -1,0 +1,209 @@
+[
+  {
+    "parameters": {
+      "frequency_hz": 3.0,
+      "body_amplitude_fraction": 0.85,
+      "pec_amplitude_deg": 10.0,
+      "pec_pitch_fraction": 0.2,
+      "caudal_phase_deg": 0.0,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.008110221949453822,
+    "displacement_m": [
+      0.006637862589125056,
+      -0.0014319581841135182,
+      0.0038144577989097663
+    ],
+    "tail_mN": 0.01865669504218712,
+    "pectoral_mN": 0.038531334161052554,
+    "yaw_deg": -1.0168594819714103
+  },
+  {
+    "parameters": {
+      "frequency_hz": 4.5,
+      "body_amplitude_fraction": 0.85,
+      "pec_amplitude_deg": 10.0,
+      "pec_pitch_fraction": 0.2,
+      "caudal_phase_deg": 0.0,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.0076269838229018755,
+    "displacement_m": [
+      0.006150260159807325,
+      -0.0007624276933616607,
+      0.00646616564149328
+    ],
+    "tail_mN": -0.04885185384521271,
+    "pectoral_mN": 0.13350027747405033,
+    "yaw_deg": -1.6626138375821709
+  },
+  {
+    "parameters": {
+      "frequency_hz": 6.0,
+      "body_amplitude_fraction": 0.85,
+      "pec_amplitude_deg": 10.0,
+      "pec_pitch_fraction": 0.2,
+      "caudal_phase_deg": 0.0,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.013690913694185533,
+    "displacement_m": [
+      0.012075530034410423,
+      0.00036519793169124905,
+      0.005808031105427939
+    ],
+    "tail_mN": -0.10403201485522529,
+    "pectoral_mN": 0.20188424550898995,
+    "yaw_deg": -1.1843717786370944
+  },
+  {
+    "parameters": {
+      "frequency_hz": 5.0,
+      "body_amplitude_fraction": 0.95,
+      "pec_amplitude_deg": 12,
+      "pec_pitch_fraction": 0.2,
+      "caudal_phase_deg": 0.0,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.016821723935143747,
+    "displacement_m": [
+      0.014569194099653598,
+      -0.0006183589399212834,
+      0.009243673893242777
+    ],
+    "tail_mN": -0.06160436381333345,
+    "pectoral_mN": 0.20736729649316077,
+    "yaw_deg": -2.2503756866018874
+  },
+  {
+    "parameters": {
+      "frequency_hz": 6.0,
+      "body_amplitude_fraction": 0.95,
+      "pec_amplitude_deg": 14,
+      "pec_pitch_fraction": 0.3,
+      "caudal_phase_deg": 0.0,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.03265687501462832,
+    "displacement_m": [
+      0.030912463535483096,
+      -0.0003741254165382586,
+      0.011440819581810641
+    ],
+    "tail_mN": -0.11357352127221582,
+    "pectoral_mN": 0.3940793071251252,
+    "yaw_deg": -1.86630780123777
+  },
+  {
+    "parameters": {
+      "frequency_hz": 6.0,
+      "body_amplitude_fraction": 0.95,
+      "pec_amplitude_deg": 14,
+      "pec_pitch_fraction": 0.3,
+      "caudal_phase_deg": -30,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.04089716398669759,
+    "displacement_m": [
+      0.04011457459309171,
+      -0.0003118536208716972,
+      0.012028831335078195
+    ],
+    "tail_mN": 0.04860648650352794,
+    "pectoral_mN": 0.346171067054534,
+    "yaw_deg": -0.761770352423954
+  },
+  {
+    "parameters": {
+      "frequency_hz": 6.0,
+      "body_amplitude_fraction": 0.95,
+      "pec_amplitude_deg": 14,
+      "pec_pitch_fraction": 0.3,
+      "caudal_phase_deg": -60,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.0442397436448782,
+    "displacement_m": [
+      0.04384922980277998,
+      -0.00032933217138656466,
+      0.012242762175465577
+    ],
+    "tail_mN": 0.12307584582715898,
+    "pectoral_mN": 0.3259194154321634,
+    "yaw_deg": -0.044859859264299716
+  },
+  {
+    "parameters": {
+      "frequency_hz": 6.0,
+      "body_amplitude_fraction": 0.95,
+      "pec_amplitude_deg": 14,
+      "pec_pitch_fraction": 0.3,
+      "caudal_phase_deg": 30,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.0208842293107334,
+    "displacement_m": [
+      0.018492219241704556,
+      -0.0002621009717018631,
+      0.010181189511789573
+    ],
+    "tail_mN": -0.29402979767621074,
+    "pectoral_mN": 0.4606946137060869,
+    "yaw_deg": -2.317444201927345
+  },
+  {
+    "parameters": {
+      "frequency_hz": 6.0,
+      "body_amplitude_fraction": 0.95,
+      "pec_amplitude_deg": 14,
+      "pec_pitch_fraction": 0.3,
+      "caudal_phase_deg": 60,
+      "caudal_counterbend_gain": 2.2,
+      "caudal_amplitude_deg": 8.0,
+      "wavelength_bl": 1.2,
+      "amplitude_deg": 24.0,
+      "chin_amplitude_fraction": 0.0
+    },
+    "speed_bl_s": 0.006983584028643854,
+    "displacement_m": [
+      0.0048171994191009634,
+      -0.00019251187620002245,
+      0.008374299495598253
+    ],
+    "tail_mN": -0.4564097193078803,
+    "pectoral_mN": 0.5383386790273806,
+    "yaw_deg": -2.6418651170653518
+  }
+]
