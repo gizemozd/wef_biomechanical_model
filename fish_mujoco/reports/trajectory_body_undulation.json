@@ -1,5 +1,5 @@
 {
-  "signature": "5d4a2032e40080143d545533ed14511af0fb36ec2aeee1ec818842d24b8b7e4d",
+  "signature": "590da5c0099632c382c51b6075d266279901792444a0cd202d5802dbd15bb1ce",
   "behavior": "body_undulation",
   "duration_s": 6.0,
   "controller": {
@@ -30,7 +30,9 @@
         "body_amplitude_fraction": 0.95,
         "pec_amplitude_deg": 14.0,
         "pec_pitch_fraction": 0.3,
-        "caudal_phase_deg": -60.0
+        "caudal_counterbend_gain": 3.0,
+        "caudal_amplitude_deg": 11.0,
+        "caudal_phase_deg": -45.0
       },
       "backward": {
         "chin_amplitude_fraction": 0.0,

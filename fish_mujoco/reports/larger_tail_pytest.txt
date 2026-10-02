@@ -1,0 +1,2 @@
+Command: .venv/bin/python -m pytest tests -q
+Result: 14 passed in 26.81s

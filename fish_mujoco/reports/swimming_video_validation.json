@@ -1,9 +1,9 @@
 {
-  "trajectory_signature": "5d4a2032e40080143d545533ed14511af0fb36ec2aeee1ec818842d24b8b7e4d",
+  "trajectory_signature": "590da5c0099632c382c51b6075d266279901792444a0cd202d5802dbd15bb1ce",
   "videos": [
     {
       "file": "03_forward_swim.mp4",
-      "sha256": "498c324ffff83a9b3e28064b1bc55149a86b4e4ebd220087f0be11cf36b4674c",
+      "sha256": "8022974a08f1831ebf2b36314af3ce29c4726db26084ed93442e6ed6237d46b5",
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
@@ -45,7 +45,7 @@
   "decoded_all_frames": true,
   "all_chin_controls_zero": true,
   "max_absolute_chin_angle_deg": {
-    "forward": 0.07647950534759108,
+    "forward": 0.07617982445804733,
     "backward": 0.059447104654698005,
     "hover": 0.011072930896490451,
     "turning": 0.02970391981853718
@@ -58,6 +58,6 @@
     "spacing_m": 0.01,
     "model_geoms_unchanged": true
   },
-  "tests": "14 passed in 27.39s; reports/forward_improvement_pytest.txt",
+  "tests": "14 passed in 26.81s; reports/larger_tail_pytest.txt",
   "unchanged_nonforward_videos": true
 }
