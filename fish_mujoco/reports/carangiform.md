@@ -1,5 +1,7 @@
 # Carangiform-style posterior body actuation
 
+Historical gait comparison. See [the current reference-inspired gait](reference_swim.md) for the latest model and video.
+
 This report records the initial carangiform profile at caudal gain 3.0. The current video retains this body envelope with a modestly larger caudal stroke; see [the latest amplitude comparison](tail_increment.md).
 
 Concentrating bending in the posterior trunk improves this model's forward propulsion. The caudal-fin base sweeps **18.4% farther sideways**, mean tail thrust more than doubles, and six-second forward travel increases **8.3%**, from **41.84 to 45.34 mm**. This comparison changes the body amplitude envelope alone; the tail-fin, pectoral, frequency, wavelength and physics settings are retained.

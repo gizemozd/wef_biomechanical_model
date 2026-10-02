@@ -6,7 +6,7 @@ In videos 03–06 the chin's three position targets now stay at zero; active sen
 
 Pectoral rotation about the span (global local-body y axis) now uses the same sign on left and right, as required by sagittal reflection of an axial vector. Its sign reverses for backward strokes. Previously that component was mirrored incorrectly; it did not reliably reverse pectoral thrust. Backward uses an independent lateral tail stroke together with reverse-feathered pectorals. Hover keeps both groups active with approximately opposing mean forces; it is open-loop and drifts. Turning retains coordinated tail strokes plus body/tail bias and unequal pectoral amplitudes.
 
-No joint range, mesh, actuator gain, inertia, fluid proxy or fluid coefficient was changed for these controller revisions. Native MuJoCo ellipsoid forces drive a free root; no trajectory prescription or added thrust is used. The base gaits use 3 Hz and 1.2 BL wavelength. The forward gait uses its own frequency, amplitude and caudal phase overrides from config.yaml. `carangiform.md` describes its current posterior-body envelope and improved propulsion. `forward_improvement.md` and `larger_tail.md` preserve the earlier speed and tail-amplitude comparisons. Historical `tuning.json`/`tuning.png` are retained and are no longer implicit overrides of config.yaml.
+The reference-video revision expands the five posterior body yaw limits from ±0.716° to ±1.432° after individual and compound seam checks. Meshes, actuator gains, inertia, fluid proxies and fluid coefficients remain unchanged. Native MuJoCo ellipsoid forces drive a free root; no trajectory prescription or added thrust is used. The base gaits use 3 Hz and 1.2 BL wavelength. The forward gait uses its own frequency, amplitude and caudal phase overrides from config.yaml. `reference_swim.md` describes the current slower body/tail cadence, independently cycling pectorals and stronger posterior bending. `carangiform.md` and `tail_increment.md` document the earlier gaits. `forward_improvement.md` and `larger_tail.md` preserve the earlier speed and tail-amplitude comparisons. Historical `tuning.json`/`tuning.png` are retained and are no longer implicit overrides of config.yaml.
 
 ## Measured contributions
 
@@ -16,10 +16,10 @@ Independent ablations hold the selected group's position targets at neutral; the
 
 | Gait | Tail force (mN) | Pectoral force (mN) | Both active (BL/s) | Tail neutral (BL/s) | Pectorals neutral (BL/s) |
 |---|---:|---:|---:|---:|---:|
-| forward | +0.18575 | +0.32598 | +0.04358 | +0.02945 | +0.02179 |
-| backward | -0.14400 | -0.16756 | -0.03432 | -0.02317 | -0.02807 |
-| hover | -0.09558 | +0.08859 | -0.00247 | +0.01277 | -0.01684 |
-| turning | +0.02347 | +0.02692 | +0.00617 | -0.01486 | -0.00100 |
+| forward | +0.20217 | +0.16628 | +0.03467 | +0.00206 | +0.02316 |
+| backward | -0.13530 | -0.16906 | -0.03384 | -0.02380 | -0.02725 |
+| hover | -0.10293 | +0.09132 | -0.00384 | +0.01244 | -0.01771 |
+| turning | +0.10290 | +0.01276 | +0.01376 | -0.02089 | +0.01075 |
 
 ![Native fin forces and control ablations](propulsion_contributions.png)
 

@@ -1,54 +1,58 @@
 {
-  "trajectory_signature": "74f0cb4bf53a7bbfca6e11d24aa233e9a99adbc12bb8e077130201d428007af0",
+  "trajectory_signature": "247d332cb71e446d4b1344e7d6c09f27af7d6d6bdfc09385c4c14d282b696c49",
   "videos": [
     {
       "file": "03_forward_swim.mp4",
-      "sha256": "bf535514262e2c3ac87897cdd48525b46aa47b6b5ba57d3560da66de86784622",
+      "bytes": 4141526,
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
       "r_frame_rate": "60/1",
       "duration": "6.000000",
-      "nb_frames": "360"
+      "nb_frames": "360",
+      "sha256": "66582a9469aeba7960e96519e8ff509c143960cf62828e56ccae1d94c6c52c43"
     },
     {
       "file": "04_backward_swim.mp4",
-      "sha256": "79d709d445218e01585f94a038c81679da99c0d60ba56f87e0c91fadc2a8aa2f",
+      "bytes": 3971307,
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
       "r_frame_rate": "60/1",
       "duration": "6.000000",
-      "nb_frames": "360"
+      "nb_frames": "360",
+      "sha256": "5b95f7d6830ace6c44088105b468140a02686e3fb7d6b2cd5e475aebc3f5a3ba"
     },
     {
       "file": "05_hover.mp4",
-      "sha256": "72b5fd841d3ea5635435e6ca832a6ccdc897a2891fa0967ff19f7f0b865da2e8",
+      "bytes": 2789001,
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
       "r_frame_rate": "60/1",
       "duration": "6.000000",
-      "nb_frames": "360"
+      "nb_frames": "360",
+      "sha256": "4fee5ea82f9e23a9259ff9fa1b940da1750747bcc09ffe9b4a0f3507da6c9ec2"
     },
     {
       "file": "06_turning.mp4",
-      "sha256": "7a69af9a15478fa8f8e35580c4944bcf9c557c7769e9d0d5b8b9cd73c5f1cd41",
+      "bytes": 3470122,
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
       "r_frame_rate": "60/1",
       "duration": "6.000000",
-      "nb_frames": "360"
+      "nb_frames": "360",
+      "sha256": "1bd2b05a367822aa069ba2e82f49253045ab6b9851e8459fe551178e49649164"
     }
   ],
   "decoded_all_frames": true,
   "all_chin_controls_zero": true,
   "max_absolute_chin_angle_deg": {
-    "forward": 0.09206855817379109,
-    "backward": 0.059447104654698005,
-    "hover": 0.011072930896490451,
-    "turning": 0.02970391981853718
+    "forward": 0.0617650467128327,
+    "backward": 0.05969942937419321,
+    "hover": 0.011484451945229701,
+    "turning": 0.030550363130288298
   },
   "ground": {
     "decorative_geoms": 163,
@@ -58,9 +62,14 @@
     "spacing_m": 0.01,
     "model_geoms_unchanged": true
   },
-  "tests": "15 passed in 25.23s; reports/tail_increment_pytest.txt",
-  "unchanged_nonforward_videos": true,
-  "unchanged_nonforward_trajectories": true,
+  "tests": "................                                                         [100%]\n16 passed in 31.63s",
   "forward_profile": "carangiform",
-  "forward_verified_frame_time_s": 3.249999999999753
+  "verified_frame_time_s": 3.0,
+  "regenerated_behavior_videos": [
+    "03",
+    "04",
+    "05",
+    "06",
+    "07"
+  ]
 }

@@ -1,5 +1,7 @@
 # Modest tail-amplitude increase with the carangiform body wave
 
+Historical gait comparison. See [the current reference-inspired gait](reference_swim.md) for the latest model and video.
+
 The forward caudal-fin swing increases from approximately **±7.8° to ±8.4°**, a **7.8% wider peak-to-peak sweep**. The tail base's lateral sweep relative to the head also increases from **3.83 to 4.11 mm**. The carangiform body envelope, frequency, timing and pectoral commands are retained.
 
 Only two forward-gait settings change: `caudal_counterbend_gain` increases from **3.0 to 3.6** and `caudal_amplitude_deg` from **11° to 12°**. The command cap now equals the existing caudal hinge limit; the achieved motion remains inside that range. No joint limits, meshes, textures, actuator gains, masses or fluid coefficients change. Other gaits are unchanged.

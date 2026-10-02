@@ -1,5 +1,5 @@
 {
-  "signature": "74f0cb4bf53a7bbfca6e11d24aa233e9a99adbc12bb8e077130201d428007af0",
+  "signature": "247d332cb71e446d4b1344e7d6c09f27af7d6d6bdfc09385c4c14d282b696c49",
   "behavior": "hover",
   "duration_s": 6.0,
   "controller": {
@@ -49,13 +49,17 @@
           ]
         ],
         "chin_amplitude_fraction": 0.0,
-        "frequency_hz": 6.0,
+        "motion_label": "Reference-inspired swimming",
+        "frequency_hz": 2.5,
+        "pec_frequency_hz": 3.5,
+        "body_wave_modulation_depth": 0.25,
+        "body_wave_modulation_hz": 0.5,
         "body_amplitude_fraction": 0.95,
-        "pec_amplitude_deg": 14.0,
+        "pec_amplitude_deg": 16.0,
         "pec_pitch_fraction": 0.3,
-        "caudal_counterbend_gain": 3.6,
+        "caudal_counterbend_gain": 1.6,
         "caudal_amplitude_deg": 12.0,
-        "caudal_phase_deg": -45.0
+        "caudal_phase_deg": -10.0
       },
       "backward": {
         "chin_amplitude_fraction": 0.0,
