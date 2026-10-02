@@ -1,9 +1,9 @@
 {
-  "trajectory_signature": "590da5c0099632c382c51b6075d266279901792444a0cd202d5802dbd15bb1ce",
+  "trajectory_signature": "24aff4cc8cf1672d2e820730ea9bb5c1fea78c983673a6f4b44fd247c00b150e",
   "videos": [
     {
       "file": "03_forward_swim.mp4",
-      "sha256": "8022974a08f1831ebf2b36314af3ce29c4726db26084ed93442e6ed6237d46b5",
+      "sha256": "bd394a8fd73671338f642fd01839684562ce7d146734fc4b96a4823f538acbb9",
       "codec_name": "h264",
       "width": 1920,
       "height": 1080,
@@ -45,7 +45,7 @@
   "decoded_all_frames": true,
   "all_chin_controls_zero": true,
   "max_absolute_chin_angle_deg": {
-    "forward": 0.07617982445804733,
+    "forward": 0.08554541379092513,
     "backward": 0.059447104654698005,
     "hover": 0.011072930896490451,
     "turning": 0.02970391981853718
@@ -58,6 +58,8 @@
     "spacing_m": 0.01,
     "model_geoms_unchanged": true
   },
-  "tests": "14 passed in 26.81s; reports/larger_tail_pytest.txt",
-  "unchanged_nonforward_videos": true
+  "tests": "15 passed in 29.15s; reports/carangiform_pytest.txt",
+  "unchanged_nonforward_videos": true,
+  "unchanged_nonforward_trajectories": true,
+  "forward_profile": "carangiform"
 }

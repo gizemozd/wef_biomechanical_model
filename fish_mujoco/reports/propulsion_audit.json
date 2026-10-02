@@ -1,90 +1,90 @@
 {
-  "signature": "590da5c0099632c382c51b6075d266279901792444a0cd202d5802dbd15bb1ce",
+  "signature": "24aff4cc8cf1672d2e820730ea9bb5c1fea78c983673a6f4b44fd247c00b150e",
   "behaviors": {
     "forward": {
       "both": {
-        "signed_speed_bl_s": 0.042539416586714084,
-        "world_x_speed_bl_s": 0.040598420600275,
+        "signed_speed_bl_s": 0.04572836902231174,
+        "world_x_speed_bl_s": 0.04370490561318255,
         "displacement_m": [
-          0.04184345132111543,
-          0.00041137893836862857,
-          0.012104058607799718
+          0.045336738159956126,
+          0.0017601363371780121,
+          0.012211246761933608
         ],
-        "reynolds": 1701.5766634685635,
-        "yaw_change_deg": 0.8426291985439762,
+        "reynolds": 1829.13476089247,
+        "yaw_change_deg": 2.101595462335055,
         "forces": {
           "caudal": {
-            "mean_axial_mN": 0.10363728787693086,
-            "rms_force_mN": 0.2914767680088253
+            "mean_axial_mN": 0.22159452515617414,
+            "rms_force_mN": 0.5713393643567042
           },
           "pectoral": {
-            "mean_axial_mN": 0.3360278627461129,
-            "rms_force_mN": 3.4707926182950826
+            "mean_axial_mN": 0.31402186313374164,
+            "rms_force_mN": 3.484614782953612
           },
           "other": {
-            "mean_axial_mN": -0.45310533033075623,
-            "rms_force_mN": 0.6292198965230217
+            "mean_axial_mN": -0.5404004645593616,
+            "rms_force_mN": 0.7575098013150922
           },
           "total": {
-            "mean_axial_mN": -0.013440179707712342,
-            "rms_force_mN": 3.4754908450876507
+            "mean_axial_mN": -0.0047840762694457105,
+            "rms_force_mN": 3.5625339940459355
           }
         },
         "joint_motion": {
           "j_chin_yaw": {
-            "min_deg": -0.03510493077859502,
-            "max_deg": 0.031247817406797933,
-            "peak_to_peak_deg": 0.06635274818539295
+            "min_deg": -0.08554541379092513,
+            "max_deg": 0.07907142389303207,
+            "peak_to_peak_deg": 0.16461683768395718
           },
           "j_chin_pitch": {
-            "min_deg": -0.05556556131163575,
-            "max_deg": 0.07617982445804733,
-            "peak_to_peak_deg": 0.1317453857696831
+            "min_deg": -0.05622936889659636,
+            "max_deg": 0.07665078618774877,
+            "peak_to_peak_deg": 0.13288015508434514
           },
           "j_chin_roll": {
-            "min_deg": -0.004036476101700331,
-            "max_deg": 0.00416524833404698,
-            "peak_to_peak_deg": 0.00820172443574731
+            "min_deg": -0.010947427284954321,
+            "max_deg": 0.0099730700981881,
+            "peak_to_peak_deg": 0.020920497383142424
           },
           "j_fin_pecL_0_abduct": {
-            "min_deg": -13.094558611946132,
-            "max_deg": 12.748409827167224,
-            "peak_to_peak_deg": 25.842968439113356
+            "min_deg": -13.063476434143466,
+            "max_deg": 12.743478087674637,
+            "peak_to_peak_deg": 25.806954521818103
           },
           "j_fin_pecL_0_protract": {
-            "min_deg": -8.451248117431234,
-            "max_deg": 7.370510993313445,
-            "peak_to_peak_deg": 15.82175911074468
+            "min_deg": -8.70787974179495,
+            "max_deg": 7.648829005134828,
+            "peak_to_peak_deg": 16.356708746929776
           },
           "j_fin_pecL_0_rotate": {
-            "min_deg": -4.383903352591663,
-            "max_deg": 6.3095791199537805,
-            "peak_to_peak_deg": 10.693482472545444
+            "min_deg": -4.380355708806653,
+            "max_deg": 6.396523947651531,
+            "peak_to_peak_deg": 10.776879656458185
           },
           "j_fin_pecR_0_abduct": {
-            "min_deg": -12.637846206727641,
-            "max_deg": 12.937437258417745,
-            "peak_to_peak_deg": 25.575283465145386
+            "min_deg": -12.62970974714897,
+            "max_deg": 12.972482844950447,
+            "peak_to_peak_deg": 25.602192592099417
           },
           "j_fin_pecR_0_protract": {
-            "min_deg": -7.368190799452363,
-            "max_deg": 8.433445153250549,
-            "peak_to_peak_deg": 15.801635952702913
+            "min_deg": -7.098910190011651,
+            "max_deg": 8.110075181721482,
+            "peak_to_peak_deg": 15.208985371733133
           },
           "j_fin_pecR_0_rotate": {
-            "min_deg": -4.381427813028485,
-            "max_deg": 6.385215929657552,
-            "peak_to_peak_deg": 10.766643742686037
+            "min_deg": -4.381625513956662,
+            "max_deg": 6.294530696514537,
+            "peak_to_peak_deg": 10.676156210471198
           },
           "j_fin_caudal_0": {
-            "min_deg": -6.704094614313829,
-            "max_deg": 6.739414682028309,
-            "peak_to_peak_deg": 13.443509296342139
+            "min_deg": -7.776908728770958,
+            "max_deg": 7.78934949792316,
+            "peak_to_peak_deg": 15.566258226694117
           }
         },
-        "sim_seconds_per_wall_second": 2.3748280895382603,
+        "sim_seconds_per_wall_second": 2.553008704763747,
         "controller": {
-          "profile": "mormyrid",
+          "profile": "carangiform",
           "frequency_hz": 6.0,
           "amplitude_deg": 24.0,
           "wavelength_bl": 1.2,
@@ -106,159 +106,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
-              "chin_amplitude_fraction": 0.0,
-              "frequency_hz": 6.0,
-              "body_amplitude_fraction": 0.95,
-              "pec_amplitude_deg": 14.0,
-              "pec_pitch_fraction": 0.3,
-              "caudal_counterbend_gain": 3.0,
-              "caudal_amplitude_deg": 11.0,
-              "caudal_phase_deg": -45.0
-            },
-            "backward": {
-              "chin_amplitude_fraction": 0.0,
-              "body_amplitude_fraction": 0.15,
-              "caudal_mode": "wave",
-              "caudal_amplitude_deg": 6.0,
-              "pec_amplitude_deg": 16.0,
-              "pec_pitch_fraction": 0.5
-            },
-            "hover": {
-              "chin_amplitude_fraction": 0.0,
-              "body_amplitude_fraction": 0.05,
-              "caudal_mode": "wave",
-              "caudal_amplitude_deg": 2.8,
-              "pec_amplitude_deg": 9.0,
-              "pec_pitch_fraction": 0.5
-            },
-            "turning": {
-              "chin_amplitude_fraction": 0.0
-            },
-            "body_undulation": {
-              "body_amplitude_fraction": 0.95,
-              "pec_amplitude_deg": 8.0
-            }
-          },
-          "tuning_frequencies": [
-            1.0,
-            2.0,
-            3.0
-          ],
-          "tuning_amplitudes": [
-            12.0,
-            24.0
-          ],
-          "tuning_wavelengths": [
-            0.6,
-            1.2
-          ],
-          "tuning_duration_s": 4.0
-        }
-      },
-      "caudal_held_neutral": {
-        "signed_speed_bl_s": 0.029178543617866114,
-        "world_x_speed_bl_s": 0.02717073799682216,
-        "displacement_m": [
-          0.027369903817121788,
-          -0.001621892395406778,
-          0.010704777570223525
-        ],
-        "reynolds": 1167.1417447146448,
-        "yaw_change_deg": -2.360674746595013,
-        "forces": {
-          "caudal": {
-            "mean_axial_mN": -0.2082777655342807,
-            "rms_force_mN": 0.703946702876273
-          },
-          "pectoral": {
-            "mean_axial_mN": 0.412328116176073,
-            "rms_force_mN": 3.458619850884025
-          },
-          "other": {
-            "mean_axial_mN": -0.2285165063188481,
-            "rms_force_mN": 0.32683875017510816
-          },
-          "total": {
-            "mean_axial_mN": -0.024466155677055873,
-            "rms_force_mN": 3.473066164090583
-          }
-        },
-        "joint_motion": {
-          "j_chin_yaw": {
-            "min_deg": -0.03008777606944283,
-            "max_deg": 0.030673973257242897,
-            "peak_to_peak_deg": 0.060761749326685724
-          },
-          "j_chin_pitch": {
-            "min_deg": -0.05670970353304135,
-            "max_deg": 0.07423389845811845,
-            "peak_to_peak_deg": 0.13094360199115979
-          },
-          "j_chin_roll": {
-            "min_deg": -0.004155613934159084,
-            "max_deg": 0.004149743950521755,
-            "peak_to_peak_deg": 0.008305357884680838
-          },
-          "j_fin_pecL_0_abduct": {
-            "min_deg": -13.030552012101785,
-            "max_deg": 12.736707724570152,
-            "peak_to_peak_deg": 25.76725973667194
-          },
-          "j_fin_pecL_0_protract": {
-            "min_deg": -8.380908358696496,
-            "max_deg": 7.139781214266197,
-            "peak_to_peak_deg": 15.520689572962693
-          },
-          "j_fin_pecL_0_rotate": {
-            "min_deg": -4.382305870878562,
-            "max_deg": 6.374433110043424,
-            "peak_to_peak_deg": 10.756738980921986
-          },
-          "j_fin_pecR_0_abduct": {
-            "min_deg": -12.696462207290715,
-            "max_deg": 12.923424624560043,
-            "peak_to_peak_deg": 25.619886831850756
-          },
-          "j_fin_pecR_0_protract": {
-            "min_deg": -7.496192948248653,
-            "max_deg": 8.662881982405944,
-            "peak_to_peak_deg": 16.159074930654597
-          },
-          "j_fin_pecR_0_rotate": {
-            "min_deg": -4.389117694543805,
-            "max_deg": 6.466615954652556,
-            "peak_to_peak_deg": 10.855733649196361
-          },
-          "j_fin_caudal_0": {
-            "min_deg": -3.4028678992607384,
-            "max_deg": 3.399266670796269,
-            "peak_to_peak_deg": 6.8021345700570075
-          }
-        },
-        "sim_seconds_per_wall_second": 2.360142193337841,
-        "controller": {
-          "profile": "mormyrid",
-          "frequency_hz": 6.0,
-          "amplitude_deg": 24.0,
-          "wavelength_bl": 1.2,
-          "body_amplitude_fraction": 0.95,
-          "body_amplitude_floor": 0.2,
-          "caudal_mode": "counterbend",
-          "caudal_counterbend_gain": 3.0,
-          "caudal_amplitude_deg": 11.0,
-          "caudal_phase_deg": -45.0,
-          "pec_amplitude_deg": 14.0,
-          "pec_pitch_fraction": 0.3,
-          "median_fin_amplitude_deg": 0.0,
-          "chin_amplitude_fraction": 0.0,
-          "chin_frequency_hz": 1.0,
-          "ramp_s": 0.5,
-          "hover_node": 0.5,
-          "turn_bias_fraction": 0.2,
-          "turn_caudal_bias_deg": 1.5,
-          "turn_pectoral_inner_fraction": 0.6,
-          "gaits": {
-            "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -306,94 +176,314 @@
             1.2
           ],
           "tuning_duration_s": 4.0,
+          "carangiform_envelope": [
+            [
+              0.0,
+              0.03
+            ],
+            [
+              0.3,
+              0.03
+            ],
+            [
+              0.55,
+              1.0
+            ],
+            [
+              0.82,
+              1.0
+            ],
+            [
+              1.0,
+              0.3
+            ]
+          ]
+        }
+      },
+      "caudal_held_neutral": {
+        "signed_speed_bl_s": 0.029452746692120103,
+        "world_x_speed_bl_s": 0.02746548160330037,
+        "displacement_m": [
+          0.027647489991133707,
+          -0.00033985934051269543,
+          0.010663761125526888
+        ],
+        "reynolds": 1178.1098676848044,
+        "yaw_change_deg": -0.6852958373678664,
+        "forces": {
+          "caudal": {
+            "mean_axial_mN": -0.19174459617538817,
+            "rms_force_mN": 0.9136948878237555
+          },
+          "pectoral": {
+            "mean_axial_mN": 0.4112590417443735,
+            "rms_force_mN": 3.457376249834942
+          },
+          "other": {
+            "mean_axial_mN": -0.24540299632679968,
+            "rms_force_mN": 0.37660446307117335
+          },
+          "total": {
+            "mean_axial_mN": -0.025888550757814332,
+            "rms_force_mN": 3.528562597563734
+          }
+        },
+        "joint_motion": {
+          "j_chin_yaw": {
+            "min_deg": -0.028879578760296867,
+            "max_deg": 0.02930851577725288,
+            "peak_to_peak_deg": 0.05818809453754975
+          },
+          "j_chin_pitch": {
+            "min_deg": -0.056421738086262344,
+            "max_deg": 0.07441693535244902,
+            "peak_to_peak_deg": 0.13083867343871136
+          },
+          "j_chin_roll": {
+            "min_deg": -0.0038053833582318347,
+            "max_deg": 0.0036128512023704505,
+            "peak_to_peak_deg": 0.007418234560602285
+          },
+          "j_fin_pecL_0_abduct": {
+            "min_deg": -12.983989722763837,
+            "max_deg": 12.739461192952549,
+            "peak_to_peak_deg": 25.723450915716384
+          },
+          "j_fin_pecL_0_protract": {
+            "min_deg": -8.631985793295675,
+            "max_deg": 7.382617488538797,
+            "peak_to_peak_deg": 16.01460328183447
+          },
+          "j_fin_pecL_0_rotate": {
+            "min_deg": -4.37753254356644,
+            "max_deg": 6.471036178505582,
+            "peak_to_peak_deg": 10.848568722072022
+          },
+          "j_fin_pecR_0_abduct": {
+            "min_deg": -12.70277561768027,
+            "max_deg": 12.969870006704804,
+            "peak_to_peak_deg": 25.672645624385076
+          },
+          "j_fin_pecR_0_protract": {
+            "min_deg": -7.258263112326237,
+            "max_deg": 8.417192457910431,
+            "peak_to_peak_deg": 15.675455570236668
+          },
+          "j_fin_pecR_0_rotate": {
+            "min_deg": -4.391595323241839,
+            "max_deg": 6.368335508893595,
+            "peak_to_peak_deg": 10.759930832135435
+          },
+          "j_fin_caudal_0": {
+            "min_deg": -3.9860957475365804,
+            "max_deg": 3.9597075276300537,
+            "peak_to_peak_deg": 7.945803275166634
+          }
+        },
+        "sim_seconds_per_wall_second": 2.5514461470148158,
+        "controller": {
+          "profile": "carangiform",
+          "frequency_hz": 6.0,
+          "amplitude_deg": 24.0,
+          "wavelength_bl": 1.2,
+          "body_amplitude_fraction": 0.95,
+          "body_amplitude_floor": 0.2,
+          "caudal_mode": "counterbend",
+          "caudal_counterbend_gain": 3.0,
+          "caudal_amplitude_deg": 11.0,
+          "caudal_phase_deg": -45.0,
+          "pec_amplitude_deg": 14.0,
+          "pec_pitch_fraction": 0.3,
+          "median_fin_amplitude_deg": 0.0,
+          "chin_amplitude_fraction": 0.0,
+          "chin_frequency_hz": 1.0,
+          "ramp_s": 0.5,
+          "hover_node": 0.5,
+          "turn_bias_fraction": 0.2,
+          "turn_caudal_bias_deg": 1.5,
+          "turn_pectoral_inner_fraction": 0.6,
+          "gaits": {
+            "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
+              "chin_amplitude_fraction": 0.0,
+              "frequency_hz": 6.0,
+              "body_amplitude_fraction": 0.95,
+              "pec_amplitude_deg": 14.0,
+              "pec_pitch_fraction": 0.3,
+              "caudal_counterbend_gain": 3.0,
+              "caudal_amplitude_deg": 11.0,
+              "caudal_phase_deg": -45.0
+            },
+            "backward": {
+              "chin_amplitude_fraction": 0.0,
+              "body_amplitude_fraction": 0.15,
+              "caudal_mode": "wave",
+              "caudal_amplitude_deg": 6.0,
+              "pec_amplitude_deg": 16.0,
+              "pec_pitch_fraction": 0.5
+            },
+            "hover": {
+              "chin_amplitude_fraction": 0.0,
+              "body_amplitude_fraction": 0.05,
+              "caudal_mode": "wave",
+              "caudal_amplitude_deg": 2.8,
+              "pec_amplitude_deg": 9.0,
+              "pec_pitch_fraction": 0.5
+            },
+            "turning": {
+              "chin_amplitude_fraction": 0.0
+            },
+            "body_undulation": {
+              "body_amplitude_fraction": 0.95,
+              "pec_amplitude_deg": 8.0
+            }
+          },
+          "tuning_frequencies": [
+            1.0,
+            2.0,
+            3.0
+          ],
+          "tuning_amplitudes": [
+            12.0,
+            24.0
+          ],
+          "tuning_wavelengths": [
+            0.6,
+            1.2
+          ],
+          "tuning_duration_s": 4.0,
+          "carangiform_envelope": [
+            [
+              0.0,
+              0.03
+            ],
+            [
+              0.3,
+              0.03
+            ],
+            [
+              0.55,
+              1.0
+            ],
+            [
+              0.82,
+              1.0
+            ],
+            [
+              1.0,
+              0.3
+            ]
+          ],
           "disabled_groups": [
             "caudal"
           ]
         }
       },
       "pectorals_held_neutral": {
-        "signed_speed_bl_s": 0.019468439102825787,
-        "world_x_speed_bl_s": 0.01955384237916332,
+        "signed_speed_bl_s": 0.0271906877767588,
+        "world_x_speed_bl_s": 0.02723456463863047,
         "displacement_m": [
-          0.016962452351516673,
-          3.1927478436203195e-06,
-          0.0023787546466042062
+          0.024985088102754696,
+          6.933275687804832e-06,
+          0.002141484852175659
         ],
-        "reynolds": 778.7375641130315,
-        "yaw_change_deg": -0.099598726598986,
+        "reynolds": 1087.627511070352,
+        "yaw_change_deg": -0.061786086215321175,
         "forces": {
           "caudal": {
-            "mean_axial_mN": 0.1723628951396696,
-            "rms_force_mN": 0.2817034962534648
+            "mean_axial_mN": 0.27732621257116874,
+            "rms_force_mN": 0.548606131934036
           },
           "pectoral": {
-            "mean_axial_mN": -0.007392220876314489,
-            "rms_force_mN": 0.008677475949628541
+            "mean_axial_mN": -0.015088375775475431,
+            "rms_force_mN": 0.019284314728448305
           },
           "other": {
-            "mean_axial_mN": -0.14740790781665827,
-            "rms_force_mN": 0.34357784137657765
+            "mean_axial_mN": -0.2428706971248141,
+            "rms_force_mN": 0.47558433217764806
           },
           "total": {
-            "mean_axial_mN": 0.017562766446696833,
-            "rms_force_mN": 0.43917133816765985
+            "mean_axial_mN": 0.019367139670879167,
+            "rms_force_mN": 0.7278328313718603
           }
         },
         "joint_motion": {
           "j_chin_yaw": {
-            "min_deg": -0.03467406065541455,
-            "max_deg": 0.03471115669718358,
-            "peak_to_peak_deg": 0.06938521735259813
+            "min_deg": -0.08367465234373228,
+            "max_deg": 0.08366779757342162,
+            "peak_to_peak_deg": 0.1673424499171539
           },
           "j_chin_pitch": {
-            "min_deg": 0.0005685435642786942,
-            "max_deg": 0.0009437197884010796,
-            "peak_to_peak_deg": 0.00037517622412238543
+            "min_deg": 0.0009951880085738558,
+            "max_deg": 0.0012455231583305148,
+            "peak_to_peak_deg": 0.0002503351497566591
           },
           "j_chin_roll": {
-            "min_deg": -0.0046570389381630885,
-            "max_deg": 0.004656895477941469,
-            "peak_to_peak_deg": 0.009313934416104556
+            "min_deg": -0.011211624196110305,
+            "max_deg": 0.011208817959650882,
+            "peak_to_peak_deg": 0.022420442155761187
           },
           "j_fin_pecL_0_abduct": {
-            "min_deg": -0.018978014483249338,
-            "max_deg": 0.013804959965401138,
-            "peak_to_peak_deg": 0.03278297444865048
+            "min_deg": -0.02605933302254207,
+            "max_deg": 0.017380029905732487,
+            "peak_to_peak_deg": 0.04343936292827456
           },
           "j_fin_pecL_0_protract": {
-            "min_deg": -0.0278873492828596,
-            "max_deg": 0.04048009183751822,
-            "peak_to_peak_deg": 0.06836744112037782
+            "min_deg": -0.18436805572068854,
+            "max_deg": 0.19564075933994526,
+            "peak_to_peak_deg": 0.3800088150606338
           },
           "j_fin_pecL_0_rotate": {
-            "min_deg": -0.00649082704873222,
-            "max_deg": 0.005149602574298273,
-            "peak_to_peak_deg": 0.011640429623030493
+            "min_deg": -0.010460515430218259,
+            "max_deg": 0.005661437283075931,
+            "peak_to_peak_deg": 0.01612195271329419
           },
           "j_fin_pecR_0_abduct": {
-            "min_deg": -0.013610286619533086,
-            "max_deg": 0.01900075199336518,
-            "peak_to_peak_deg": 0.03261103861289827
+            "min_deg": -0.01729116935081622,
+            "max_deg": 0.026038156603015342,
+            "peak_to_peak_deg": 0.04332932595383156
           },
           "j_fin_pecR_0_protract": {
-            "min_deg": -0.040427099981005,
-            "max_deg": 0.027686756801364166,
-            "peak_to_peak_deg": 0.06811385678236917
+            "min_deg": -0.1956239180119121,
+            "max_deg": 0.18426573384989461,
+            "peak_to_peak_deg": 0.3798896518618067
           },
           "j_fin_pecR_0_rotate": {
-            "min_deg": -0.006494945244001629,
-            "max_deg": 0.005107477525671137,
-            "peak_to_peak_deg": 0.011602422769672766
+            "min_deg": -0.010448101885426306,
+            "max_deg": 0.005635657347346195,
+            "peak_to_peak_deg": 0.016083759232772502
           },
           "j_fin_caudal_0": {
-            "min_deg": -6.75787160935663,
-            "max_deg": 6.7590207094300965,
-            "peak_to_peak_deg": 13.516892318786727
+            "min_deg": -7.8003097443170235,
+            "max_deg": 7.8014695044376285,
+            "peak_to_peak_deg": 15.601779248754653
           }
         },
-        "sim_seconds_per_wall_second": 2.372083736782638,
+        "sim_seconds_per_wall_second": 2.5526609529604136,
         "controller": {
-          "profile": "mormyrid",
+          "profile": "carangiform",
           "frequency_hz": 6.0,
           "amplitude_deg": 24.0,
           "wavelength_bl": 1.2,
@@ -415,6 +505,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -462,6 +575,28 @@
             1.2
           ],
           "tuning_duration_s": 4.0,
+          "carangiform_envelope": [
+            [
+              0.0,
+              0.03
+            ],
+            [
+              0.3,
+              0.03
+            ],
+            [
+              0.55,
+              1.0
+            ],
+            [
+              0.82,
+              1.0
+            ],
+            [
+              1.0,
+              0.3
+            ]
+          ],
           "disabled_groups": [
             "pectoral"
           ]
@@ -549,7 +684,7 @@
             "peak_to_peak_deg": 9.70590822923902
           }
         },
-        "sim_seconds_per_wall_second": 2.3734977219590623,
+        "sim_seconds_per_wall_second": 2.5703130093007536,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -573,6 +708,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -702,7 +860,7 @@
             "peak_to_peak_deg": 0.7149773634717542
           }
         },
-        "sim_seconds_per_wall_second": 2.3721418827119813,
+        "sim_seconds_per_wall_second": 2.447943711992548,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -726,6 +884,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -858,7 +1039,7 @@
             "peak_to_peak_deg": 9.885745276781151
           }
         },
-        "sim_seconds_per_wall_second": 2.3755236731037335,
+        "sim_seconds_per_wall_second": 2.5354710638125475,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -882,6 +1063,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -1016,7 +1220,7 @@
             "peak_to_peak_deg": 6.125531531490667
           }
         },
-        "sim_seconds_per_wall_second": 2.382238742644618,
+        "sim_seconds_per_wall_second": 2.5662208839869596,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -1040,6 +1244,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -1169,7 +1396,7 @@
             "peak_to_peak_deg": 0.2978105513117312
           }
         },
-        "sim_seconds_per_wall_second": 2.374979667975563,
+        "sim_seconds_per_wall_second": 2.559515717266307,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -1193,6 +1420,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -1325,7 +1575,7 @@
             "peak_to_peak_deg": 5.973903894471109
           }
         },
-        "sim_seconds_per_wall_second": 2.367265570071748,
+        "sim_seconds_per_wall_second": 2.561315354959858,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -1349,6 +1599,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -1483,7 +1756,7 @@
             "peak_to_peak_deg": 12.356847157511513
           }
         },
-        "sim_seconds_per_wall_second": 2.36657928566004,
+        "sim_seconds_per_wall_second": 2.5388786065476374,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -1507,6 +1780,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -1636,7 +1932,7 @@
             "peak_to_peak_deg": 5.082360303468557
           }
         },
-        "sim_seconds_per_wall_second": 2.350209442317266,
+        "sim_seconds_per_wall_second": 2.5081695786738343,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -1660,6 +1956,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -1792,7 +2111,7 @@
             "peak_to_peak_deg": 12.405771264293326
           }
         },
-        "sim_seconds_per_wall_second": 2.355675298884928,
+        "sim_seconds_per_wall_second": 2.5055390254627583,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -1816,6 +2135,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,
@@ -1950,7 +2292,7 @@
             "peak_to_peak_deg": 13.953543829129615
           }
         },
-        "sim_seconds_per_wall_second": 2.326733714775931,
+        "sim_seconds_per_wall_second": 2.4788119243855102,
         "controller": {
           "profile": "mormyrid",
           "frequency_hz": 3.0,
@@ -1974,6 +2316,29 @@
           "turn_pectoral_inner_fraction": 0.6,
           "gaits": {
             "forward": {
+              "profile": "carangiform",
+              "carangiform_envelope": [
+                [
+                  0.0,
+                  0.03
+                ],
+                [
+                  0.3,
+                  0.03
+                ],
+                [
+                  0.55,
+                  1.0
+                ],
+                [
+                  0.82,
+                  1.0
+                ],
+                [
+                  1.0,
+                  0.3
+                ]
+              ],
               "chin_amplitude_fraction": 0.0,
               "frequency_hz": 6.0,
               "body_amplitude_fraction": 0.95,

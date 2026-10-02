@@ -1,5 +1,7 @@
 # Larger forward tail stroke
 
+Historical comparison before the posterior-body revision. The current forward video uses the carangiform-style envelope documented in [carangiform.md](carangiform.md). The measurements below describe the preceding larger-tail gait.
+
 The forward tail movement is larger, but **the extra amplitude does not improve forward swimming in this model**. The selected stroke increases the caudal hinge sweep by **31.8%** and approximately doubles the tail-tip lateral excursion. Six-second forward travel decreases **4.6%**, from **43.85 to 41.84 mm**. The tail remains useful: holding its position target neutral reduces speed by **31.4%** relative to the selected gait.
 
 | Measurement | Previous stroke | Larger stroke (current) |
@@ -46,7 +48,7 @@ This result is specific to the rigid fins, stiff body ranges and MuJoCo ellipsoi
 
 ## Reproduction and validation
 
-Run from `fish_mujoco/`:
+The current gait regenerates with the following commands from `fish_mujoco/`; the plotting command reproduces this historical comparison:
 
 ```sh
 .venv/bin/python evaluate_behaviors.py --only forward

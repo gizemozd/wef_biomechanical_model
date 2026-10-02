@@ -1,5 +1,159 @@
 {
-  "forward": {
+  "previous": {
+    "signed_speed_bl_s": 0.042539416586714084,
+    "world_x_speed_bl_s": 0.040598420600275,
+    "displacement_m": [
+      0.04184345132111543,
+      0.00041137893836862857,
+      0.012104058607799718
+    ],
+    "reynolds": 1701.5766634685635,
+    "yaw_change_deg": 0.8426291985439762,
+    "forces": {
+      "caudal": {
+        "mean_axial_mN": 0.10363728787693086,
+        "rms_force_mN": 0.2914767680088253
+      },
+      "pectoral": {
+        "mean_axial_mN": 0.3360278627461129,
+        "rms_force_mN": 3.4707926182950826
+      },
+      "other": {
+        "mean_axial_mN": -0.45310533033075623,
+        "rms_force_mN": 0.6292198965230217
+      },
+      "total": {
+        "mean_axial_mN": -0.013440179707712342,
+        "rms_force_mN": 3.4754908450876507
+      }
+    },
+    "joint_motion": {
+      "j_chin_yaw": {
+        "min_deg": -0.03510493077859502,
+        "max_deg": 0.031247817406797933,
+        "peak_to_peak_deg": 0.06635274818539295
+      },
+      "j_chin_pitch": {
+        "min_deg": -0.05556556131163575,
+        "max_deg": 0.07617982445804733,
+        "peak_to_peak_deg": 0.1317453857696831
+      },
+      "j_chin_roll": {
+        "min_deg": -0.004036476101700331,
+        "max_deg": 0.00416524833404698,
+        "peak_to_peak_deg": 0.00820172443574731
+      },
+      "j_fin_pecL_0_abduct": {
+        "min_deg": -13.094558611946132,
+        "max_deg": 12.748409827167224,
+        "peak_to_peak_deg": 25.842968439113356
+      },
+      "j_fin_pecL_0_protract": {
+        "min_deg": -8.451248117431234,
+        "max_deg": 7.370510993313445,
+        "peak_to_peak_deg": 15.82175911074468
+      },
+      "j_fin_pecL_0_rotate": {
+        "min_deg": -4.383903352591663,
+        "max_deg": 6.3095791199537805,
+        "peak_to_peak_deg": 10.693482472545444
+      },
+      "j_fin_pecR_0_abduct": {
+        "min_deg": -12.637846206727641,
+        "max_deg": 12.937437258417745,
+        "peak_to_peak_deg": 25.575283465145386
+      },
+      "j_fin_pecR_0_protract": {
+        "min_deg": -7.368190799452363,
+        "max_deg": 8.433445153250549,
+        "peak_to_peak_deg": 15.801635952702913
+      },
+      "j_fin_pecR_0_rotate": {
+        "min_deg": -4.381427813028485,
+        "max_deg": 6.385215929657552,
+        "peak_to_peak_deg": 10.766643742686037
+      },
+      "j_fin_caudal_0": {
+        "min_deg": -6.704094614313829,
+        "max_deg": 6.739414682028309,
+        "peak_to_peak_deg": 13.443509296342139
+      }
+    },
+    "sim_seconds_per_wall_second": 2.545122682614949,
+    "controller": {
+      "profile": "mormyrid",
+      "frequency_hz": 6.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 1.2,
+      "body_amplitude_fraction": 0.95,
+      "body_amplitude_floor": 0.2,
+      "caudal_mode": "counterbend",
+      "caudal_counterbend_gain": 3.0,
+      "caudal_amplitude_deg": 11.0,
+      "caudal_phase_deg": -45.0,
+      "pec_amplitude_deg": 14.0,
+      "pec_pitch_fraction": 0.3,
+      "median_fin_amplitude_deg": 0.0,
+      "chin_amplitude_fraction": 0.0,
+      "chin_frequency_hz": 1.0,
+      "ramp_s": 0.5,
+      "hover_node": 0.5,
+      "turn_bias_fraction": 0.2,
+      "turn_caudal_bias_deg": 1.5,
+      "turn_pectoral_inner_fraction": 0.6,
+      "gaits": {
+        "forward": {
+          "chin_amplitude_fraction": 0.0,
+          "frequency_hz": 6.0,
+          "body_amplitude_fraction": 0.95,
+          "pec_amplitude_deg": 14.0,
+          "pec_pitch_fraction": 0.3,
+          "caudal_counterbend_gain": 3.0,
+          "caudal_amplitude_deg": 11.0,
+          "caudal_phase_deg": -45.0
+        },
+        "backward": {
+          "chin_amplitude_fraction": 0.0,
+          "body_amplitude_fraction": 0.15,
+          "caudal_mode": "wave",
+          "caudal_amplitude_deg": 6.0,
+          "pec_amplitude_deg": 16.0,
+          "pec_pitch_fraction": 0.5
+        },
+        "hover": {
+          "chin_amplitude_fraction": 0.0,
+          "body_amplitude_fraction": 0.05,
+          "caudal_mode": "wave",
+          "caudal_amplitude_deg": 2.8,
+          "pec_amplitude_deg": 9.0,
+          "pec_pitch_fraction": 0.5
+        },
+        "turning": {
+          "chin_amplitude_fraction": 0.0
+        },
+        "body_undulation": {
+          "body_amplitude_fraction": 0.95,
+          "pec_amplitude_deg": 8.0
+        }
+      },
+      "tuning_frequencies": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "tuning_amplitudes": [
+        12.0,
+        24.0
+      ],
+      "tuning_wavelengths": [
+        0.6,
+        1.2
+      ],
+      "tuning_duration_s": 4.0
+    },
+    "tail_base_lateral_sweep_mm": 3.2311899757364126
+  },
+  "carangiform": {
     "signed_speed_bl_s": 0.04572836902231174,
     "world_x_speed_bl_s": 0.04370490561318255,
     "displacement_m": [
@@ -79,7 +233,183 @@
         "peak_to_peak_deg": 15.566258226694117
       }
     },
-    "sim_seconds_per_wall_second": 2.553008704763747,
+    "sim_seconds_per_wall_second": 2.3167269493910148,
+    "controller": {
+      "profile": "carangiform",
+      "frequency_hz": 6.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 1.2,
+      "body_amplitude_fraction": 0.95,
+      "body_amplitude_floor": 0.2,
+      "caudal_mode": "counterbend",
+      "caudal_counterbend_gain": 3.0,
+      "caudal_amplitude_deg": 11.0,
+      "caudal_phase_deg": -45.0,
+      "pec_amplitude_deg": 14.0,
+      "pec_pitch_fraction": 0.3,
+      "median_fin_amplitude_deg": 0.0,
+      "chin_amplitude_fraction": 0.0,
+      "chin_frequency_hz": 1.0,
+      "ramp_s": 0.5,
+      "hover_node": 0.5,
+      "turn_bias_fraction": 0.2,
+      "turn_caudal_bias_deg": 1.5,
+      "turn_pectoral_inner_fraction": 0.6,
+      "gaits": {
+        "forward": {
+          "chin_amplitude_fraction": 0.0,
+          "frequency_hz": 6.0,
+          "body_amplitude_fraction": 0.95,
+          "pec_amplitude_deg": 14.0,
+          "pec_pitch_fraction": 0.3,
+          "caudal_counterbend_gain": 3.0,
+          "caudal_amplitude_deg": 11.0,
+          "caudal_phase_deg": -45.0
+        },
+        "backward": {
+          "chin_amplitude_fraction": 0.0,
+          "body_amplitude_fraction": 0.15,
+          "caudal_mode": "wave",
+          "caudal_amplitude_deg": 6.0,
+          "pec_amplitude_deg": 16.0,
+          "pec_pitch_fraction": 0.5
+        },
+        "hover": {
+          "chin_amplitude_fraction": 0.0,
+          "body_amplitude_fraction": 0.05,
+          "caudal_mode": "wave",
+          "caudal_amplitude_deg": 2.8,
+          "pec_amplitude_deg": 9.0,
+          "pec_pitch_fraction": 0.5
+        },
+        "turning": {
+          "chin_amplitude_fraction": 0.0
+        },
+        "body_undulation": {
+          "body_amplitude_fraction": 0.95,
+          "pec_amplitude_deg": 8.0
+        }
+      },
+      "tuning_frequencies": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "tuning_amplitudes": [
+        12.0,
+        24.0
+      ],
+      "tuning_wavelengths": [
+        0.6,
+        1.2
+      ],
+      "tuning_duration_s": 4.0,
+      "carangiform_envelope": [
+        [
+          0,
+          0.03
+        ],
+        [
+          0.3,
+          0.03
+        ],
+        [
+          0.55,
+          1
+        ],
+        [
+          0.82,
+          1
+        ],
+        [
+          1,
+          0.3
+        ]
+      ]
+    },
+    "tail_base_lateral_sweep_mm": 3.8264250676022575
+  },
+  "body_held_neutral": {
+    "signed_speed_bl_s": -0.007717798096676121,
+    "world_x_speed_bl_s": -0.00940700381618666,
+    "displacement_m": [
+      -0.009173600130368938,
+      0.0012454302344630257,
+      0.006401800937350904
+    ],
+    "reynolds": 308.71192386704485,
+    "yaw_change_deg": 3.1211206106693115,
+    "forces": {
+      "caudal": {
+        "mean_axial_mN": -0.6113494704175128,
+        "rms_force_mN": 0.9253826914033135
+      },
+      "pectoral": {
+        "mean_axial_mN": 0.6221452124844011,
+        "rms_force_mN": 3.4553139115262175
+      },
+      "other": {
+        "mean_axial_mN": -0.028644682351234654,
+        "rms_force_mN": 0.3684854890749868
+      },
+      "total": {
+        "mean_axial_mN": -0.01784894028434625,
+        "rms_force_mN": 3.434140334603526
+      }
+    },
+    "joint_motion": {
+      "j_chin_yaw": {
+        "min_deg": -0.04875062713750469,
+        "max_deg": 0.043924021448061956,
+        "peak_to_peak_deg": 0.09267464858556665
+      },
+      "j_chin_pitch": {
+        "min_deg": -0.06342006110866326,
+        "max_deg": 0.06975672533346657,
+        "peak_to_peak_deg": 0.13317678644212982
+      },
+      "j_chin_roll": {
+        "min_deg": -0.006217491428616389,
+        "max_deg": 0.005986289158761724,
+        "peak_to_peak_deg": 0.012203780587378112
+      },
+      "j_fin_pecL_0_abduct": {
+        "min_deg": -12.898219573540807,
+        "max_deg": 12.809830488333773,
+        "peak_to_peak_deg": 25.70805006187458
+      },
+      "j_fin_pecL_0_protract": {
+        "min_deg": -8.83809915209678,
+        "max_deg": 7.35460017320941,
+        "peak_to_peak_deg": 16.19269932530619
+      },
+      "j_fin_pecL_0_rotate": {
+        "min_deg": -4.412302902443037,
+        "max_deg": 6.604002328769454,
+        "peak_to_peak_deg": 11.016305231212492
+      },
+      "j_fin_pecR_0_abduct": {
+        "min_deg": -12.717169275873198,
+        "max_deg": 12.835759612297327,
+        "peak_to_peak_deg": 25.552928888170527
+      },
+      "j_fin_pecR_0_protract": {
+        "min_deg": -6.997300510763625,
+        "max_deg": 8.589285963816478,
+        "peak_to_peak_deg": 15.586586474580102
+      },
+      "j_fin_pecR_0_rotate": {
+        "min_deg": -4.411420914948161,
+        "max_deg": 6.600997715894879,
+        "peak_to_peak_deg": 11.01241863084304
+      },
+      "j_fin_caudal_0": {
+        "min_deg": -6.52803105170589,
+        "max_deg": 6.468510571480953,
+        "peak_to_peak_deg": 12.996541623186843
+      }
+    },
+    "sim_seconds_per_wall_second": 2.3888795268365377,
     "controller": {
       "profile": "carangiform",
       "frequency_hz": 6.0,
@@ -194,633 +524,108 @@
           1.0,
           0.3
         ]
+      ],
+      "disabled_groups": [
+        "body"
       ]
     }
   },
-  "backward": {
-    "signed_speed_bl_s": -0.03432245960552687,
-    "world_x_speed_bl_s": -0.03538526330675301,
+  "caudal_held_neutral": {
+    "signed_speed_bl_s": 0.029452746692120103,
+    "world_x_speed_bl_s": 0.02746548160330037,
     "displacement_m": [
-      -0.03516499723055745,
-      -0.002139555075582163,
-      -0.00393178240265506
+      0.027647489991133707,
+      -0.00033985934051269543,
+      0.010663761125526888
     ],
-    "reynolds": 1372.898384221075,
-    "yaw_change_deg": -0.035633458913901524,
+    "reynolds": 1178.1098676848044,
+    "yaw_change_deg": -0.6852958373678664,
     "forces": {
       "caudal": {
-        "mean_axial_mN": -0.14399780827402148,
-        "rms_force_mN": 0.4218989333035208
+        "mean_axial_mN": -0.19174459617538817,
+        "rms_force_mN": 0.9136948878237555
       },
       "pectoral": {
-        "mean_axial_mN": -0.1675559119203341,
-        "rms_force_mN": 2.5542183185134766
+        "mean_axial_mN": 0.4112590417443735,
+        "rms_force_mN": 3.457376249834942
       },
       "other": {
-        "mean_axial_mN": 0.28307571383431657,
-        "rms_force_mN": 0.3330580594522136
+        "mean_axial_mN": -0.24540299632679968,
+        "rms_force_mN": 0.37660446307117335
       },
       "total": {
-        "mean_axial_mN": -0.028478006360038947,
-        "rms_force_mN": 2.638863811576644
+        "mean_axial_mN": -0.025888550757814332,
+        "rms_force_mN": 3.528562597563734
       }
     },
     "joint_motion": {
       "j_chin_yaw": {
-        "min_deg": -0.02924685766737132,
-        "max_deg": 0.03138229248811763,
-        "peak_to_peak_deg": 0.06062915015548895
+        "min_deg": -0.028879578760296867,
+        "max_deg": 0.02930851577725288,
+        "peak_to_peak_deg": 0.05818809453754975
       },
       "j_chin_pitch": {
-        "min_deg": -0.059447104654698005,
-        "max_deg": 0.04005027390097246,
-        "peak_to_peak_deg": 0.09949737855567047
+        "min_deg": -0.056421738086262344,
+        "max_deg": 0.07441693535244902,
+        "peak_to_peak_deg": 0.13083867343871136
       },
       "j_chin_roll": {
-        "min_deg": -0.003978750143197964,
-        "max_deg": 0.004454124028523164,
-        "peak_to_peak_deg": 0.008432874171721129
+        "min_deg": -0.0038053833582318347,
+        "max_deg": 0.0036128512023704505,
+        "peak_to_peak_deg": 0.007418234560602285
       },
       "j_fin_pecL_0_abduct": {
-        "min_deg": -17.1446795214593,
-        "max_deg": 17.313162160550654,
-        "peak_to_peak_deg": 34.457841682009956
+        "min_deg": -12.983989722763837,
+        "max_deg": 12.739461192952549,
+        "peak_to_peak_deg": 25.723450915716384
       },
       "j_fin_pecL_0_protract": {
-        "min_deg": -9.010616480440275,
-        "max_deg": 8.651226909563416,
-        "peak_to_peak_deg": 17.66184339000369
+        "min_deg": -8.631985793295675,
+        "max_deg": 7.382617488538797,
+        "peak_to_peak_deg": 16.01460328183447
       },
       "j_fin_pecL_0_rotate": {
-        "min_deg": -8.776123397368362,
-        "max_deg": 8.620380354362656,
-        "peak_to_peak_deg": 17.396503751731018
+        "min_deg": -4.37753254356644,
+        "max_deg": 6.471036178505582,
+        "peak_to_peak_deg": 10.848568722072022
       },
       "j_fin_pecR_0_abduct": {
-        "min_deg": -17.44419136528971,
-        "max_deg": 17.2051044933385,
-        "peak_to_peak_deg": 34.64929585862821
+        "min_deg": -12.70277561768027,
+        "max_deg": 12.969870006704804,
+        "peak_to_peak_deg": 25.672645624385076
       },
       "j_fin_pecR_0_protract": {
-        "min_deg": -8.584562167117056,
-        "max_deg": 8.941127920809635,
-        "peak_to_peak_deg": 17.52569008792669
+        "min_deg": -7.258263112326237,
+        "max_deg": 8.417192457910431,
+        "peak_to_peak_deg": 15.675455570236668
       },
       "j_fin_pecR_0_rotate": {
-        "min_deg": -8.753938591463545,
-        "max_deg": 8.633916405409018,
-        "peak_to_peak_deg": 17.387854996872562
+        "min_deg": -4.391595323241839,
+        "max_deg": 6.368335508893595,
+        "peak_to_peak_deg": 10.759930832135435
       },
       "j_fin_caudal_0": {
-        "min_deg": -4.761765701679103,
-        "max_deg": 4.944142527559917,
-        "peak_to_peak_deg": 9.70590822923902
+        "min_deg": -3.9860957475365804,
+        "max_deg": 3.9597075276300537,
+        "peak_to_peak_deg": 7.945803275166634
       }
     },
-    "sim_seconds_per_wall_second": 2.5703130093007536,
+    "sim_seconds_per_wall_second": 2.5514461470148158,
     "controller": {
-      "profile": "mormyrid",
-      "frequency_hz": 3.0,
-      "amplitude_deg": 24.0,
-      "wavelength_bl": 1.2,
-      "body_amplitude_fraction": 0.15,
-      "body_amplitude_floor": 0.2,
-      "caudal_mode": "wave",
-      "caudal_counterbend_gain": 2.2,
-      "caudal_amplitude_deg": 6.0,
-      "caudal_phase_deg": 0.0,
-      "pec_amplitude_deg": 16.0,
-      "pec_pitch_fraction": 0.5,
-      "median_fin_amplitude_deg": 0.0,
-      "chin_amplitude_fraction": 0.0,
-      "chin_frequency_hz": 1.0,
-      "ramp_s": 0.5,
-      "hover_node": 0.5,
-      "turn_bias_fraction": 0.2,
-      "turn_caudal_bias_deg": 1.5,
-      "turn_pectoral_inner_fraction": 0.6,
-      "gaits": {
-        "forward": {
-          "profile": "carangiform",
-          "carangiform_envelope": [
-            [
-              0.0,
-              0.03
-            ],
-            [
-              0.3,
-              0.03
-            ],
-            [
-              0.55,
-              1.0
-            ],
-            [
-              0.82,
-              1.0
-            ],
-            [
-              1.0,
-              0.3
-            ]
-          ],
-          "chin_amplitude_fraction": 0.0,
-          "frequency_hz": 6.0,
-          "body_amplitude_fraction": 0.95,
-          "pec_amplitude_deg": 14.0,
-          "pec_pitch_fraction": 0.3,
-          "caudal_counterbend_gain": 3.0,
-          "caudal_amplitude_deg": 11.0,
-          "caudal_phase_deg": -45.0
-        },
-        "backward": {
-          "chin_amplitude_fraction": 0.0,
-          "body_amplitude_fraction": 0.15,
-          "caudal_mode": "wave",
-          "caudal_amplitude_deg": 6.0,
-          "pec_amplitude_deg": 16.0,
-          "pec_pitch_fraction": 0.5
-        },
-        "hover": {
-          "chin_amplitude_fraction": 0.0,
-          "body_amplitude_fraction": 0.05,
-          "caudal_mode": "wave",
-          "caudal_amplitude_deg": 2.8,
-          "pec_amplitude_deg": 9.0,
-          "pec_pitch_fraction": 0.5
-        },
-        "turning": {
-          "chin_amplitude_fraction": 0.0
-        },
-        "body_undulation": {
-          "body_amplitude_fraction": 0.95,
-          "pec_amplitude_deg": 8.0
-        }
-      },
-      "tuning_frequencies": [
-        1.0,
-        2.0,
-        3.0
-      ],
-      "tuning_amplitudes": [
-        12.0,
-        24.0
-      ],
-      "tuning_wavelengths": [
-        0.6,
-        1.2
-      ],
-      "tuning_duration_s": 4.0
-    }
-  },
-  "hover": {
-    "signed_speed_bl_s": -0.002472379588119621,
-    "world_x_speed_bl_s": -0.0026649438823900884,
-    "displacement_m": [
-      -0.0021689139882877396,
-      0.0004447781426795702,
-      0.002775954797076974
-    ],
-    "reynolds": 98.89518352478484,
-    "yaw_change_deg": 0.16401583619832413,
-    "forces": {
-      "caudal": {
-        "mean_axial_mN": -0.09557595054576126,
-        "rms_force_mN": 0.18534195299055076
-      },
-      "pectoral": {
-        "mean_axial_mN": 0.08859375347529756,
-        "rms_force_mN": 0.45525931129375286
-      },
-      "other": {
-        "mean_axial_mN": 0.002980520432169012,
-        "rms_force_mN": 0.009604249662146824
-      },
-      "total": {
-        "mean_axial_mN": -0.004001676638294676,
-        "rms_force_mN": 0.47600326803862264
-      }
-    },
-    "joint_motion": {
-      "j_chin_yaw": {
-        "min_deg": -0.011027976055263428,
-        "max_deg": 0.010886188067329656,
-        "peak_to_peak_deg": 0.02191416412259308
-      },
-      "j_chin_pitch": {
-        "min_deg": -0.007970886890285071,
-        "max_deg": 0.008793464904473655,
-        "peak_to_peak_deg": 0.016764351794758728
-      },
-      "j_chin_roll": {
-        "min_deg": -0.0014923701972580448,
-        "max_deg": 0.0014756653526697128,
-        "peak_to_peak_deg": 0.002968035549927758
-      },
-      "j_fin_pecL_0_abduct": {
-        "min_deg": -10.008459403080169,
-        "max_deg": 10.01395063576946,
-        "peak_to_peak_deg": 20.022410038849628
-      },
-      "j_fin_pecL_0_protract": {
-        "min_deg": -5.339521778849832,
-        "max_deg": 4.8220252995214095,
-        "peak_to_peak_deg": 10.161547078371242
-      },
-      "j_fin_pecL_0_rotate": {
-        "min_deg": -4.842317485485529,
-        "max_deg": 5.010473329780101,
-        "peak_to_peak_deg": 9.85279081526563
-      },
-      "j_fin_pecR_0_abduct": {
-        "min_deg": -10.011508861132423,
-        "max_deg": 10.001928685675948,
-        "peak_to_peak_deg": 20.01343754680837
-      },
-      "j_fin_pecR_0_protract": {
-        "min_deg": -4.791604481323095,
-        "max_deg": 5.291382124611153,
-        "peak_to_peak_deg": 10.082986605934249
-      },
-      "j_fin_pecR_0_rotate": {
-        "min_deg": -4.842858072396754,
-        "max_deg": 5.000844559484604,
-        "peak_to_peak_deg": 9.843702631881358
-      },
-      "j_fin_caudal_0": {
-        "min_deg": -3.0584763336989536,
-        "max_deg": 3.0670551977917135,
-        "peak_to_peak_deg": 6.125531531490667
-      }
-    },
-    "sim_seconds_per_wall_second": 2.5662208839869596,
-    "controller": {
-      "profile": "mormyrid",
-      "frequency_hz": 3.0,
-      "amplitude_deg": 24.0,
-      "wavelength_bl": 1.2,
-      "body_amplitude_fraction": 0.05,
-      "body_amplitude_floor": 0.2,
-      "caudal_mode": "wave",
-      "caudal_counterbend_gain": 2.2,
-      "caudal_amplitude_deg": 2.8,
-      "caudal_phase_deg": 0.0,
-      "pec_amplitude_deg": 9.0,
-      "pec_pitch_fraction": 0.5,
-      "median_fin_amplitude_deg": 0.0,
-      "chin_amplitude_fraction": 0.0,
-      "chin_frequency_hz": 1.0,
-      "ramp_s": 0.5,
-      "hover_node": 0.5,
-      "turn_bias_fraction": 0.2,
-      "turn_caudal_bias_deg": 1.5,
-      "turn_pectoral_inner_fraction": 0.6,
-      "gaits": {
-        "forward": {
-          "profile": "carangiform",
-          "carangiform_envelope": [
-            [
-              0.0,
-              0.03
-            ],
-            [
-              0.3,
-              0.03
-            ],
-            [
-              0.55,
-              1.0
-            ],
-            [
-              0.82,
-              1.0
-            ],
-            [
-              1.0,
-              0.3
-            ]
-          ],
-          "chin_amplitude_fraction": 0.0,
-          "frequency_hz": 6.0,
-          "body_amplitude_fraction": 0.95,
-          "pec_amplitude_deg": 14.0,
-          "pec_pitch_fraction": 0.3,
-          "caudal_counterbend_gain": 3.0,
-          "caudal_amplitude_deg": 11.0,
-          "caudal_phase_deg": -45.0
-        },
-        "backward": {
-          "chin_amplitude_fraction": 0.0,
-          "body_amplitude_fraction": 0.15,
-          "caudal_mode": "wave",
-          "caudal_amplitude_deg": 6.0,
-          "pec_amplitude_deg": 16.0,
-          "pec_pitch_fraction": 0.5
-        },
-        "hover": {
-          "chin_amplitude_fraction": 0.0,
-          "body_amplitude_fraction": 0.05,
-          "caudal_mode": "wave",
-          "caudal_amplitude_deg": 2.8,
-          "pec_amplitude_deg": 9.0,
-          "pec_pitch_fraction": 0.5
-        },
-        "turning": {
-          "chin_amplitude_fraction": 0.0
-        },
-        "body_undulation": {
-          "body_amplitude_fraction": 0.95,
-          "pec_amplitude_deg": 8.0
-        }
-      },
-      "tuning_frequencies": [
-        1.0,
-        2.0,
-        3.0
-      ],
-      "tuning_amplitudes": [
-        12.0,
-        24.0
-      ],
-      "tuning_wavelengths": [
-        0.6,
-        1.2
-      ],
-      "tuning_duration_s": 4.0
-    }
-  },
-  "turning": {
-    "signed_speed_bl_s": 0.006165953627725038,
-    "world_x_speed_bl_s": 0.005951286908715145,
-    "displacement_m": [
-      0.004868925454632002,
-      0.00543918770431574,
-      0.003916905108233099
-    ],
-    "reynolds": 246.63814510900156,
-    "yaw_change_deg": 2.553497273972675,
-    "forces": {
-      "caudal": {
-        "mean_axial_mN": 0.023473651936107006,
-        "rms_force_mN": 0.1161212901623602
-      },
-      "pectoral": {
-        "mean_axial_mN": 0.02691867542226601,
-        "rms_force_mN": 0.4916291103994899
-      },
-      "other": {
-        "mean_axial_mN": -0.046208409376346724,
-        "rms_force_mN": 0.16325325228908924
-      },
-      "total": {
-        "mean_axial_mN": 0.004183917982026289,
-        "rms_force_mN": 0.5288903153404054
-      }
-    },
-    "joint_motion": {
-      "j_chin_yaw": {
-        "min_deg": -0.02970391981853718,
-        "max_deg": 0.023174937509811998,
-        "peak_to_peak_deg": 0.05287885732834918
-      },
-      "j_chin_pitch": {
-        "min_deg": -0.007515204205292967,
-        "max_deg": 0.008285213430992849,
-        "peak_to_peak_deg": 0.015800417636285816
-      },
-      "j_chin_roll": {
-        "min_deg": -0.003641451872331289,
-        "max_deg": 0.003209024942609881,
-        "peak_to_peak_deg": 0.00685047681494117
-      },
-      "j_fin_pecL_0_abduct": {
-        "min_deg": -11.18753514598099,
-        "max_deg": 11.135434875482613,
-        "peak_to_peak_deg": 22.322970021463604
-      },
-      "j_fin_pecL_0_protract": {
-        "min_deg": -5.810386276568504,
-        "max_deg": 5.337744814815735,
-        "peak_to_peak_deg": 11.14813109138424
-      },
-      "j_fin_pecL_0_rotate": {
-        "min_deg": -2.0936770317111706,
-        "max_deg": 2.3178016733888085,
-        "peak_to_peak_deg": 4.411478705099979
-      },
-      "j_fin_pecR_0_abduct": {
-        "min_deg": -6.68921105969207,
-        "max_deg": 6.736017270354578,
-        "peak_to_peak_deg": 13.425228330046648
-      },
-      "j_fin_pecR_0_protract": {
-        "min_deg": -3.3009009973138252,
-        "max_deg": 3.5013577926151904,
-        "peak_to_peak_deg": 6.802258789929016
-      },
-      "j_fin_pecR_0_rotate": {
-        "min_deg": -1.2548181651958816,
-        "max_deg": 1.3473278077992576,
-        "peak_to_peak_deg": 2.6021459729951393
-      },
-      "j_fin_caudal_0": {
-        "min_deg": -4.700101270265896,
-        "max_deg": 7.6567458872456164,
-        "peak_to_peak_deg": 12.356847157511513
-      }
-    },
-    "sim_seconds_per_wall_second": 2.5388786065476374,
-    "controller": {
-      "profile": "mormyrid",
-      "frequency_hz": 3.0,
-      "amplitude_deg": 24.0,
-      "wavelength_bl": 1.2,
-      "body_amplitude_fraction": 0.85,
-      "body_amplitude_floor": 0.2,
-      "caudal_mode": "counterbend",
-      "caudal_counterbend_gain": 2.2,
-      "caudal_amplitude_deg": 8.0,
-      "caudal_phase_deg": 0.0,
-      "pec_amplitude_deg": 10.0,
-      "pec_pitch_fraction": 0.2,
-      "median_fin_amplitude_deg": 0.0,
-      "chin_amplitude_fraction": 0.0,
-      "chin_frequency_hz": 1.0,
-      "ramp_s": 0.5,
-      "hover_node": 0.5,
-      "turn_bias_fraction": 0.2,
-      "turn_caudal_bias_deg": 1.5,
-      "turn_pectoral_inner_fraction": 0.6,
-      "gaits": {
-        "forward": {
-          "profile": "carangiform",
-          "carangiform_envelope": [
-            [
-              0.0,
-              0.03
-            ],
-            [
-              0.3,
-              0.03
-            ],
-            [
-              0.55,
-              1.0
-            ],
-            [
-              0.82,
-              1.0
-            ],
-            [
-              1.0,
-              0.3
-            ]
-          ],
-          "chin_amplitude_fraction": 0.0,
-          "frequency_hz": 6.0,
-          "body_amplitude_fraction": 0.95,
-          "pec_amplitude_deg": 14.0,
-          "pec_pitch_fraction": 0.3,
-          "caudal_counterbend_gain": 3.0,
-          "caudal_amplitude_deg": 11.0,
-          "caudal_phase_deg": -45.0
-        },
-        "backward": {
-          "chin_amplitude_fraction": 0.0,
-          "body_amplitude_fraction": 0.15,
-          "caudal_mode": "wave",
-          "caudal_amplitude_deg": 6.0,
-          "pec_amplitude_deg": 16.0,
-          "pec_pitch_fraction": 0.5
-        },
-        "hover": {
-          "chin_amplitude_fraction": 0.0,
-          "body_amplitude_fraction": 0.05,
-          "caudal_mode": "wave",
-          "caudal_amplitude_deg": 2.8,
-          "pec_amplitude_deg": 9.0,
-          "pec_pitch_fraction": 0.5
-        },
-        "turning": {
-          "chin_amplitude_fraction": 0.0
-        },
-        "body_undulation": {
-          "body_amplitude_fraction": 0.95,
-          "pec_amplitude_deg": 8.0
-        }
-      },
-      "tuning_frequencies": [
-        1.0,
-        2.0,
-        3.0
-      ],
-      "tuning_amplitudes": [
-        12.0,
-        24.0
-      ],
-      "tuning_wavelengths": [
-        0.6,
-        1.2
-      ],
-      "tuning_duration_s": 4.0
-    }
-  },
-  "body_undulation": {
-    "signed_speed_bl_s": 0.005106877628939638,
-    "world_x_speed_bl_s": 0.005013070296789282,
-    "displacement_m": [
-      0.004174497353203844,
-      0.0006039897804009537,
-      0.0026873886555728098
-    ],
-    "reynolds": 204.27510515758553,
-    "yaw_change_deg": 0.7866156023235955,
-    "forces": {
-      "caudal": {
-        "mean_axial_mN": 0.03146056806332938,
-        "rms_force_mN": 0.13617159985915436
-      },
-      "pectoral": {
-        "mean_axial_mN": 0.026345299051342752,
-        "rms_force_mN": 0.45855664508741095
-      },
-      "other": {
-        "mean_axial_mN": -0.05441727144938601,
-        "rms_force_mN": 0.20671793916318304
-      },
-      "total": {
-        "mean_axial_mN": 0.003388595665286113,
-        "rms_force_mN": 0.5146227017142576
-      }
-    },
-    "joint_motion": {
-      "j_chin_yaw": {
-        "min_deg": -38.15137705094504,
-        "max_deg": 38.18765947373558,
-        "peak_to_peak_deg": 76.33903652468061
-      },
-      "j_chin_pitch": {
-        "min_deg": -38.182036901790894,
-        "max_deg": 38.17900567639982,
-        "peak_to_peak_deg": 76.3610425781907
-      },
-      "j_chin_roll": {
-        "min_deg": -25.43632131373854,
-        "max_deg": 25.450866958821216,
-        "peak_to_peak_deg": 50.887188272559754
-      },
-      "j_fin_pecL_0_abduct": {
-        "min_deg": -8.93087701758335,
-        "max_deg": 8.915400112755021,
-        "peak_to_peak_deg": 17.846277130338372
-      },
-      "j_fin_pecL_0_protract": {
-        "min_deg": -4.6426571126278295,
-        "max_deg": 4.326882074715695,
-        "peak_to_peak_deg": 8.969539187343525
-      },
-      "j_fin_pecL_0_rotate": {
-        "min_deg": -1.6717471180642502,
-        "max_deg": 1.8326917230405222,
-        "peak_to_peak_deg": 3.5044388411047724
-      },
-      "j_fin_pecR_0_abduct": {
-        "min_deg": -8.92537272064858,
-        "max_deg": 8.98222097629494,
-        "peak_to_peak_deg": 17.907593696943522
-      },
-      "j_fin_pecR_0_protract": {
-        "min_deg": -4.354536147417589,
-        "max_deg": 4.690074540922286,
-        "peak_to_peak_deg": 9.044610688339874
-      },
-      "j_fin_pecR_0_rotate": {
-        "min_deg": -1.6724005515811273,
-        "max_deg": 1.825845556987756,
-        "peak_to_peak_deg": 3.4982461085688836
-      },
-      "j_fin_caudal_0": {
-        "min_deg": -6.9776027504505675,
-        "max_deg": 6.975941078679046,
-        "peak_to_peak_deg": 13.953543829129615
-      }
-    },
-    "sim_seconds_per_wall_second": 2.4788119243855102,
-    "controller": {
-      "profile": "mormyrid",
-      "frequency_hz": 3.0,
+      "profile": "carangiform",
+      "frequency_hz": 6.0,
       "amplitude_deg": 24.0,
       "wavelength_bl": 1.2,
       "body_amplitude_fraction": 0.95,
       "body_amplitude_floor": 0.2,
       "caudal_mode": "counterbend",
-      "caudal_counterbend_gain": 2.2,
-      "caudal_amplitude_deg": 8.0,
-      "caudal_phase_deg": 0.0,
-      "pec_amplitude_deg": 8.0,
-      "pec_pitch_fraction": 0.2,
+      "caudal_counterbend_gain": 3.0,
+      "caudal_amplitude_deg": 11.0,
+      "caudal_phase_deg": -45.0,
+      "pec_amplitude_deg": 14.0,
+      "pec_pitch_fraction": 0.3,
       "median_fin_amplitude_deg": 0.0,
-      "chin_amplitude_fraction": 0.85,
+      "chin_amplitude_fraction": 0.0,
       "chin_frequency_hz": 1.0,
       "ramp_s": 0.5,
       "hover_node": 0.5,
@@ -898,7 +703,236 @@
         0.6,
         1.2
       ],
-      "tuning_duration_s": 4.0
+      "tuning_duration_s": 4.0,
+      "carangiform_envelope": [
+        [
+          0.0,
+          0.03
+        ],
+        [
+          0.3,
+          0.03
+        ],
+        [
+          0.55,
+          1.0
+        ],
+        [
+          0.82,
+          1.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "disabled_groups": [
+        "caudal"
+      ]
     }
-  }
+  },
+  "pectorals_held_neutral": {
+    "signed_speed_bl_s": 0.0271906877767588,
+    "world_x_speed_bl_s": 0.02723456463863047,
+    "displacement_m": [
+      0.024985088102754696,
+      6.933275687804832e-06,
+      0.002141484852175659
+    ],
+    "reynolds": 1087.627511070352,
+    "yaw_change_deg": -0.061786086215321175,
+    "forces": {
+      "caudal": {
+        "mean_axial_mN": 0.27732621257116874,
+        "rms_force_mN": 0.548606131934036
+      },
+      "pectoral": {
+        "mean_axial_mN": -0.015088375775475431,
+        "rms_force_mN": 0.019284314728448305
+      },
+      "other": {
+        "mean_axial_mN": -0.2428706971248141,
+        "rms_force_mN": 0.47558433217764806
+      },
+      "total": {
+        "mean_axial_mN": 0.019367139670879167,
+        "rms_force_mN": 0.7278328313718603
+      }
+    },
+    "joint_motion": {
+      "j_chin_yaw": {
+        "min_deg": -0.08367465234373228,
+        "max_deg": 0.08366779757342162,
+        "peak_to_peak_deg": 0.1673424499171539
+      },
+      "j_chin_pitch": {
+        "min_deg": 0.0009951880085738558,
+        "max_deg": 0.0012455231583305148,
+        "peak_to_peak_deg": 0.0002503351497566591
+      },
+      "j_chin_roll": {
+        "min_deg": -0.011211624196110305,
+        "max_deg": 0.011208817959650882,
+        "peak_to_peak_deg": 0.022420442155761187
+      },
+      "j_fin_pecL_0_abduct": {
+        "min_deg": -0.02605933302254207,
+        "max_deg": 0.017380029905732487,
+        "peak_to_peak_deg": 0.04343936292827456
+      },
+      "j_fin_pecL_0_protract": {
+        "min_deg": -0.18436805572068854,
+        "max_deg": 0.19564075933994526,
+        "peak_to_peak_deg": 0.3800088150606338
+      },
+      "j_fin_pecL_0_rotate": {
+        "min_deg": -0.010460515430218259,
+        "max_deg": 0.005661437283075931,
+        "peak_to_peak_deg": 0.01612195271329419
+      },
+      "j_fin_pecR_0_abduct": {
+        "min_deg": -0.01729116935081622,
+        "max_deg": 0.026038156603015342,
+        "peak_to_peak_deg": 0.04332932595383156
+      },
+      "j_fin_pecR_0_protract": {
+        "min_deg": -0.1956239180119121,
+        "max_deg": 0.18426573384989461,
+        "peak_to_peak_deg": 0.3798896518618067
+      },
+      "j_fin_pecR_0_rotate": {
+        "min_deg": -0.010448101885426306,
+        "max_deg": 0.005635657347346195,
+        "peak_to_peak_deg": 0.016083759232772502
+      },
+      "j_fin_caudal_0": {
+        "min_deg": -7.8003097443170235,
+        "max_deg": 7.8014695044376285,
+        "peak_to_peak_deg": 15.601779248754653
+      }
+    },
+    "sim_seconds_per_wall_second": 2.5526609529604136,
+    "controller": {
+      "profile": "carangiform",
+      "frequency_hz": 6.0,
+      "amplitude_deg": 24.0,
+      "wavelength_bl": 1.2,
+      "body_amplitude_fraction": 0.95,
+      "body_amplitude_floor": 0.2,
+      "caudal_mode": "counterbend",
+      "caudal_counterbend_gain": 3.0,
+      "caudal_amplitude_deg": 11.0,
+      "caudal_phase_deg": -45.0,
+      "pec_amplitude_deg": 14.0,
+      "pec_pitch_fraction": 0.3,
+      "median_fin_amplitude_deg": 0.0,
+      "chin_amplitude_fraction": 0.0,
+      "chin_frequency_hz": 1.0,
+      "ramp_s": 0.5,
+      "hover_node": 0.5,
+      "turn_bias_fraction": 0.2,
+      "turn_caudal_bias_deg": 1.5,
+      "turn_pectoral_inner_fraction": 0.6,
+      "gaits": {
+        "forward": {
+          "profile": "carangiform",
+          "carangiform_envelope": [
+            [
+              0.0,
+              0.03
+            ],
+            [
+              0.3,
+              0.03
+            ],
+            [
+              0.55,
+              1.0
+            ],
+            [
+              0.82,
+              1.0
+            ],
+            [
+              1.0,
+              0.3
+            ]
+          ],
+          "chin_amplitude_fraction": 0.0,
+          "frequency_hz": 6.0,
+          "body_amplitude_fraction": 0.95,
+          "pec_amplitude_deg": 14.0,
+          "pec_pitch_fraction": 0.3,
+          "caudal_counterbend_gain": 3.0,
+          "caudal_amplitude_deg": 11.0,
+          "caudal_phase_deg": -45.0
+        },
+        "backward": {
+          "chin_amplitude_fraction": 0.0,
+          "body_amplitude_fraction": 0.15,
+          "caudal_mode": "wave",
+          "caudal_amplitude_deg": 6.0,
+          "pec_amplitude_deg": 16.0,
+          "pec_pitch_fraction": 0.5
+        },
+        "hover": {
+          "chin_amplitude_fraction": 0.0,
+          "body_amplitude_fraction": 0.05,
+          "caudal_mode": "wave",
+          "caudal_amplitude_deg": 2.8,
+          "pec_amplitude_deg": 9.0,
+          "pec_pitch_fraction": 0.5
+        },
+        "turning": {
+          "chin_amplitude_fraction": 0.0
+        },
+        "body_undulation": {
+          "body_amplitude_fraction": 0.95,
+          "pec_amplitude_deg": 8.0
+        }
+      },
+      "tuning_frequencies": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "tuning_amplitudes": [
+        12.0,
+        24.0
+      ],
+      "tuning_wavelengths": [
+        0.6,
+        1.2
+      ],
+      "tuning_duration_s": 4.0,
+      "carangiform_envelope": [
+        [
+          0.0,
+          0.03
+        ],
+        [
+          0.3,
+          0.03
+        ],
+        [
+          0.55,
+          1.0
+        ],
+        [
+          0.82,
+          1.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "disabled_groups": [
+        "pectoral"
+      ]
+    }
+  },
+  "distance_increase_percent": 8.3484672715749,
+  "tail_base_sweep_increase_percent": 18.4215442711686,
+  "tail_share_of_caudal_and_pectoral_force": 0.4137187173522976
 }
