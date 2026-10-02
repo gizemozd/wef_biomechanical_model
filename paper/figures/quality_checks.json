@@ -1,0 +1,97 @@
+{
+  "pdf_width_mm": 183,
+  "pdf_height_mm": 75,
+  "height_reduction_percent": 29.90654205607477,
+  "caption_word_count": 228,
+  "files": [
+    {
+      "file": "Figure1_overview.svg",
+      "unique_svg_ids": true,
+      "live_text_nodes": 26,
+      "image_objects": 6,
+      "embedded_Arial_only": true
+    },
+    {
+      "file": "panels/Figure1a_source_mesh.svg",
+      "unique_svg_ids": true,
+      "live_text_nodes": 4,
+      "image_objects": 1,
+      "embedded_Arial_only": true
+    },
+    {
+      "file": "panels/Figure1b_spherical_cuts.svg",
+      "unique_svg_ids": true,
+      "live_text_nodes": 4,
+      "image_objects": 1,
+      "embedded_Arial_only": true
+    },
+    {
+      "file": "panels/Figure1c_separated_segments.svg",
+      "unique_svg_ids": true,
+      "live_text_nodes": 6,
+      "image_objects": 1,
+      "embedded_Arial_only": true
+    },
+    {
+      "file": "panels/Figure1d_kinematic_model.svg",
+      "unique_svg_ids": true,
+      "live_text_nodes": 3,
+      "image_objects": 1,
+      "embedded_Arial_only": true
+    },
+    {
+      "file": "panels/Figure1e_textured_model.svg",
+      "unique_svg_ids": true,
+      "live_text_nodes": 4,
+      "image_objects": 1,
+      "embedded_Arial_only": true
+    },
+    {
+      "file": "panels/Figure1f_chin_joint.svg",
+      "unique_svg_ids": true,
+      "live_text_nodes": 5,
+      "image_objects": 1,
+      "embedded_Arial_only": true
+    }
+  ],
+  "raw_png_count": 6,
+  "raw_tiff_count": 6,
+  "panel_c_fin_positions": {
+    "fin_pecL_0": [
+      0.04225798807,
+      0.02832025823,
+      -0.045674348288
+    ],
+    "fin_pecR_0": [
+      0.06825798807,
+      -0.02832025823,
+      -0.028674348288
+    ],
+    "fin_pelL_0": [
+      -0.002123437111999995,
+      0.015311759418,
+      -0.0351580452754
+    ],
+    "fin_pelR_0": [
+      0.020876562888000005,
+      -0.015311759418,
+      -0.0361580452754
+    ],
+    "fin_dorsal_0": [
+      -0.074423594787,
+      0.0,
+      0.033520166894657005
+    ],
+    "fin_anal_0": [
+      -0.074360806627,
+      0.0,
+      -0.034600633125343
+    ],
+    "fin_caudal_0": [
+      -0.140537427472,
+      -1.03726496e-06,
+      -0.002707739575493
+    ]
+  },
+  "all_anal_and_paired_fins_below_body": true
+}

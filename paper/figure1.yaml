@@ -1,0 +1,56 @@
+figure:
+  width_mm: 183
+  height_mm: 75
+  font: Arial
+  label_pt: 8
+  title_pt: 7
+  detail_pt: 6
+  dpi: 600
+layout:
+  margin_mm: 2
+  column_gap_mm: 8
+  lower_image_bottom_mm: 9
+  row_pitch_mm: 36
+  arrow_length_mm: 5
+  arrow_line_pt: 1.5
+  arrow_head_pt: 7
+render:
+  width_px: 1800
+  height_px: 800
+  camera_outward: [0.12, -1.0, 0.20]
+  full_view_height_m: 0.1012667965
+  exploded_view_height_m: 0.1417731256
+  chin_view_height_m: 0.0210321324
+  background: [1, 1, 1]
+colors:
+  body: '#6c96ae'
+  fins: '#d1ad63'
+  chin: '#cc7257'
+  cuts: '#347f9e'
+  joints: '#9a3451'
+  text: '#17191c'
+panels:
+  - id: a
+    name: source_mesh
+    title: Textured source mesh
+    detail: Gnathonemus petersii
+  - id: b
+    name: spherical_cuts
+    title: Spherical segmentation
+    detail: Body interfaces and chin socket
+  - id: c
+    name: separated_segments
+    title: Separated rigid segments
+    detail: 14 body regions · 7 fins · 1 chin
+  - id: d
+    name: kinematic_model
+    title: Reassembled and rigged
+    detail: 40 actuators; floating root
+  - id: e
+    name: textured_model
+    title: Textured MuJoCo model
+    detail: UV-mapped rigid assembly
+  - id: f
+    name: chin_joint
+    title: Movable sensory chin
+    detail: Yaw ±45° · pitch ±45° · roll ±30°

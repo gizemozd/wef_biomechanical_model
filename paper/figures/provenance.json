@@ -1,0 +1,51 @@
+{
+  "figure_size_mm": [
+    183,
+    75
+  ],
+  "font_files": {
+    "regular": "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "bold": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "italic": "/System/Library/Fonts/Supplemental/Arial Italic.ttf"
+  },
+  "raster_render_px": [
+    1800,
+    800
+  ],
+  "raster_effective_dpi": 841.4723926380367,
+  "pdf_image_export_dpi": 600,
+  "mujoco_version": "3.14.0",
+  "source_type": "User-supplied textured external surface model; no micro-CT or thresholded scan data.",
+  "sha256": {
+    "fish_mujoco/fish.xml": "c3d6d916d14cb3e368561883262fc8620fe56ca24866f749256580e94cca3500",
+    "fish_mujoco/config.yaml": "7928c6986f9d3b17030fe890fedf187716df9fcad5f9a035fc1745b57b374bad",
+    "fish_mujoco/assets/segments.json": "442b2f763b6639777249bf23196d294ceef24c4702b5765496f8ca6f08078b38",
+    "fish_mujoco/assets/meshes/original.obj": "deb962be1ad39e8e7ae114f84c06e4ed6f607bace33b4034cd1feff38ea65285",
+    "fish_mujoco/assets/textures/fish_atlas.png": "d5a07ed4d4192709020fddebd97163773d5cfb58f9304f0e2dc3f0050d84ece8",
+    "fish_mujoco/assets/textures/Elephant_Nose_Fish_Diffuse.png": "60452f7e7b34e5466244944e472693d8c0c8c73d0f95c4f1182e73823126b562",
+    "paper/figure1.yaml": "5c7d5cf68379f03ff9461385ac98006ceda8505bae1d9188e8a3086cd0086369",
+    "paper/make_figure1.py": "591180598af7fcce5f3e073299765ab3bc3e23815997a54d395de31596c33ede",
+    "fish_mujoco/assets/meshes/body_00_head.obj": "d8f844876c2baf56eecb80bbc26f83000aa600ef21c955a697e76ade2c41aaf0",
+    "fish_mujoco/assets/meshes/body_01.obj": "902898c2729a83e8fab8e17cd190618075ef515983bbb25ff29d268fb994be9c",
+    "fish_mujoco/assets/meshes/body_02.obj": "c835c34908e78618f948e51108e3ac98900df98425dfd4c229f7e438aea5c3cd",
+    "fish_mujoco/assets/meshes/body_03.obj": "c3f1193f215838e414c7e8750d3e38dd40f952a98f109361ac52c7afefbad9a5",
+    "fish_mujoco/assets/meshes/body_04.obj": "bef6fdd04ab0bb948ea47d26cfb4312bbdde00af47714d8ce4911f0e065d3abd",
+    "fish_mujoco/assets/meshes/body_05.obj": "aea20676e224b2dcf1fa6a26f72fe745d13072127502facf3de6d434e6e4f45b",
+    "fish_mujoco/assets/meshes/body_06.obj": "24e83591f9dc72ec7f637ec066c3102c3ca9ede38ec800055a977fff899f8e74",
+    "fish_mujoco/assets/meshes/body_07.obj": "552613e5ab88679eece27f90e4d782e54228f79fa34260be68697e064c846c7d",
+    "fish_mujoco/assets/meshes/body_08.obj": "f0aa70068ac968e0604d454ac490df701d83e63cf4414367d104e7db8cd588b6",
+    "fish_mujoco/assets/meshes/body_09.obj": "3e312a296fb33bbb6ad442a52a313419c35a5e733a49f7a6fc2cc5bc2945e4f2",
+    "fish_mujoco/assets/meshes/body_10.obj": "9f2285a185873cd9865d225eb1f393fd31b3e20c32b5f87415405667670714d0",
+    "fish_mujoco/assets/meshes/body_11.obj": "8fef05cbe1675e49fdd12135e4821e9ce18846d1ba7b78b1b615045db0855380",
+    "fish_mujoco/assets/meshes/body_12.obj": "93a630689b9a869ad24386f2bcb2b71caa8d7ee6b1f8d9218b5143416d1e2940",
+    "fish_mujoco/assets/meshes/body_13.obj": "b566e0fa82220144a0106a03c0a6221ca81eca466446d4679b0bf8cadd94a0d7",
+    "fish_mujoco/assets/meshes/chin_0.obj": "4590aac7c2af4cd274790ca4ef18404b9f19b70719e8217716d69ae71f7c86a4",
+    "fish_mujoco/assets/meshes/fin_pecL_0.obj": "81e0aee2a41a1b2e649c2522332fc23555dbe96031fbb3569e99f13ba0e25548",
+    "fish_mujoco/assets/meshes/fin_pecR_0.obj": "aabda95dd6c2b5b72d0760d259aa96545cbd4f4a368e9363513f1b921db0af99",
+    "fish_mujoco/assets/meshes/fin_pelL_0.obj": "3c2724b1c89f4526f54b0082cecb127cf60bf1309f9504f91523715f297dcd8e",
+    "fish_mujoco/assets/meshes/fin_pelR_0.obj": "a58013378f09ee7ac6da56c81bd2b7860c117c0909092cbb9b746d7ab5621a06",
+    "fish_mujoco/assets/meshes/fin_dorsal_0.obj": "a6ad807d62f8bd779e8fd549fd9e388d9bcdb49ea156af7884f81f1ca27d7c9b",
+    "fish_mujoco/assets/meshes/fin_anal_0.obj": "8b19b915ca6e349646d44769c77a9a344ff243961d6393d6efcd6d057a033565",
+    "fish_mujoco/assets/meshes/fin_caudal_0.obj": "a8e93c56b9555469098507c55b9045cacdd8af53fb0f1573bb66ccd585a43110"
+  }
+}
