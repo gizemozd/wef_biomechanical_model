@@ -1,0 +1,29 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 06.04.2026 15:38:04
+
+newmtl sclera
+	Ns 10.000
+	Ni 1.500
+	d 0.000
+	Tr 1.000
+	Tf 0.000 0.000 0.000 
+	illum 2
+	Ka 0.588 0.588 0.588
+	Kd 0.000 0.000 0.000
+	Ks 0.000 0.000 0.000
+	Ke 0.000 0.000 0.000
+
+newmtl elephant_nose_fish_mat_all
+	Ns 10.000
+	Ni 1.500
+	d 1.000
+	Tr 0.000
+	Tf 1.000 1.000 1.000 
+	illum 2
+	Ka 0.588 0.588 0.588
+	Kd 0.500 0.500 0.500
+	Ks 0.000 0.000 0.000
+	Ke 0.000 0.000 0.000
+	map_Ka Elephant_Nose_Fish_Diffuse.png
+	map_Kd Elephant_Nose_Fish_Diffuse.png
+	map_Ks Elephant_Nose_Fish_Specular.png
