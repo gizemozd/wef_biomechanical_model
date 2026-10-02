@@ -105,7 +105,10 @@ controller:
       body_amplitude_fraction: 0.95
       pec_amplitude_deg: 14.0
       pec_pitch_fraction: 0.3
-      caudal_phase_deg: -60.0
+      # Larger visible tail sweep; about 5% less travel than gain 2.2 / -60 deg.
+      caudal_counterbend_gain: 3.0
+      caudal_amplitude_deg: 11.0
+      caudal_phase_deg: -45.0
     backward:
       chin_amplitude_fraction: 0.0
       body_amplitude_fraction: 0.15
