@@ -1,0 +1,21 @@
+# Local environments, caches and operating-system metadata
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+._*
+MUJOCO_LOG.TXT
+
+# Machine-local credentials and configuration
+.env
+.env.*
+!.env.example
+
+# Editor temporary files
+*.swp
+*.swo
+*~
