@@ -1,0 +1,160 @@
+species: Gnathonemus petersii
+source:
+  mesh: ../data/Elephant_Nose_Fish_obj/Elephant_Nose_Fish.obj
+  texture_dir: ../data/Elephant_Nose_Fish_textures
+  length_m: 0.20  # Full mesh extent, including chin; not standard length
+  rotation: [[0, -1, 0], [1, 0, 0], [0, 0, 1]]
+segmentation:
+  N_body: 14
+  median_fins: single_mesh
+  cut_type: sphere
+  cut_radius_factor: 0.8
+  sphere_subdivisions: 4
+  overlap_m: 0.00035
+  pivot_anterior_source: 6.2
+  pivot_posterior_source: -7.7
+  # Landmarks in oriented source units, before centering/scaling.
+  dorsal_base: [[-8.6, 3.95], [-7, 4.65], [-5, 5.85], [-3, 6.20], [-2.6, 6.24]]
+  anal_base: [[-8.6, 2.94], [-7, 2.48], [-5, 1.72], [-2.7, 1.50]]
+  pec_base_y: 1.63
+  caudal_base_x: -9.1
+  # Rigid ball on the chin, recessed socket in the head; no stretched visual collar.
+  chin_attachment: ball_socket
+  chin_pivot_source: [9.05, 0, 2.65]
+  chin_radius_source: 0.225
+  chin_upper_limit_source: 2.99
+  # Rigid root contour: [anterior offset from pivot, envelope radius], source units.
+  # A narrow, smooth waist seats the small ball at the marked mouthward location.
+  chin_root_profile_source: [[-0.65, 1.4], [-0.40, 0.72], [-0.25, 0.48], [-0.13, 0.32], [0, 0.218], [0.13, 0.23], [0.30, 0.28], [0.55, 0.45], [0.75, 1.0]]
+  chin_root_axial_samples: 96
+  chin_root_radial_sections: 96
+  # Legacy visual skin is disabled; the entire exterior remains rigid.
+  chin_skin: false
+  # Deform only the short base collar; the exposed shaft follows the chin rigidly.
+  chin_skin_blend_radii_m: [0.0015, 0.0055]
+  chin_skin_mouth_fade_source_z: [2.85, 3.0]
+  chin_skin_subdivisions: 1
+  seam_rest_fraction: 0.01
+  seam_bent_fraction: 0.03
+  seam_samples_per_edge: 5
+joints:
+  trunk_yaw_deg: 2.0
+  posterior_yaw_deg: 3.0
+  peduncle_yaw_deg: 1.0
+  pitch_deg: 0.5
+  auto_reduce_for_seams: true
+  stiffness: 0.003
+  damping: 0.00015
+  armature: 0.00000001
+  body_kp: 0.02
+  body_kv: 0.0004
+  fin_range_deg: 30
+  fin_stiffness: 0.000001
+  fin_damping: 0.0000002
+  fin_kp: 0.0004
+  fin_kv: 0.000002
+  pec_ranges_deg: [30, 25, 15]
+  caudal_range_deg: 12
+  median_fin_range_deg: 3
+  # Active sensory scanning: engineering limits, not measured anatomical ROM.
+  # Report rigid chin seam gaps without shrinking this independent range.
+  chin_auto_reduce_for_seams: false
+  chin_yaw_deg: 45
+  chin_pitch_deg: 45
+  chin_roll_deg: 30
+  chin_kp: 0.0004
+  chin_kv: 0.000002
+fluid:
+  density: 1000.0
+  viscosity: 0.001
+  fish_density: 1000.0
+  gravity: true
+  explicit_buoyancy: true
+  body_fluidcoef: [0.5, 0.08, 1.5, 1.0, 1.0]
+  fin_fluidcoef: [1.0, 0.05, 1.5, 1.0, 1.0]
+simulation:
+  minimum_inertia_kg_m2: 1.0e-14
+  timestep: 0.001
+  duration_s: 6.0
+controller:
+  profile: mormyrid
+  frequency_hz: 3.0
+  amplitude_deg: 24.0
+  wavelength_bl: 1.2
+  body_amplitude_fraction: 0.85
+  body_amplitude_floor: 0.2
+  caudal_mode: counterbend
+  caudal_counterbend_gain: 2.2
+  caudal_amplitude_deg: 8.0  # cap on coordinated counter-bending, within 12-degree ROM
+  caudal_phase_deg: 0.0
+  pec_amplitude_deg: 10.0
+  pec_pitch_fraction: 0.2
+  median_fin_amplitude_deg: 0.0
+  chin_amplitude_fraction: 0.85
+  chin_frequency_hz: 1.0
+  ramp_s: 0.5
+  hover_node: 0.5
+  turn_bias_fraction: 0.2
+  turn_caudal_bias_deg: 1.5
+  turn_pectoral_inner_fraction: 0.6
+  # Each behavior keeps caudal and paired pectoral strokes active.
+  gaits:
+    forward:
+      chin_amplitude_fraction: 0.0
+      frequency_hz: 6.0
+      body_amplitude_fraction: 0.95
+      pec_amplitude_deg: 14.0
+      pec_pitch_fraction: 0.3
+      caudal_phase_deg: -60.0
+    backward:
+      chin_amplitude_fraction: 0.0
+      body_amplitude_fraction: 0.15
+      caudal_mode: wave
+      caudal_amplitude_deg: 6.0
+      pec_amplitude_deg: 16.0
+      pec_pitch_fraction: 0.5
+    hover:
+      chin_amplitude_fraction: 0.0
+      body_amplitude_fraction: 0.05
+      caudal_mode: wave
+      caudal_amplitude_deg: 2.8
+      pec_amplitude_deg: 9.0
+      pec_pitch_fraction: 0.5
+    turning:
+      chin_amplitude_fraction: 0.0
+    body_undulation:
+      body_amplitude_fraction: 0.95
+      pec_amplitude_deg: 8.0
+  tuning_frequencies: [1.0, 2.0, 3.0]
+  tuning_amplitudes: [12.0, 24.0]
+  tuning_wavelengths: [0.6, 1.2]
+  tuning_duration_s: 4.0
+render:
+  width: 1920
+  height: 1080
+  fps: 60
+  overview_duration_s: 4.0
+  exploded_duration_s: 5.0
+  rom_seconds_per_joint: 0.3
+  distance_bl: 1.65
+  azimuth: 90
+  elevation: -8
+  shadow_size: 2048
+  samples: 4
+  crf: 20
+  background: [0.025, 0.10, 0.13]
+  swimming_side_elevation_deg: -18
+  swimming_fixed_top: true
+  swimming_ground:
+    enabled: true
+    z_m: -0.05
+    half_extent_m: 0.4
+    spacing_m: 0.01
+    major_every: 5
+    minor_line_px: 1.0
+    major_line_px: 2.0
+    origin_line_px: 2.5
+    floor_rgba: [0.07, 0.16, 0.18, 1.0]
+    minor_rgba: [0.08, 0.13, 0.14, 1.0]
+    major_rgba: [0.20, 0.32, 0.33, 1.0]
+    origin_rgba: [0.80, 0.57, 0.25, 1.0]
