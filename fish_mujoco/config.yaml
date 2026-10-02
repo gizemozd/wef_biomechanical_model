@@ -110,8 +110,8 @@ controller:
       pec_amplitude_deg: 14.0
       pec_pitch_fraction: 0.3
       # Coordinate the rigid caudal fin with the stronger posterior body wave.
-      caudal_counterbend_gain: 3.0
-      caudal_amplitude_deg: 11.0
+      caudal_counterbend_gain: 3.6
+      caudal_amplitude_deg: 12.0
       caudal_phase_deg: -45.0
     backward:
       chin_amplitude_fraction: 0.0
