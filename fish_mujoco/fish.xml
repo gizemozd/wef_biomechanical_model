@@ -1,0 +1,356 @@
+<mujoco model="Gnathonemus_petersii">
+  <compiler angle="degree" meshdir="assets/meshes" texturedir="assets/textures" inertiafromgeom="false" autolimits="true" />
+  <option timestep="0.001" gravity="0 0 -9.81" density="1000" viscosity="0.001" integrator="implicitfast" solver="Newton" iterations="30" />
+  <size nuser_body="1" />
+  <visual>
+    <global offwidth="1920" offheight="1080" azimuth="90" elevation="-8" />
+    <quality shadowsize="2048" offsamples="4" />
+    <headlight ambient="0.45 0.45 0.45" diffuse="0.65 0.65 0.65" specular="0.15 0.15 0.15" />
+    <rgba haze="0.05 0.16 0.19 1" />
+    <map znear="0.002" zfar="20" fogstart="1" fogend="5" />
+  </visual>
+  <statistic center="0 0 0" extent="0.25" meansize="0.008" />
+  <asset>
+    <texture name="water" type="skybox" builtin="gradient" rgb1="0.025 0.1 0.13" rgb2="0.12 0.26 0.28" width="512" height="3072" />
+    <texture name="diffuse" type="2d" file="fish_atlas.png" />
+    <material name="fish_material" texture="diffuse" specular="0.12" shininess="0.2" reflectance="0.03" />
+    <mesh name="body_00_head" file="body_00_head.obj" smoothnormal="true" />
+    <mesh name="body_01" file="body_01.obj" smoothnormal="true" />
+    <mesh name="body_02" file="body_02.obj" smoothnormal="true" />
+    <mesh name="body_03" file="body_03.obj" smoothnormal="true" />
+    <mesh name="body_04" file="body_04.obj" smoothnormal="true" />
+    <mesh name="body_05" file="body_05.obj" smoothnormal="true" />
+    <mesh name="body_06" file="body_06.obj" smoothnormal="true" />
+    <mesh name="body_07" file="body_07.obj" smoothnormal="true" />
+    <mesh name="body_08" file="body_08.obj" smoothnormal="true" />
+    <mesh name="body_09" file="body_09.obj" smoothnormal="true" />
+    <mesh name="body_10" file="body_10.obj" smoothnormal="true" />
+    <mesh name="body_11" file="body_11.obj" smoothnormal="true" />
+    <mesh name="body_12" file="body_12.obj" smoothnormal="true" />
+    <mesh name="body_13" file="body_13.obj" smoothnormal="true" />
+    <mesh name="chin_0" file="chin_0.obj" smoothnormal="true" />
+    <mesh name="fin_pecL_0" file="fin_pecL_0.obj" smoothnormal="true" />
+    <mesh name="fin_pecR_0" file="fin_pecR_0.obj" smoothnormal="true" />
+    <mesh name="fin_pelL_0" file="fin_pelL_0.obj" smoothnormal="true" />
+    <mesh name="fin_pelR_0" file="fin_pelR_0.obj" smoothnormal="true" />
+    <mesh name="fin_dorsal_0" file="fin_dorsal_0.obj" smoothnormal="true" />
+    <mesh name="fin_anal_0" file="fin_anal_0.obj" smoothnormal="true" />
+    <mesh name="fin_caudal_0" file="fin_caudal_0.obj" smoothnormal="true" />
+  </asset>
+  <worldbody>
+    <light name="key" pos="0.1 0.4 0.5" dir="-0.2 -0.6 -1" diffuse="0.85 0.85 0.8" castshadow="true" />
+    <light name="fill" pos="-0.2 -0.3 0.1" dir="0.3 0.7 -0.4" diffuse="0.5 0.6 0.65" castshadow="false" />
+    <camera name="fixed_side" pos="0 0.34 0.035" xyaxes="-1 0 0 0 0 1" fovy="40" />
+    <body name="body_00_head" pos="0 0 0" gravcomp="1" user="1.751050597e-05">
+      <inertial pos="0.05433045629 -5.202310969e-08 -0.0004100051152" mass="0.01751050597" diaginertia="1.413400013e-06 2.398040128e-06 2.738390535e-06" quat="0.7061388412 0.7061493281 0.03688083314 -0.03688993819" />
+      <freejoint name="root_free" />
+      <site name="imu" size="0.001" rgba="0 0 0 0" />
+      <camera name="tracking_side" mode="trackcom" pos="0 0.34 0.035" xyaxes="-1 0 0 0 0 1" fovy="40" />
+      <camera name="tracking_top" mode="trackcom" pos="0 0 0.34" xyaxes="-1 0 0 0 -1 0" fovy="40" />
+      <camera name="fin_closeup" mode="trackcom" pos="-0.04 0.15 0.01" xyaxes="-1 0 0 0 0 1" fovy="35" />
+      <geom name="visual_body_00_head" type="mesh" mesh="body_00_head" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="fluid_body_00_head" type="ellipsoid" size="0.02305520364 0.01582357285 0.01237743221" pos="0.05433045629 -5.202310969e-08 -0.0004100051152" quat="0.7061388412 0.7061493281 0.03688083314 -0.03688993819" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+      <body name="body_01" pos="0.05887063823 0 -0.0005302909266" gravcomp="1" user="8.150289643e-06">
+        <inertial pos="-0.02646965524 -1.88852711e-07 0.001001682928" mass="0.008150289643" diaginertia="3.886249974e-07 8.349658073e-07 9.171498856e-07" quat="0.7185434633 8.266756421e-05 -0.6954820444 -0.0001024729196" />
+        <joint name="j_body_01_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <joint name="j_body_01_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <geom name="visual_body_01" type="mesh" mesh="body_01" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="fluid_body_01" type="ellipsoid" size="0.02045076566 0.01201727213 0.009695201977" pos="-0.02646965524 -1.88852711e-07 0.001001682928" quat="0.7185434633 8.266756421e-05 -0.6954820444 -0.0001024729196" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+        <body name="body_02" pos="-0.009465827681 0 0.000690746208" gravcomp="1" user="7.116031402e-06">
+          <inertial pos="-0.0298238466 3.226461012e-07 0.0001999979644" mass="0.007116031402" diaginertia="2.728979815e-07 8.100001986e-07 8.594840869e-07" quat="0.0001143331161 -0.7059705756 7.111777698e-05 0.7082411512" />
+          <joint name="j_body_02_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+          <joint name="j_body_02_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+          <geom name="visual_body_02" type="mesh" mesh="body_02" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="fluid_body_02" type="ellipsoid" size="0.02215057303 0.01064232166 0.008859441792" pos="-0.0298238466 3.226461012e-07 0.0001999979644" quat="0.0001143331161 -0.7059705756 7.111777698e-05 0.7082411512" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+          <body name="body_03" pos="-0.009465827681 0 0.0001540624832" gravcomp="1" user="7.020405512e-06">
+            <inertial pos="-0.03205427488 -3.778255366e-09 5.361308894e-05" mass="0.007020405512" diaginertia="2.623823513e-07 8.232361381e-07 8.819704055e-07" quat="0.7105558958 1.299922983e-06 -0.7036407599 1.878005684e-06" />
+            <joint name="j_body_03_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+            <joint name="j_body_03_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+            <geom name="visual_body_03" type="mesh" mesh="body_03" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+            <geom name="fluid_body_03" type="ellipsoid" size="0.02266708185 0.0106935104 0.008515870905" pos="-0.03205427488 -3.778255366e-09 5.361308894e-05" quat="0.7105558958 1.299922983e-06 -0.7036407599 1.878005684e-06" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+            <body name="body_04" pos="-0.009465827681 0 3.856462767e-06" gravcomp="1" user="5.995996774e-06">
+              <inertial pos="-0.03344516657 2.048546465e-15 -0.0003335497231" mass="0.005995996774" diaginertia="2.008002115e-07 6.858668759e-07 7.366033597e-07" quat="7.141665434e-13 -0.7061969079 1.072666707e-12 0.7080154852" />
+              <joint name="j_body_04_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+              <joint name="j_body_04_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+              <geom name="visual_body_04" type="mesh" mesh="body_04" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+              <geom name="fluid_body_04" type="ellipsoid" size="0.02256920534 0.01024094384 0.007910012584" pos="-0.03344516657 2.048546465e-15 -0.0003335497231" quat="7.141665434e-13 -0.7061969079 1.072666707e-12 0.7080154852" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+              <body name="body_05" pos="-0.009465827681 0 -6.182555981e-05" gravcomp="1" user="4.818897285e-06">
+                <inertial pos="-0.0343101073 -1.132711005e-19 -0.0004289549327" mass="0.004818897285" diaginertia="1.36552486e-07 4.775575144e-07 5.07978662e-07" quat="2.454850954e-16 0.7096492864 2.062958452e-16 -0.7045551009" />
+                <joint name="j_body_05_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                <joint name="j_body_05_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                <geom name="visual_body_05" type="mesh" mesh="body_05" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                <geom name="fluid_body_05" type="ellipsoid" size="0.02098678161 0.009307222978 0.007420240648" pos="-0.0343101073 -1.132711005e-19 -0.0004289549327" quat="2.454850954e-16 0.7096492864 2.062958452e-16 -0.7045551009" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                <body name="body_06" pos="-0.009465827681 0 0.0002242333971" gravcomp="1" user="3.596769246e-06">
+                  <inertial pos="-0.03507127701 -3.803389518e-14 -0.0007418514269" mass="0.003596769246" diaginertia="8.133801511e-08 2.99593817e-07 3.003556649e-07" quat="-0.7029511089 6.967924916e-11 0.7112381729 7.711114057e-11" />
+                  <joint name="j_body_06_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                  <joint name="j_body_06_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                  <geom name="visual_body_06" type="mesh" mesh="body_06" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                  <geom name="fluid_body_06" type="ellipsoid" size="0.01898605671 0.007554138311 0.007483711194" pos="-0.03507127701 -3.803389518e-14 -0.0007418514269" quat="-0.7029511089 6.967924916e-11 0.7112381729 7.711114057e-11" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                  <body name="body_07" pos="-0.009465827681 0 -0.0003675776473" gravcomp="1" user="1.869382097e-06">
+                    <inertial pos="-0.03519539653 -2.293844458e-14 -0.0009293040176" mass="0.001869382097" diaginertia="2.621353741e-08 1.143079802e-07 1.154043148e-07" quat="-0.5016990444 0.5016990448 0.4982951619 0.4982951624" />
+                    <joint name="j_body_07_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                    <joint name="j_body_07_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                    <geom name="visual_body_07" type="mesh" mesh="body_07" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                    <geom name="fluid_body_07" type="ellipsoid" size="0.01649688116 0.006043392445 0.00579570939" pos="-0.03519539653 -2.293844458e-14 -0.0009293040176" quat="-0.5016990444 0.5016990448 0.4982951619 0.4982951624" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                    <body name="body_08" pos="-0.009465827681 0 -0.0003346977227" gravcomp="1" user="9.94307641e-07">
+                      <inertial pos="-0.03426692894 -1.79904318e-09 -0.001426954164" mass="0.000994307641" diaginertia="1.037234256e-08 3.680162218e-08 4.071798345e-08" quat="-0.497875401 0.4978740671 0.5021167593 0.5021157819" />
+                      <joint name="j_body_08_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                      <joint name="j_body_08_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                      <geom name="visual_body_08" type="mesh" mesh="body_08" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                      <geom name="fluid_body_08" type="ellipsoid" size="0.01299342888 0.005993852249 0.004028939515" pos="-0.03426692894 -1.79904318e-09 -0.001426954164" quat="-0.497875401 0.4978740671 0.5021167593 0.5021157819" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                      <body name="body_09" pos="-0.009465827681 0 5.730831849e-05" gravcomp="1" user="3.82977846e-07">
+                        <inertial pos="-0.03323258484 -1.438445679e-07 -0.002354940175" mass="0.000382977846" diaginertia="2.490067954e-09 5.690010661e-09 7.024609045e-09" quat="-0.480122045 0.4800423084 0.519150332 0.5191581039" />
+                        <joint name="j_body_09_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                        <joint name="j_body_09_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                        <geom name="visual_body_09" type="mesh" mesh="body_09" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                        <geom name="fluid_body_09" type="ellipsoid" size="0.008169685099 0.004996661798 0.002746391425" pos="-0.03323258484 -1.438445679e-07 -0.002354940175" quat="-0.480122045 0.4800423084 0.519150332 0.5191581039" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                        <body name="body_10" pos="-0.009465827681 0 -5.829593004e-05" gravcomp="1" user="1.790268535e-07">
+                          <inertial pos="-0.0306867704 -1.667605304e-07 -0.00232905417" mass="0.0001790268535" diaginertia="6.622097277e-10 1.490119071e-09 1.834180271e-09" quat="0.532272921 0.5323594828 0.4654538597 -0.4654370237" />
+                          <joint name="j_body_10_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                          <joint name="j_body_10_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                          <geom name="visual_body_10" type="mesh" mesh="body_10" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                          <geom name="fluid_body_10" type="ellipsoid" size="0.006097085014 0.00374859376 0.002107782885" pos="-0.0306867704 -1.667605304e-07 -0.00232905417" quat="0.532272921 0.5323594828 0.4654538597 -0.4654370237" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                          <body name="body_11" pos="-0.009465827681 0 -0.0009090979917" gravcomp="1" user="4.695746255e-08">
+                            <inertial pos="-0.0252896315 -6.599013903e-07 -0.001447020597" mass="4.695746255e-05" diaginertia="4.743624159e-11 2.615651723e-10 2.705280735e-10" quat="-0.0006662570038 0.686860154 0.0003640923782 0.7267892077" />
+                            <joint name="j_body_11_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                            <joint name="j_body_11_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                            <geom name="visual_body_11" type="mesh" mesh="body_11" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                            <geom name="fluid_body_11" type="ellipsoid" size="0.005079663466 0.001732821971 0.001431191147" pos="-0.0252896315 -6.599013903e-07 -0.001447020597" quat="-0.0006662570038 0.686860154 0.0003640923782 0.7267892077" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                            <body name="body_12" pos="-0.009465827681 0 -0.000770449354" gravcomp="1" user="6.148064481e-08">
+                              <inertial pos="-0.01844640396 1.198635425e-07 -0.0007118306528" mass="6.148064481e-05" diaginertia="8.722189704e-11 3.183150102e-10 3.429766078e-10" quat="-0.4912769297 0.4912329597 0.5086680546 0.5085213544" />
+                              <joint name="j_body_12_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                              <joint name="j_body_12_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                              <geom name="visual_body_12" type="mesh" mesh="body_12" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                              <geom name="fluid_body_12" type="ellipsoid" size="0.004831512615 0.002132965392 0.001594961509" pos="-0.01844640396 1.198635425e-07 -0.0007118306528" quat="-0.4912769297 0.4912329597 0.5086680546 0.5085213544" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                              <body name="body_13" pos="-0.009465827681 0 -0.0006057894079" gravcomp="1" user="1.698417528e-08">
+                                <inertial pos="-0.01097203058 -6.793641791e-07 -0.0003054033552" mass="1.698417528e-05" diaginertia="9.722480706e-12 1.041766591e-10 1.107841176e-10" quat="-0.0001018389806 0.7118864272 0.0001630196 -0.7022945805" />
+                                <joint name="j_body_13_yaw" type="hinge" axis="0 0 1" range="-0.7161972439 0.7161972439" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                                <joint name="j_body_13_pitch" type="hinge" axis="0 1 0" range="-0.5 0.5" stiffness="0.003" damping="0.00015" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                                <geom name="visual_body_13" type="mesh" mesh="body_13" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                                <geom name="fluid_body_13" type="ellipsoid" size="0.005496382812 0.00155038678 0.0006771398091" pos="-0.01097203058 -6.793641791e-07 -0.0003054033552" quat="-0.0001018389806 0.7118864272 0.0001630196 -0.7022945805" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="0.5 0.08 1.5 1 1" />
+                                <body name="fin_caudal_0" pos="-0.01131813353 -1.03726496e-06 -0.000199921905" gravcomp="1" user="9.155604473e-07">
+                                  <inertial pos="-0.01611033024 9.545862663e-07 -0.001728391827" mass="0.0009155604473" diaginertia="6.212937076e-08 7.596865347e-08 1.376586241e-07" quat="0.5332734472 0.5332822757 0.4643439161 -0.4643427317" />
+                                  <joint name="j_fin_caudal_0" type="hinge" axis="0 0 1" range="-12 12" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                                  <geom name="visual_fin_caudal_0" type="mesh" mesh="fin_caudal_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                                  <geom name="fluid_fin_caudal_0" type="ellipsoid" size="0.01691999659 0.00154634635 0.01865653321" pos="-0.01704257743 1.03726496e-06 -0.002072843508" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                      <body name="fin_dorsal_0" pos="-0.03103343925 0 0.0137416602" gravcomp="1" user="3.769774365e-07">
+                        <inertial pos="0.006599425733 1.848154089e-08 0.007501172675" mass="0.0003769774365" diaginertia="5.287266989e-09 2.560325135e-08 3.076877448e-08" quat="0.6870459631 0.6870374261 -0.1672531266 0.1672537333" />
+                        <joint name="j_fin_dorsal_0" type="hinge" axis="1 0 0" range="-3 3" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                        <geom name="visual_fin_dorsal_0" type="mesh" mesh="fin_dorsal_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                        <geom name="fluid_fin_dorsal_0" type="ellipsoid" size="0.02451581322 0.0008980032871 0.01468905801" pos="0.0008653688767 0 0.002623496016" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+                      </body>
+                      <body name="fin_anal_0" pos="-0.03097065109 0 -0.01437913982" gravcomp="1" user="3.193494139e-07">
+                        <inertial pos="0.007649688739 7.91000006e-13 -0.005949484262" mass="0.0003193494139" diaginertia="3.573705662e-09 3.16650348e-08 3.517186249e-08" quat="-0.6951139049 0.6951139051 -0.1296790617 -0.1296790618" />
+                        <joint name="j_fin_anal_0" type="hinge" axis="1 0 0" range="-3 3" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+                        <geom name="visual_fin_anal_0" type="mesh" mesh="fin_anal_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+                        <geom name="fluid_fin_anal_0" type="ellipsoid" size="0.02410721639 0.00100821536 0.01201683446" pos="0.0003939838916 0 -0.00421525334" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+            <body name="fin_pelL_0" pos="-0.02356241998 0.005311759418 -0.01847256304" gravcomp="1" user="4.380997601e-08">
+              <inertial pos="0.001036122593 0.002413386376 -0.00282880407" mass="4.380997601e-05" diaginertia="2.480232811e-10 3.710968113e-10 5.886572745e-10" quat="0.7537088161 -0.3163643299 -0.1800264296 -0.5471993383" />
+              <joint name="j_fin_pelL_0" type="hinge" axis="1 0 0" range="-30 30" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+              <geom name="visual_fin_pelL_0" type="mesh" mesh="fin_pelL_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+              <geom name="fluid_fin_pelL_0" type="ellipsoid" size="0.007967639249 0.004376072437 0.003779521212" pos="0.0002042986444 0.001924491258 -0.003779520605" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+            </body>
+            <body name="fin_pelR_0" pos="-0.02356241998 -0.005311759418 -0.01847256304" gravcomp="1" user="4.363937957e-08">
+              <inertial pos="0.001028803318 -0.002417660382 -0.00283168391" mass="4.363937957e-05" diaginertia="2.474376844e-10 3.681632669e-10 5.852520334e-10" quat="-0.5500390473 -0.1813832809 -0.3156628284 0.7516076973" />
+              <joint name="j_fin_pelR_0" type="hinge" axis="1 0 0" range="-30 30" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+              <geom name="visual_fin_pelR_0" type="mesh" mesh="fin_pelR_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+              <geom name="fluid_fin_pelR_0" type="ellipsoid" size="0.007967639249 0.004376072437 0.003779521212" pos="0.0002042986444 -0.001924491258 -0.003779520605" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="chin_0" pos="0.08216066029 0 -0.009168913949" gravcomp="1" user="1.641578745e-07">
+        <inertial pos="0.006579868855 3.598938852e-13 -0.0008972297758" mass="0.0001641578745" diaginertia="2.509158524e-10 4.336849719e-09 4.361927269e-09" quat="0.9972259499 1.493815776e-09 0.07443389584 -1.450823189e-10" />
+        <joint name="j_chin_yaw" type="hinge" axis="0 0 1" range="-45 45" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <joint name="j_chin_pitch" type="hinge" axis="0 1 0" range="-45 45" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <joint name="j_chin_roll" type="hinge" axis="1 0 0" range="-30 30" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <geom name="visual_chin_0" type="mesh" mesh="chin_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="fluid_chin_0" type="ellipsoid" size="0.009839013219 0.002267602831 0.00274388562" pos="0.008000327979 0 -0.0007945633137" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+      </body>
+      <body name="fin_pecL_0" pos="0.03925798807 0.01332025823 -0.004674348288" gravcomp="1" user="2.395141753e-07">
+        <inertial pos="-0.004859647568 0.011740919 0.0001386906588" mass="0.0002395141753" diaginertia="3.207441003e-09 8.559431017e-09 1.172745599e-08" quat="0.03127737669 0.6946003012 0.7174839304 -0.04205896939" />
+        <joint name="j_fin_pecL_0_abduct" type="hinge" axis="1 0 0" range="-30 30" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <joint name="j_fin_pecL_0_protract" type="hinge" axis="0 0 1" range="-25 25" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <joint name="j_fin_pecL_0_rotate" type="hinge" axis="0 1 0" range="-15 15" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <geom name="visual_fin_pecL_0" type="mesh" mesh="fin_pecL_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="fluid_fin_pecL_0" type="ellipsoid" size="0.007505925372 0.0122783361 0.001849383814" pos="-0.005422079671 0.01227833575 5.972944828e-05" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+      </body>
+      <body name="fin_pecR_0" pos="0.03925798807 -0.01332025823 -0.004674348288" gravcomp="1" user="2.39440771e-07">
+        <inertial pos="-0.004860645665 -0.01174420057 0.0001384312749" mass="0.000239440771" diaginertia="3.20674888e-09 8.550787002e-09 1.17181506e-08" quat="-0.6947546063 -0.03130070183 -0.04205261219 0.7173338699" />
+        <joint name="j_fin_pecR_0_abduct" type="hinge" axis="1 0 0" range="-30 30" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <joint name="j_fin_pecR_0_protract" type="hinge" axis="0 0 1" range="-25 25" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <joint name="j_fin_pecR_0_rotate" type="hinge" axis="0 1 0" range="-15 15" stiffness="1e-06" damping="2e-07" armature="1e-08" solreflimit="0.003 1" margin="1e-05" />
+        <geom name="visual_fin_pecR_0" type="mesh" mesh="fin_pecR_0" material="fish_material" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="fluid_fin_pecR_0" type="ellipsoid" size="0.007505925372 0.0122783361 0.001849383814" pos="-0.005422079671 -0.01227833575 5.972944828e-05" quat="1 0 0 0" mass="0" group="3" contype="2" conaffinity="1" rgba="0.2 0.7 0.8 0.25" fluidshape="ellipsoid" fluidcoef="1 0.05 1.5 1 1" />
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="a_j_body_01_yaw" joint="j_body_01_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_01_pitch" joint="j_body_01_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_02_yaw" joint="j_body_02_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_02_pitch" joint="j_body_02_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_03_yaw" joint="j_body_03_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_03_pitch" joint="j_body_03_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_04_yaw" joint="j_body_04_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_04_pitch" joint="j_body_04_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_05_yaw" joint="j_body_05_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_05_pitch" joint="j_body_05_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_06_yaw" joint="j_body_06_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_06_pitch" joint="j_body_06_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_07_yaw" joint="j_body_07_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_07_pitch" joint="j_body_07_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_08_yaw" joint="j_body_08_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_08_pitch" joint="j_body_08_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_09_yaw" joint="j_body_09_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_09_pitch" joint="j_body_09_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_10_yaw" joint="j_body_10_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_10_pitch" joint="j_body_10_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_11_yaw" joint="j_body_11_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_11_pitch" joint="j_body_11_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_12_yaw" joint="j_body_12_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_12_pitch" joint="j_body_12_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_body_13_yaw" joint="j_body_13_yaw" kp="0.02" kv="0.0004" ctrlrange="-0.0125 0.0125" forcerange="-0.02 0.02" />
+    <position name="a_j_body_13_pitch" joint="j_body_13_pitch" kp="0.02" kv="0.0004" ctrlrange="-0.00872664626 0.00872664626" forcerange="-0.02 0.02" />
+    <position name="a_j_chin_yaw" joint="j_chin_yaw" kp="0.0004" kv="2e-06" ctrlrange="-0.7853981634 0.7853981634" forcerange="-0.02 0.02" />
+    <position name="a_j_chin_pitch" joint="j_chin_pitch" kp="0.0004" kv="2e-06" ctrlrange="-0.7853981634 0.7853981634" forcerange="-0.02 0.02" />
+    <position name="a_j_chin_roll" joint="j_chin_roll" kp="0.0004" kv="2e-06" ctrlrange="-0.5235987756 0.5235987756" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pecL_0_abduct" joint="j_fin_pecL_0_abduct" kp="0.0004" kv="2e-06" ctrlrange="-0.5235987756 0.5235987756" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pecL_0_protract" joint="j_fin_pecL_0_protract" kp="0.0004" kv="2e-06" ctrlrange="-0.436332313 0.436332313" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pecL_0_rotate" joint="j_fin_pecL_0_rotate" kp="0.0004" kv="2e-06" ctrlrange="-0.2617993878 0.2617993878" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pecR_0_abduct" joint="j_fin_pecR_0_abduct" kp="0.0004" kv="2e-06" ctrlrange="-0.5235987756 0.5235987756" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pecR_0_protract" joint="j_fin_pecR_0_protract" kp="0.0004" kv="2e-06" ctrlrange="-0.436332313 0.436332313" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pecR_0_rotate" joint="j_fin_pecR_0_rotate" kp="0.0004" kv="2e-06" ctrlrange="-0.2617993878 0.2617993878" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pelL_0" joint="j_fin_pelL_0" kp="0.0004" kv="2e-06" ctrlrange="-0.5235987756 0.5235987756" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_pelR_0" joint="j_fin_pelR_0" kp="0.0004" kv="2e-06" ctrlrange="-0.5235987756 0.5235987756" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_dorsal_0" joint="j_fin_dorsal_0" kp="0.0004" kv="2e-06" ctrlrange="-0.05235987756 0.05235987756" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_anal_0" joint="j_fin_anal_0" kp="0.0004" kv="2e-06" ctrlrange="-0.05235987756 0.05235987756" forcerange="-0.02 0.02" />
+    <position name="a_j_fin_caudal_0" joint="j_fin_caudal_0" kp="0.0004" kv="2e-06" ctrlrange="-0.2094395102 0.2094395102" forcerange="-0.02 0.02" />
+  </actuator>
+  <sensor>
+    <jointpos name="j_body_01_yaw_pos" joint="j_body_01_yaw" />
+    <jointvel name="j_body_01_yaw_vel" joint="j_body_01_yaw" />
+    <jointpos name="j_body_01_pitch_pos" joint="j_body_01_pitch" />
+    <jointvel name="j_body_01_pitch_vel" joint="j_body_01_pitch" />
+    <jointpos name="j_body_02_yaw_pos" joint="j_body_02_yaw" />
+    <jointvel name="j_body_02_yaw_vel" joint="j_body_02_yaw" />
+    <jointpos name="j_body_02_pitch_pos" joint="j_body_02_pitch" />
+    <jointvel name="j_body_02_pitch_vel" joint="j_body_02_pitch" />
+    <jointpos name="j_body_03_yaw_pos" joint="j_body_03_yaw" />
+    <jointvel name="j_body_03_yaw_vel" joint="j_body_03_yaw" />
+    <jointpos name="j_body_03_pitch_pos" joint="j_body_03_pitch" />
+    <jointvel name="j_body_03_pitch_vel" joint="j_body_03_pitch" />
+    <jointpos name="j_body_04_yaw_pos" joint="j_body_04_yaw" />
+    <jointvel name="j_body_04_yaw_vel" joint="j_body_04_yaw" />
+    <jointpos name="j_body_04_pitch_pos" joint="j_body_04_pitch" />
+    <jointvel name="j_body_04_pitch_vel" joint="j_body_04_pitch" />
+    <jointpos name="j_body_05_yaw_pos" joint="j_body_05_yaw" />
+    <jointvel name="j_body_05_yaw_vel" joint="j_body_05_yaw" />
+    <jointpos name="j_body_05_pitch_pos" joint="j_body_05_pitch" />
+    <jointvel name="j_body_05_pitch_vel" joint="j_body_05_pitch" />
+    <jointpos name="j_body_06_yaw_pos" joint="j_body_06_yaw" />
+    <jointvel name="j_body_06_yaw_vel" joint="j_body_06_yaw" />
+    <jointpos name="j_body_06_pitch_pos" joint="j_body_06_pitch" />
+    <jointvel name="j_body_06_pitch_vel" joint="j_body_06_pitch" />
+    <jointpos name="j_body_07_yaw_pos" joint="j_body_07_yaw" />
+    <jointvel name="j_body_07_yaw_vel" joint="j_body_07_yaw" />
+    <jointpos name="j_body_07_pitch_pos" joint="j_body_07_pitch" />
+    <jointvel name="j_body_07_pitch_vel" joint="j_body_07_pitch" />
+    <jointpos name="j_body_08_yaw_pos" joint="j_body_08_yaw" />
+    <jointvel name="j_body_08_yaw_vel" joint="j_body_08_yaw" />
+    <jointpos name="j_body_08_pitch_pos" joint="j_body_08_pitch" />
+    <jointvel name="j_body_08_pitch_vel" joint="j_body_08_pitch" />
+    <jointpos name="j_body_09_yaw_pos" joint="j_body_09_yaw" />
+    <jointvel name="j_body_09_yaw_vel" joint="j_body_09_yaw" />
+    <jointpos name="j_body_09_pitch_pos" joint="j_body_09_pitch" />
+    <jointvel name="j_body_09_pitch_vel" joint="j_body_09_pitch" />
+    <jointpos name="j_body_10_yaw_pos" joint="j_body_10_yaw" />
+    <jointvel name="j_body_10_yaw_vel" joint="j_body_10_yaw" />
+    <jointpos name="j_body_10_pitch_pos" joint="j_body_10_pitch" />
+    <jointvel name="j_body_10_pitch_vel" joint="j_body_10_pitch" />
+    <jointpos name="j_body_11_yaw_pos" joint="j_body_11_yaw" />
+    <jointvel name="j_body_11_yaw_vel" joint="j_body_11_yaw" />
+    <jointpos name="j_body_11_pitch_pos" joint="j_body_11_pitch" />
+    <jointvel name="j_body_11_pitch_vel" joint="j_body_11_pitch" />
+    <jointpos name="j_body_12_yaw_pos" joint="j_body_12_yaw" />
+    <jointvel name="j_body_12_yaw_vel" joint="j_body_12_yaw" />
+    <jointpos name="j_body_12_pitch_pos" joint="j_body_12_pitch" />
+    <jointvel name="j_body_12_pitch_vel" joint="j_body_12_pitch" />
+    <jointpos name="j_body_13_yaw_pos" joint="j_body_13_yaw" />
+    <jointvel name="j_body_13_yaw_vel" joint="j_body_13_yaw" />
+    <jointpos name="j_body_13_pitch_pos" joint="j_body_13_pitch" />
+    <jointvel name="j_body_13_pitch_vel" joint="j_body_13_pitch" />
+    <jointpos name="j_chin_yaw_pos" joint="j_chin_yaw" />
+    <jointvel name="j_chin_yaw_vel" joint="j_chin_yaw" />
+    <jointpos name="j_chin_pitch_pos" joint="j_chin_pitch" />
+    <jointvel name="j_chin_pitch_vel" joint="j_chin_pitch" />
+    <jointpos name="j_chin_roll_pos" joint="j_chin_roll" />
+    <jointvel name="j_chin_roll_vel" joint="j_chin_roll" />
+    <jointpos name="j_fin_pecL_0_abduct_pos" joint="j_fin_pecL_0_abduct" />
+    <jointvel name="j_fin_pecL_0_abduct_vel" joint="j_fin_pecL_0_abduct" />
+    <jointpos name="j_fin_pecL_0_protract_pos" joint="j_fin_pecL_0_protract" />
+    <jointvel name="j_fin_pecL_0_protract_vel" joint="j_fin_pecL_0_protract" />
+    <jointpos name="j_fin_pecL_0_rotate_pos" joint="j_fin_pecL_0_rotate" />
+    <jointvel name="j_fin_pecL_0_rotate_vel" joint="j_fin_pecL_0_rotate" />
+    <jointpos name="j_fin_pecR_0_abduct_pos" joint="j_fin_pecR_0_abduct" />
+    <jointvel name="j_fin_pecR_0_abduct_vel" joint="j_fin_pecR_0_abduct" />
+    <jointpos name="j_fin_pecR_0_protract_pos" joint="j_fin_pecR_0_protract" />
+    <jointvel name="j_fin_pecR_0_protract_vel" joint="j_fin_pecR_0_protract" />
+    <jointpos name="j_fin_pecR_0_rotate_pos" joint="j_fin_pecR_0_rotate" />
+    <jointvel name="j_fin_pecR_0_rotate_vel" joint="j_fin_pecR_0_rotate" />
+    <jointpos name="j_fin_pelL_0_pos" joint="j_fin_pelL_0" />
+    <jointvel name="j_fin_pelL_0_vel" joint="j_fin_pelL_0" />
+    <jointpos name="j_fin_pelR_0_pos" joint="j_fin_pelR_0" />
+    <jointvel name="j_fin_pelR_0_vel" joint="j_fin_pelR_0" />
+    <jointpos name="j_fin_dorsal_0_pos" joint="j_fin_dorsal_0" />
+    <jointvel name="j_fin_dorsal_0_vel" joint="j_fin_dorsal_0" />
+    <jointpos name="j_fin_anal_0_pos" joint="j_fin_anal_0" />
+    <jointvel name="j_fin_anal_0_vel" joint="j_fin_anal_0" />
+    <jointpos name="j_fin_caudal_0_pos" joint="j_fin_caudal_0" />
+    <jointvel name="j_fin_caudal_0_vel" joint="j_fin_caudal_0" />
+    <framepos name="root_position" objtype="body" objname="body_00_head" />
+    <framequat name="root_orientation" objtype="body" objname="body_00_head" />
+    <framelinvel name="root_velocity" objtype="body" objname="body_00_head" />
+    <frameangvel name="root_angular_velocity" objtype="body" objname="body_00_head" />
+    <accelerometer name="imu_accelerometer" site="imu" />
+    <gyro name="imu_gyro" site="imu" />
+  </sensor>
+  <contact>
+    <exclude body1="body_00_head" body2="body_01" />
+    <exclude body1="body_01" body2="body_02" />
+    <exclude body1="body_02" body2="body_03" />
+    <exclude body1="body_03" body2="body_04" />
+    <exclude body1="body_04" body2="body_05" />
+    <exclude body1="body_05" body2="body_06" />
+    <exclude body1="body_06" body2="body_07" />
+    <exclude body1="body_07" body2="body_08" />
+    <exclude body1="body_08" body2="body_09" />
+    <exclude body1="body_09" body2="body_10" />
+    <exclude body1="body_10" body2="body_11" />
+    <exclude body1="body_11" body2="body_12" />
+    <exclude body1="body_12" body2="body_13" />
+    <exclude body1="body_00_head" body2="chin_0" />
+    <exclude body1="body_00_head" body2="fin_pecL_0" />
+    <exclude body1="body_00_head" body2="fin_pecR_0" />
+    <exclude body1="body_03" body2="fin_pelL_0" />
+    <exclude body1="body_03" body2="fin_pelR_0" />
+    <exclude body1="body_08" body2="fin_dorsal_0" />
+    <exclude body1="body_08" body2="fin_anal_0" />
+    <exclude body1="body_13" body2="fin_caudal_0" />
+  </contact>
+  <keyframe>
+    <key name="rest" qpos="0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+  </keyframe>
+</mujoco>

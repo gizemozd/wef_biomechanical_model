@@ -1,0 +1,562 @@
+[
+  {
+    "name": "j_body_01_yaw",
+    "body": "body_01",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.716197243913529,
+      0.716197243913529
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_01_pitch",
+    "body": "body_01",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_02_yaw",
+    "body": "body_02",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.7161972439135291,
+      0.7161972439135291
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_02_pitch",
+    "body": "body_02",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_03_yaw",
+    "body": "body_03",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.7161972439135291,
+      0.7161972439135291
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_03_pitch",
+    "body": "body_03",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_04_yaw",
+    "body": "body_04",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.716197243913529,
+      0.716197243913529
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_04_pitch",
+    "body": "body_04",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_05_yaw",
+    "body": "body_05",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.7161972439135291,
+      0.7161972439135291
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_05_pitch",
+    "body": "body_05",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_06_yaw",
+    "body": "body_06",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.716197243913529,
+      0.716197243913529
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_06_pitch",
+    "body": "body_06",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_07_yaw",
+    "body": "body_07",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.716197243913529,
+      0.716197243913529
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_07_pitch",
+    "body": "body_07",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_08_yaw",
+    "body": "body_08",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.7161972439135289,
+      0.7161972439135289
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_08_pitch",
+    "body": "body_08",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_09_yaw",
+    "body": "body_09",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.7161972439135291,
+      0.7161972439135291
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_09_pitch",
+    "body": "body_09",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_10_yaw",
+    "body": "body_10",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.7161972439135291,
+      0.7161972439135291
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_10_pitch",
+    "body": "body_10",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_11_yaw",
+    "body": "body_11",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.716197243913529,
+      0.716197243913529
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_11_pitch",
+    "body": "body_11",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_12_yaw",
+    "body": "body_12",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.716197243913529,
+      0.716197243913529
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_12_pitch",
+    "body": "body_12",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_13_yaw",
+    "body": "body_13",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -0.7161972439135291,
+      0.7161972439135291
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_body_13_pitch",
+    "body": "body_13",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -0.5,
+      0.5
+    ],
+    "kind": "body"
+  },
+  {
+    "name": "j_chin_yaw",
+    "body": "chin_0",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -45.0,
+      45.0
+    ],
+    "kind": "chin"
+  },
+  {
+    "name": "j_chin_pitch",
+    "body": "chin_0",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -45.0,
+      45.0
+    ],
+    "kind": "chin"
+  },
+  {
+    "name": "j_chin_roll",
+    "body": "chin_0",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range_deg": [
+      -30.0,
+      30.0
+    ],
+    "kind": "chin"
+  },
+  {
+    "name": "j_fin_pecL_0_abduct",
+    "body": "fin_pecL_0",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range_deg": [
+      -30,
+      30
+    ],
+    "kind": "pectoral"
+  },
+  {
+    "name": "j_fin_pecL_0_protract",
+    "body": "fin_pecL_0",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -25,
+      25
+    ],
+    "kind": "pectoral"
+  },
+  {
+    "name": "j_fin_pecL_0_rotate",
+    "body": "fin_pecL_0",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -15,
+      15
+    ],
+    "kind": "pectoral"
+  },
+  {
+    "name": "j_fin_pecR_0_abduct",
+    "body": "fin_pecR_0",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range_deg": [
+      -30,
+      30
+    ],
+    "kind": "pectoral"
+  },
+  {
+    "name": "j_fin_pecR_0_protract",
+    "body": "fin_pecR_0",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -25,
+      25
+    ],
+    "kind": "pectoral"
+  },
+  {
+    "name": "j_fin_pecR_0_rotate",
+    "body": "fin_pecR_0",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "range_deg": [
+      -15,
+      15
+    ],
+    "kind": "pectoral"
+  },
+  {
+    "name": "j_fin_pelL_0",
+    "body": "fin_pelL_0",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range_deg": [
+      -30,
+      30
+    ],
+    "kind": "pelvic"
+  },
+  {
+    "name": "j_fin_pelR_0",
+    "body": "fin_pelR_0",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range_deg": [
+      -30,
+      30
+    ],
+    "kind": "pelvic"
+  },
+  {
+    "name": "j_fin_dorsal_0",
+    "body": "fin_dorsal_0",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range_deg": [
+      -3,
+      3
+    ],
+    "kind": "dorsal"
+  },
+  {
+    "name": "j_fin_anal_0",
+    "body": "fin_anal_0",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range_deg": [
+      -3,
+      3
+    ],
+    "kind": "anal"
+  },
+  {
+    "name": "j_fin_caudal_0",
+    "body": "fin_caudal_0",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range_deg": [
+      -12,
+      12
+    ],
+    "kind": "caudal"
+  }
+]
